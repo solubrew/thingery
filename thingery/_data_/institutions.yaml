@@ -1,18 +1,11 @@
 ---
 # Thingery Institutions Configuration
 # Only government institutions, established banks (>100 years), and prestigious universities/labs
-# Filter: Founded <= 1926
+# Filter: Founded <= 1926 (100+ years old)
 # Last Updated: 2026-03-08
 Institutions:
   BANKS:
-    federal_reserve:
-      name: Federal Reserve System
-      location: Washington D.C., USA
-      founded: 1913
-      type: central_bank
-      website: https://www.federalreserve.gov
-      focus_areas: ["Monetary Policy", "Banking Supervision", "Financial Stability"]
-      notable_research: ["Economic Research", "Payment Systems", "Consumer Protection"]
+    # Europe - Oldest
     bank_of_england:
       name: Bank of England
       location: London, UK
@@ -21,14 +14,56 @@ Institutions:
       website: https://www.bankofengland.co.uk
       focus_areas: ["Monetary Policy", "Financial Stability", "Currency"]
       notable_research: ["Macroeconomics", "Financial Markets", "Central Banking"]
-    bank_of_japan:
-      name: Bank of Japan
-      location: Tokyo, Japan
-      founded: 1882
+    
+    swedish_riksbank:
+      name: Sveriges Riksbank
+      location: Stockholm, Sweden
+      founded: 1668
       type: central_bank
-      website: https://www.boj.or.jp
-      focus_areas: ["Monetary Policy", "Financial System", "Currency"]
-      notable_research: ["Macro Economics", "Price Stability", "Quantitative Easing"]
+      website: https://www.riksbank.se
+      focus_areas: ["Monetary Policy", "Financial Stability", "Payment Systems"]
+      notable_research: ["Price Stability", "Macroeconomics", "Central Banking"]
+    
+    netherlands_bank:
+      name: De Nederlandsche Bank
+      location: Amsterdam, Netherlands
+      founded: 1814
+      type: central_bank
+      website: https://www.dnb.nl
+      focus_areas: ["Monetary Policy", "Prudential Supervision", "Financial Stability"]
+      notable_research: ["Macroeconomics", "Financial Markets", "Economics"]
+    
+    # France
+    banque_de_france:
+      name: Banque de France
+      location: Paris, France
+      founded: 1800
+      type: central_bank
+      website: https://www.banque-france.fr
+      focus_areas: ["Monetary Policy", "Financial Stability", "Consumer Credit"]
+      notable_research: ["Economic Research", "Payment Systems", "Statistics"]
+    
+    # Italy
+    bank_of_italy:
+      name: Bank of Italy (Banca d'Italia)
+      location: Rome, Italy
+      founded: 1893
+      type: central_bank
+      website: https://www.bancaditalia.it
+      focus_areas: ["Monetary Policy", "Financial Supervision", "Payment Systems"]
+      notable_research: ["Monetary Economics", "Financial Stability", "Banking"]
+    
+    # Spain
+    banco_de_espana:
+      name: Banco de España
+      location: Madrid, Spain
+      founded: 1856
+      type: central_bank
+      website: https://www.bde.es
+      focus_areas: ["Monetary Policy", "Banking Supervision", "Financial Stability"]
+      notable_research: ["Economic Research", "Statistics", "Financial Markets"]
+    
+    # Switzerland
     swiss_national_bank:
       name: Swiss National Bank
       location: Zurich, Switzerland
@@ -37,8 +72,89 @@ Institutions:
       website: https://www.snb.ch
       focus_areas: ["Monetary Policy", "Currency", "Asset Management"]
       notable_research: ["Price Stability", "Gold Reserves", "International Cooperation"]
+    
+    # Belgium
+    national_bank_of_belgium:
+      name: National Bank of Belgium
+      location: Brussels, Belgium
+      founded: 1850
+      type: central_bank
+      website: https://www.nbb.be
+      focus_areas: ["Monetary Policy", "Financial Stability", "Statistics"]
+      notable_research: ["Economic Research", "Financial Markets", "Banking"]
+    
+    # Austria
+    oesterreichische_nationalbank:
+      name: Oesterreichische Nationalbank
+      location: Vienna, Austria
+      founded: 1816
+      type: central_bank
+      website: https://www.oenb.at
+      focus_areas: ["Monetary Policy", "Financial Stability", "Cash Management"]
+      notable_research: ["Macroeconomics", "Financial Markets", "Economic Research"]
+    
+    # Portugal
+    banco_de_portugal:
+      name: Banco de Portugal
+      location: Lisbon, Portugal
+      founded: 1846
+      type: central_bank
+      website: https://www.bportugal.pt
+      focus_areas: ["Monetary Policy", "Banking Supervision", "Financial Stability"]
+      notable_research: ["Economic Research", "Financial Markets", "Statistics"]
+    
+    # Denmark
+    national_bank_of_denmark:
+      name: Danmarks Nationalbank
+      location: Copenhagen, Denmark
+      founded: 1818
+      type: central_bank
+      website: https://www.nationalbanken.dk
+      focus_areas: ["Monetary Policy", "Financial Stability", "Currency"]
+      notable_research: ["Macroeconomics", "Financial Markets", "Price Stability"]
+    
+    # Norway
+    norges_bank:
+      name: Norges Bank
+      location: Oslo, Norway
+      founded: 1816
+      type: central_bank
+      website: https://www.norges-bank.no
+      focus_areas: ["Monetary Policy", "Financial Stability", "Payment Systems"]
+      notable_research: ["Price Stability", "Macroeconomics", "Central Banking"]
+    
+    # Finland
+    bank_of_finland:
+      name: Bank of Finland
+      location: Helsinki, Finland
+      founded: 1812
+      type: central_bank
+      website: https://www.suomenpankki.fi
+      focus_areas: ["Monetary Policy", "Financial Stability", "Research"]
+      notable_research: ["Macroeconomics", "Financial Markets", "Economics"]
+    
+    # Japan
+    bank_of_japan:
+      name: Bank of Japan
+      location: Tokyo, Japan
+      founded: 1882
+      type: central_bank
+      website: https://www.boj.or.jp
+      focus_areas: ["Monetary Policy", "Financial System", "Currency"]
+      notable_research: ["Macro Economics", "Price Stability", "Quantitative Easing"]
+    
+    # United States
+    federal_reserve:
+      name: Federal Reserve System
+      location: Washington D.C., USA
+      founded: 1913
+      type: central_bank
+      website: https://www.federalreserve.gov
+      focus_areas: ["Monetary Policy", "Banking Supervision", "Financial Stability"]
+      notable_research: ["Economic Research", "Payment Systems", "Consumer Protection"]
 
   GOVERNMENT:
+    # United States
     us_treasury:
       name: US Department of the Treasury
       location: Washington D.C., USA
@@ -46,6 +162,7 @@ Institutions:
       website: https://home.treasury.gov
       focus_areas: ["Economics", "National Security", "Financial Crimes"]
       notable_research: ["Tax Policy", "Currency", "Debt Management"]
+    
     nist:
       name: National Institute of Standards and Technology
       location: Gaithersburg, USA
@@ -53,15 +170,70 @@ Institutions:
       website: https://www.nist.gov
       focus_areas: ["Measurement Standards", "Technology", "Standards"]
       notable_research: ["Atomic Clocks", "Quantum Measurement", "Cybersecurity"]
+    
+    us_navy:
+      name: US Navy (Bureau of Naval Weapons / Naval Research Lab)
+      location: Washington D.C., USA
+      founded: 1775
+      website: https://www.navy.mil
+      focus_areas: ["Naval Warfare", "Maritime Security", "Technology"]
+      notable_research: ["Naval Architecture", "Oceanography", "Weapons Systems"]
+    
+    # United Kingdom
+    british_museum:
+      name: British Museum
+      location: London, UK
+      founded: 1753
+      website: https://www.britishmuseum.org
+      focus_areas: ["History", "Archaeology", "Culture"]
+      notable_research: ["Egyptology", "Classical Antiquities", "Numismatics"]
+    
+    # France
+    institut_de_france:
+      name: Institut de France
+      location: Paris, France
+      founded: 1795
+      website: https://www.institut-de-france.fr
+      focus_areas: ["Sciences", "Arts", "Literature", "Morals"]
+      notable_research: ["Academy of Sciences", "Academy of Fine Arts", "Academy of Inscriptions"]
+    
+    # Germany
+    max_planck_society:
+      name: Max Planck Society
+      location: Munich, Germany
+      founded: 1912
+      website: https://www.mpg.de
+      focus_areas: ["Basic Research", "Natural Sciences", "Life Sciences"]
+      notable_research: ["Quantum Physics", "Astrophysics", "Biochemistry"]
+    
+    # Japan
+    riken:
+      name: RIKEN
+      location: Wako, Japan
+      founded: 1917
+      website: https://www.riken.jp
+      focus_areas: ["Natural Sciences", "Technology", "Medical Research"]
+      notable_research: ["Physics", "Chemistry", "Biology", "Engineering"]
+    
+    # China
+    chinese_academy_of_sciences:
+      name: Chinese Academy of Sciences
+      location: Beijing, China
+      founded: 1949
+      website: https://www.cas.ac.cn
+      focus_areas: ["Natural Sciences", "High Technology", "Applied Research"]
+      notable_research: ["Space Exploration", "Supercomputing", "Genetics"]
 
   UNIVERSITIES:
-    harvard:
-      name: Harvard University
-      location: Cambridge, USA
-      founded: 1636
-      website: https://www.harvard.edu
-      focus_areas: ["Law", "Medicine", "Business", "Arts & Sciences"]
-      notable_research: ["Genetics", "Climate Science", "Economics"]
+    # Oldest Universities
+    university_of_bologna:
+      name: University of Bologna
+      location: Bologna, Italy
+      founded: 1088
+      website: https://www.unibo.it
+      focus_areas: ["Law", "Medicine", "Sciences", "Humanities"]
+      notable_research: ["Physics", "Chemistry", "Medicine", "Engineering"]
+    
     oxford:
       name: University of Oxford
       location: Oxford, UK
@@ -69,6 +241,15 @@ Institutions:
       website: https://www.ox.ac.uk
       focus_areas: ["Humanities", "Sciences", "Medicine", "Engineering"]
       notable_research: ["Vaccines", "Climate Science", "AI"]
+    
+    sorbonne:
+      name: Sorbonne University (Université de Paris)
+      location: Paris, France
+      founded: 1150
+      website: https://www.sorbonne-universite.fr
+      focus_areas: ["Humanities", "Sciences", "Medicine", "Law"]
+      notable_research: ["Mathematics", "Philosophy", "Literature"]
+    
     cambridge:
       name: University of Cambridge
       location: Cambridge, UK
@@ -76,6 +257,40 @@ Institutions:
       website: https://www.cam.ac.uk
       focus_areas: ["Sciences", "Engineering", "Medicine", "Humanities"]
       notable_research: ["DNA Structure", "Stephen Hawking", "Quantum Computing"]
+    
+    university_of_edinburgh:
+      name: University of Edinburgh
+      location: Edinburgh, UK
+      founded: 1583
+      website: https://www.ed.ac.uk
+      focus_areas: ["Sciences", "Medicine", "Law", "Arts"]
+      notable_research: ["Genetics", "AI", "Physics", "Medicine"]
+    
+    heidelberg:
+      name: University of Heidelberg
+      location: Heidelberg, Germany
+      founded: 1386
+      website: https://www.uni-heidelberg.de
+      focus_areas: ["Humanities", "Sciences", "Medicine", "Law"]
+      notable_research: ["Physics", "Chemistry", "Medicine", "Philosophy"]
+    
+    leiden:
+      name: Leiden University
+      location: Leiden, Netherlands
+      founded: 1575
+      website: https://www.universiteitleiden.nl
+      focus_areas: ["Humanities", "Sciences", "Law", "Medicine"]
+      notable_research: ["Physics", "Astronomy", "Archaeology"]
+    
+    # United States (Colonial Era)
+    harvard:
+      name: Harvard University
+      location: Cambridge, USA
+      founded: 1636
+      website: https://www.harvard.edu
+      focus_areas: ["Law", "Medicine", "Business", "Arts & Sciences"]
+      notable_research: ["Genetics", "Climate Science", "Economics"]
+    
     yale:
       name: Yale University
       location: New Haven, USA
@@ -83,6 +298,72 @@ Institutions:
       website: https://www.yale.edu
       focus_areas: ["Law", "Medicine", "Arts", "Drama"]
       notable_research: ["Genetics", "Immunology", "Economics"]
+    
+    princeton:
+      name: Princeton University
+      location: Princeton, USA
+      founded: 1746
+      website: https://www.princeton.edu
+      focus_areas: ["Sciences", "Engineering", "Public Policy", "Humanities"]
+      notable_research: ["Physics", "Mathematics", "Economics", "Computer Science"]
+    
+    columbia:
+      name: Columbia University
+      location: New York, USA
+      founded: 1754
+      website: https://www.columbia.edu
+      focus_areas: ["Law", "Medicine", "Journalism", "International Affairs"]
+      notable_research: ["Nuclear Physics", "Psychiatry", "Climate Science"]
+    
+    university_of_pennsylvania:
+      name: University of Pennsylvania
+      location: Philadelphia, USA
+      founded: 1740
+      website: https://www.upenn.edu
+      focus_areas: ["Business", "Medicine", "Law", "Engineering"]
+      notable_research: ["Economics", "Biomedical Research", "AI"]
+    
+    brown:
+      name: Brown University
+      location: Providence, USA
+      founded: 1764
+      website: https://www.brown.edu
+      focus_areas: ["Liberal Arts", "Medicine", "Public Health"]
+      notable_research: ["Neuroscience", "Climate Science", "Public Policy"]
+    
+    rutgers:
+      name: Rutgers University
+      location: New Brunswick, USA
+      founded: 1766
+      website: https://www.rutgers.edu
+      focus_areas: ["Arts", "Sciences", "Engineering", "Medicine"]
+      notable_research: ["Pharmaceutical Research", "Climate Science", "AI"]
+    
+    dartmouth:
+      name: Dartmouth College
+      location: Hanover, USA
+      founded: 1769
+      website: https://www.dartmouth.edu
+      focus_areas: ["Liberal Arts", "Engineering", "Business"]
+      notable_research: ["Medicine", "Climate Science", "Digital Humanities"]
+    
+    duke:
+      name: Duke University
+      location: Durham, USA
+      founded: 1838
+      website: https://www.duke.edu
+      focus_areas: ["Medicine", "Law", "Business", "Engineering"]
+      notable_research: ["Biomedicine", "Public Policy", "Sustainability"]
+    
+    william_and_mary:
+      name: College of William & Mary
+      location: Williamsburg, USA
+      founded: 1693
+      website: https://www.wm.edu
+      focus_areas: ["Liberal Arts", "Sciences", "Law", "Marine Science"]
+      notable_research: ["Marine Biology", "Climate Science", "Law"]
+    
+    # United States (19th Century)
     mit:
       name: Massachusetts Institute of Technology
       location: Cambridge, USA
@@ -90,6 +371,23 @@ Institutions:
       website: https://www.mit.edu
       focus_areas: ["Engineering", "Computer Science", "Physics", "Mathematics"]
       notable_research: ["Quantum Computing", "AI", "Energy", "Space Exploration"]
+    
+    cornell:
+      name: Cornell University
+      location: Ithaca, USA
+      founded: 1865
+      website: https://www.cornell.edu
+      focus_areas: ["Engineering", "Agriculture", "Business", "Medicine"]
+      notable_research: ["Robotics", "Computer Science", "Veterinary Medicine"]
+    
+    johns_hopkins:
+      name: Johns Hopkins University
+      location: Baltimore, USA
+      founded: 1876
+      website: https://www.jhu.edu
+      focus_areas: ["Medicine", "Engineering", "Public Health", "Music"]
+      notable_research: ["Medical Research", "Public Health", "Space Physics"]
+    
     stanford:
       name: Stanford University
       location: Stanford, USA
@@ -97,6 +395,7 @@ Institutions:
       website: https://www.stanford.edu
       focus_areas: ["Computer Science", "Medicine", "Engineering", "Business"]
       notable_research: ["AI", "Autonomous Vehicles", "Biotechnology"]
+    
     caltech:
       name: California Institute of Technology
       location: Pasadena, USA
@@ -104,6 +403,41 @@ Institutions:
       website: https://www.caltech.edu
       focus_areas: ["Science", "Engineering", "Space Exploration"]
       notable_research: ["Jet Propulsion", "Quantum Information", "Astrophysics"]
+    
+    chicago:
+      name: University of Chicago
+      location: Chicago, USA
+      founded: 1890
+      website: https://www.uchicago.edu
+      focus_areas: ["Economics", "Law", "Sociology", "Physics"]
+      notable_research: ["Economics", "Radiation Oncology", "Archaeology"]
+    
+    vanderbilt:
+      name: Vanderbilt University
+      location: Nashville, USA
+      founded: 1873
+      website: https://www.vanderbilt.edu
+      focus_areas: ["Medicine", "Music", "Education", "Engineering"]
+      notable_research: ["Biomedical Research", "Neuroscience", "Education Policy"]
+    
+    # Canada
+    mcgill:
+      name: McGill University
+      location: Montreal, Canada
+      founded: 1821
+      website: https://www.mcgill.ca
+      focus_areas: ["Medicine", "Arts", "Science", "Engineering"]
+      notable_research: ["Medicine", "Physics", "Neuroscience"]
+    
+    university_of_toronto:
+      name: University of Toronto
+      location: Toronto, Canada
+      founded: 1827
+      website: https://www.utoronto.ca
+      focus_areas: ["Medicine", "Engineering", "Business", "Arts"]
+      notable_research: ["AI", "Stem Cells", "Cardiovascular Research"]
+    
+    # Switzerland
     eth_zurich:
       name: ETH Zurich
       location: Zurich, Switzerland
@@ -111,8 +445,35 @@ Institutions:
       website: https://www.ethz.ch
       focus_areas: ["Science", "Technology", "Engineering", "Mathematics"]
       notable_research: ["Quantum Physics", "Robotics", "Climate Science"]
+    
+    # Japan
+    tokyo_university:
+      name: University of Tokyo
+      location: Tokyo, Japan
+      founded: 1877
+      website: https://www.u-tokyo.ac.jp
+      focus_areas: ["Sciences", "Engineering", "Medicine", "Humanities"]
+      notable_research: ["Physics", "Chemistry", "Computer Science", "Medicine"]
+    
+    # UK
+    kings_college_london:
+      name: King's College London
+      location: London, UK
+      founded: 1829
+      website: https://www.kcl.ac.uk
+      focus_areas: ["Medicine", "Law", "Humanities", "Social Sciences"]
+      notable_research: ["Medicine", "Psychology", "International Affairs"]
+    
+    imperial_college:
+      name: Imperial College London
+      location: London, UK
+      founded: 1907
+      website: https://www.imperial.ac.uk
+      focus_areas: ["Science", "Engineering", "Medicine", "Business"]
+      notable_research: ["Climate Science", "Biomedicine", "Aerospace"]
 
   CORPORATIONS:
+    # Technology & Computing
     ibm:
       name: IBM
       location: Armonk, USA
@@ -120,6 +481,7 @@ Institutions:
       website: https://www.ibm.com
       focus_areas: ["Computing", "AI", "Cloud", "Quantum"]
       notable_research: ["Watson", "Quantum Computing", "Blockchain"]
+    
     att:
       name: AT&T
       location: Dallas, USA
@@ -127,6 +489,32 @@ Institutions:
       website: https://www.att.com
       focus_areas: ["Telecommunications", "Entertainment", "Technology"]
       notable_research: ["Bell Labs", "5G", "Fiber Optics"]
+    
+    bell_labs:
+      name: Bell Labs (Nokia Bell Labs)
+      location: Murray Hill, USA
+      founded: 1925
+      website: https://www.bell-labs.com
+      focus_areas: ["Communications", "Physics", "Computer Science"]
+      notable_research: ["Transistor", "Laser", "Information Theory", "Unix", "C Language"]
+    
+    intel:
+      name: Intel Corporation
+      location: Santa Clara, USA
+      founded: 1968
+      website: https://www.intel.com
+      focus_areas: ["Semiconductors", "Computing", "AI"]
+      notable_research: ["Microprocessors", "Chip Architecture", "Manufacturing"]
+    
+    microsoft:
+      name: Microsoft Corporation
+      location: Redmond, USA
+      founded: 1975
+      website: https://www.microsoft.com
+      focus_areas: ["Software", "Cloud Computing", "AI"]
+      notable_research: ["Windows", "Azure", "Office Suite"]
+    
+    # Industrial & Engineering
     siemens:
       name: Siemens
       location: Berlin, Germany
@@ -134,6 +522,7 @@ Institutions:
       website: https://www.siemens.com
       focus_areas: ["Electronics", "Engineering", "Healthcare", "Energy"]
       notable_research: ["Electrification", "Automation", "Digitalization"]
+    
     ge:
       name: General Electric
       location: Boston, USA
@@ -141,3 +530,138 @@ Institutions:
       website: https://www.ge.com
       focus_areas: ["Aviation", "Healthcare", "Energy", "Transportation"]
       notable_research: ["Jet Engines", "MRI", "Power Generation"]
+    
+    westinghouse:
+      name: Westinghouse Electric Corporation
+      location: Pittsburgh, USA
+      founded: 1886
+      website: https://www.westinghouse.com
+      focus_areas: ["Electric Power", "Nuclear Energy", "Defense"]
+      notable_research: ["Nuclear Reactor", "Electric Motors", "Broadcasting"]
+    
+    boeing:
+      name: Boeing
+      location: Seattle, USA
+      founded: 1916
+      website: https://www.boeing.com
+      focus_areas: ["Aerospace", "Defense", "Commercial Aircraft"]
+      notable_research: ["Aircraft Design", "Space Systems", "Missiles"]
+    
+    lockheed:
+      name: Lockheed Corporation
+      location: Burbank, USA
+      founded: 1912
+      website: https://www.lockheedmartin.com
+      focus_areas: ["Aerospace", "Defense", "Security"]
+      notable_research: ["F-35", "Space Systems", "Missile Technology"]
+    
+    # Automotive
+    ford:
+      name: Ford Motor Company
+      location: Dearborn, USA
+      founded: 1903
+      website: https://www.ford.com
+      focus_areas: ["Automotive", "Mobility", "Electric Vehicles"]
+      notable_research: ["Assembly Line", "Electric Vehicles", "Autonomous Driving"]
+    
+    general_motors:
+      name: General Motors
+      location: Detroit, USA
+      founded: 1908
+      website: https://www.gm.com
+      focus_areas: ["Automotive", "Electric Vehicles", "Autonomous Driving"]
+      notable_research: ["Electric Vehicles", "Hydrogen Fuel Cells", "Autonomous Tech"]
+    
+    # Energy
+    exxon:
+      name: ExxonMobil
+      location: Irving, USA
+      founded: 1870
+      website: https://www.exxonmobil.com
+      focus_areas: ["Energy", "Petroleum", "Chemicals"]
+      notable_research: ["Fuel Technology", "Chemical Engineering", "Climate Research"]
+    
+    shell:
+      name: Royal Dutch Shell
+      location: The Hague, Netherlands
+      founded: 1907
+      website: https://www.shell.com
+      focus_areas: ["Energy", "Petroleum", "Natural Gas"]
+      notable_research: ["Fuel Technology", "Lubricants", "Biofuels"]
+    
+    # Pharmaceuticals
+    merck:
+      name: Merck & Co.
+      location: Kenilworth, USA
+      founded: 1891
+      website: https://www.merck.com
+      focus_areas: ["Pharmaceuticals", "Healthcare", "Life Sciences"]
+      notable_research: ["Vaccines", "Cancer Treatment", "HIV/AIDS Therapy"]
+    
+    pfizer:
+      name: Pfizer
+      location: New York, USA
+      founded: 1849
+      website: https://www.pfizer.com
+      focus_areas: ["Pharmaceuticals", "Biotechnology", "Vaccines"]
+      notable_research: ["COVID-19 Vaccine", "Antibiotics", "Oncology"]
+    
+    johnson_and_johnson:
+      name: Johnson & Johnson
+      location: New Brunswick, USA
+      founded: 1886
+      website: https://www.jnj.com
+      focus_areas: ["Medical Devices", "Pharmaceuticals", "Consumer Health"]
+      notable_research: ["Surgical Equipment", "Drug Delivery", "Biotechnology"]
+
+  INTERNATIONAL:
+    # Scientific Societies (Oldest)
+    royal_society:
+      name: Royal Society
+      location: London, UK
+      founded: 1660
+      website: https://royalsociety.org
+      focus_areas: ["Science", "Natural Knowledge", "Fellowship"]
+      notable_research: ["Scientific Publishing", "Research Grants", "Science Policy"]
+    
+    french_academy:
+      name: French Academy of Sciences
+      location: Paris, France
+      founded: 1666
+      website: https://www.academie-sciences.fr
+      focus_areas: ["Sciences", "Mathematics", "Physics"]
+      notable_research: ["Mathematics", "Physics", "Chemistry", "Biology"]
+    
+    leibniz_society:
+      name: Leibniz Scientific Community
+      location: Berlin, Germany
+      founded: 1700
+      website: https://www.leibniz-gemeinschaft.de
+      focus_areas: ["Interdisciplinary Research", "Natural Sciences", "Engineering"]
+      notable_research: ["Environmental Research", "Life Sciences", "Materials Science"]
+    
+    # Standards Organizations
+    itu:
+      name: International Telecommunication Union
+      location: Geneva, Switzerland
+      founded: 1865
+      website: https://www.itu.int
+      focus_areas: ["Telecommunications", "Radio Spectrum", "Standardization"]
+      notable_research: ["5G Standards", "Satellite Communications", "Cybersecurity"]
+    
+    iec:
+      name: International Electrotechnical Commission
+      location: Geneva, Switzerland
+      founded: 1906
+      website: https://www.iec.ch
+      focus_areas: ["Electrotechnical Standards", "Safety", "Performance"]
+      notable_research: ["Electrical Standards", "Renewable Energy", "Smart Grid"]
+    
+    # Financial
+    bis:
+      name: Bank for International Settlements
+      location: Basel, Switzerland
+      founded: 1930
+      website: https://www.bis.org
+      focus_areas: ["Central Bank Cooperation", "Financial Stability", "Monetary Policy"]
+      notable_research: ["Central Banking", "Financial Markets", "Payment Systems"]

@@ -107,8 +107,8 @@ universities = get_institutions_by_type(InstitutionType.UNIVERSITY.value)
 international_orgs = get_institutions_by_type(InstitutionType.INTERNATIONAL.value)
 corporations = get_institutions_by_type(InstitutionType.COMPANY.value)
 
-# Filtered: founded <= 1926 (founded <= 1926)
-established = get_institutions_by_founded(1976)
+# Filtered: founded <= 1926 (>100 years old)
+established = get_institutions_by_founded(1926)
 
 
 # ===========================EXPORTS===================================================================================||

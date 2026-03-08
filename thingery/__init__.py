@@ -33,23 +33,20 @@ from thingery.elements.elements import (
 	Silver, Gold
 )
 
-from thingery.materials.materials import (
-	Iron as IronMaterial, Copper as CopperMaterial, Aluminum as AluminumMaterial, 
-	Gold as GoldMaterial, Silver as SilverMaterial, Titanium as TitaniumMaterial, 
-	Magnesium as MagnesiumMaterial, Zinc, Nickel, Lead, Steel, StainlessSteel, 
-	Brass, Bronze, CastIron,
-	Polyethylene, Polypropylene, Polystyrene, PolyvinylChloride, Nylon,
-	Alumina, Zirconia, SiliconCarbide, SiliconSemiconductor, Germanium, GalliumArsenide,
-	Glass, CarbonFiberComposite, Quartz, Graphite, Water, Ethanol
+# Materials - new YAML-based module
+from thingery.materials import (
+	get_material, list_materials, list_categories, search_materials
 )
 
-from thingery.food.foods import (
-	Apple, Banana, Orange, Strawberry, Blueberry, Grape, Watermelon, Mango,
-	Broccoli, Carrot, Spinach, Tomato, Potato, Onion,
-	ChickenBreast, Beef, Salmon, Egg, Tofu,
-	Rice, Wheat, Oatmeal,
-	Milk, Cheese, Yogurt,
-	Coffee, Tea, OrangeJuice, OliveOil
+# Foods - YAML-based loading (no individual class exports - use get_food() instead)
+from thingery.food import (
+	get_food,
+	get_food_or_raise,
+	list_foods,
+	list_categories,
+	get_foods_by_category,
+	search_foods,
+	Food,
 )
 
 # Institutions - YAML-based loading with backward compatibility
@@ -159,13 +156,14 @@ __all__ = [
 	'Alumina', 'Zirconia', 'SiliconCarbide', 'SiliconSemiconductor', 'Germanium', 'GalliumArsenide',
 	'Glass', 'CarbonFiberComposite', 'Quartz', 'Graphite', 'Water', 'Ethanol',
 	
-	# Foods
-	'Apple', 'Banana', 'Orange', 'Strawberry', 'Blueberry', 'Grape', 'Watermelon', 'Mango',
-	'Broccoli', 'Carrot', 'Spinach', 'Tomato', 'Potato', 'Onion',
-	'ChickenBreast', 'Beef', 'Salmon', 'Egg', 'Tofu',
-	'Rice', 'Wheat', 'Oatmeal',
-	'Milk', 'Cheese', 'Yogurt',
-	'Coffee', 'Tea', 'OrangeJuice', 'OliveOil',
+	# Foods - use get_food() to access individual foods
+	'get_food',
+	'get_food_or_raise',
+	'list_foods',
+	'list_categories',
+	'get_foods_by_category',
+	'search_foods',
+	'Food',
 	
 	# Institutions - YAML-based
 	'all_institutions', 'banks', 'government', 'universities', 'international_orgs',
