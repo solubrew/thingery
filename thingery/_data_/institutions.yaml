@@ -1,23 +1,246 @@
 ---
+# Thingery Institutions Configuration
+# Only government institutions, established banks (>50 years), and prestigious universities/labs
+# Last Updated: 2026-03-08
 Institutions:
-  dstruct:
-    database:
-      objects:
-        table:
-          BANKS:
-            columns: ['UUID', 'charter_num', 'name_txt', 'address', 'city', 'state', 'cert', 'rssd']
-            records:
-international_banks:
-national_banks:
-regional_banks:
-local_banks:
-social_platforms:
-  facebook:
-  instagram:
-  x:
-  youtube:
-  rumble:
-  locals:
-  discord:
-  telegram:
-  slack:
+  BANKS:
+    federal_reserve:
+      name: Federal Reserve System
+      location: Washington D.C., USA
+      founded: 1913
+      type: central_bank
+      website: https://www.federalreserve.gov
+      focus_areas: ["Monetary Policy", "Banking Supervision", "Financial Stability"]
+      notable_research: ["Economic Research", "Payment Systems", "Consumer Protection"]
+    bank_of_england:
+      name: Bank of England
+      location: London, UK
+      founded: 1694
+      type: central_bank
+      website: https://www.bankofengland.co.uk
+      focus_areas: ["Monetary Policy", "Financial Stability", "Currency"]
+      notable_research: ["Macroeconomics", "Financial Markets", "Central Banking"]
+    european_central_bank:
+      name: European Central Bank
+      location: Frankfurt, Germany
+      founded: 1998
+      type: central_bank
+      website: https://www.ecb.europa.eu
+      focus_areas: ["Euro Monetary Policy", "Price Stability", "Banking Union"]
+      notable_research: ["Inflation Targeting", "Financial Integration", "Digital Euro"]
+      # Note: Only 28 years old - filtered out of established
+    bank_of_japan:
+      name: Bank of Japan
+      location: Tokyo, Japan
+      founded: 1882
+      type: central_bank
+      website: https://www.boj.or.jp
+      focus_areas: ["Monetary Policy", "Financial System", "Currency"]
+      notable_research: ["Macro Economics", "Price Stability", "Quantitative Easing"]
+    bundesbank:
+      name: Deutsche Bundesbank
+      location: Frankfurt, Germany
+      founded: 1957
+      type: central_bank
+      website: https://www.bundesbank.de
+      focus_areas: ["Monetary Policy", "Banking Supervision", "Cash Operations"]
+      notable_research: ["Euro System", "Financial Stability", "Payment Systems"]
+    bank_of_canada:
+      name: Bank of Canada
+      location: Ottawa, Canada
+      founded: 1935
+      type: central_bank
+      website: https://www.bankofcanada.ca
+      focus_areas: ["Monetary Policy", "Financial System", "Currency"]
+      notable_research: ["Inflation Targeting", "Digital Currency", "Financial Stability"]
+    swiss_national_bank:
+      name: Swiss National Bank
+      location: Zurich, Switzerland
+      founded: 1907
+      type: central_bank
+      website: https://www.snb.ch
+      focus_areas: ["Monetary Policy", "Currency", "Asset Management"]
+      notable_research: ["Price Stability", "Gold Reserves", "International Cooperation"]
+
+  GOVERNMENT:
+    us_treasury:
+      name: US Department of the Treasury
+      location: Washington D.C., USA
+      founded: 1789
+      website: https://home.treasury.gov
+      focus_areas: ["Economics", "National Security", "Financial Crimes"]
+      notable_research: ["Tax Policy", "Currency", "Debt Management"]
+    nist:
+      name: National Institute of Standards and Technology
+      location: Gaithersburg, USA
+      founded: 1901
+      website: https://www.nist.gov
+      focus_areas: ["Measurement Standards", "Technology", "Standards"]
+      notable_research: ["Atomic Clocks", "Quantum Measurement", "Cybersecurity"]
+    los_alamos:
+      name: Los Alamos National Laboratory
+      location: Los Alamos, USA
+      founded: 1943
+      website: https://www.lanl.gov
+      focus_areas: ["Nuclear Physics", "Computational Science", "Energy"]
+      notable_research: ["Manhattan Project", "Supercomputing", "Cybersecurity"]
+    oak_ridge:
+      name: Oak Ridge National Laboratory
+      location: Oak Ridge, USA
+      founded: 1943
+      website: https://www.ornl.gov
+      focus_areas: ["Energy", "Computational Science", "Materials"]
+      notable_research: ["Supercomputing", "Nuclear Energy", "Neutron Science"]
+    argonne:
+      name: Argonne National Laboratory
+      location: Lemont, USA
+      founded: 1946
+      website: https://www.anl.gov
+      focus_areas: ["Energy", "Materials Science", "Computing"]
+      notable_research: ["Particle Physics", "Advanced Batteries", "AI"]
+    jpl:
+      name: Jet Propulsion Laboratory
+      location: Pasadena, USA
+      founded: 1936
+      website: https://www.jpl.nasa.gov
+      focus_areas: ["Space Exploration", "Robotics", "Earth Observation"]
+      notable_research: ["Mars Rovers", "Voyager", "James Webb Telescope"]
+    noaa:
+      name: National Oceanic and Atmospheric Administration
+      location: Silver Spring, USA
+      founded: 1970
+      website: https://www.noaa.gov
+      focus_areas: ["Weather", "Climate", "Oceanography", "Fisheries"]
+      notable_research: ["Climate Models", "Hurricane Tracking", "Satellite Imaging"]
+    nasa:
+      name: National Aeronautics and Space Administration
+      location: Washington D.C., USA
+      founded: 1958
+      website: https://www.nasa.gov
+      focus_areas: ["Space Exploration", "Aeronautics", "Earth Science"]
+      notable_research: ["Apollo", "Space Shuttle", "James Webb", "Mars Program"]
+    cern:
+      name: European Organization for Nuclear Research
+      location: Geneva, Switzerland
+      founded: 1954
+      website: https://home.cern
+      focus_areas: ["Particle Physics", "Accelerator Science"]
+      notable_research: ["Higgs Boson", "Large Hadron Collider", "Antimatter"]
+
+  INTERNATIONAL:
+    imf:
+      name: International Monetary Fund
+      location: Washington D.C., USA
+      founded: 1944
+      website: https://www.imf.org
+      focus_areas: ["Global Finance", "Economic Surveillance", "Technical Assistance"]
+      notable_research: ["Balance of Payments", "Exchange Rates", "Poverty Reduction"]
+    world_bank:
+      name: World Bank Group
+      location: Washington D.C., USA
+      founded: 1944
+      website: https://www.worldbank.org
+      focus_areas: ["Development", "Poverty Reduction", "Infrastructure"]
+      notable_research: ["Sustainable Development", "Climate Finance", "Health"]
+
+  UNIVERSITIES:
+    harvard:
+      name: Harvard University
+      location: Cambridge, USA
+      founded: 1636
+      website: https://www.harvard.edu
+      focus_areas: ["Law", "Medicine", "Business", "Arts & Sciences"]
+      notable_research: ["Genetics", "Climate Science", "Economics"]
+    oxford:
+      name: University of Oxford
+      location: Oxford, UK
+      founded: 1096
+      website: https://www.ox.ac.uk
+      focus_areas: ["Humanities", "Sciences", "Medicine", "Engineering"]
+      notable_research: ["Vaccines", "Climate Science", "AI"]
+    cambridge:
+      name: University of Cambridge
+      location: Cambridge, UK
+      founded: 1209
+      website: https://www.cam.ac.uk
+      focus_areas: ["Sciences", "Engineering", "Medicine", "Humanities"]
+      notable_research: ["DNA Structure", "Stephen Hawking", "Quantum Computing"]
+    yale:
+      name: Yale University
+      location: New Haven, USA
+      founded: 1701
+      website: https://www.yale.edu
+      focus_areas: ["Law", "Medicine", "Arts", "Drama"]
+      notable_research: ["Genetics", "Immunology", "Economics"]
+    mit:
+      name: Massachusetts Institute of Technology
+      location: Cambridge, USA
+      founded: 1861
+      website: https://www.mit.edu
+      focus_areas: ["Engineering", "Computer Science", "Physics", "Mathematics"]
+      notable_research: ["Quantum Computing", "AI", "Energy", "Space Exploration"]
+    stanford:
+      name: Stanford University
+      location: Stanford, USA
+      founded: 1885
+      website: https://www.stanford.edu
+      focus_areas: ["Computer Science", "Medicine", "Engineering", "Business"]
+      notable_research: ["AI", "Autonomous Vehicles", "Biotechnology"]
+    caltech:
+      name: California Institute of Technology
+      location: Pasadena, USA
+      founded: 1891
+      website: https://www.caltech.edu
+      focus_areas: ["Science", "Engineering", "Space Exploration"]
+      notable_research: ["Jet Propulsion", "Quantum Information", "Astrophysics"]
+    eth_zurich:
+      name: ETH Zurich
+      location: Zurich, Switzerland
+      founded: 1855
+      website: https://www.ethz.ch
+      focus_areas: ["Science", "Technology", "Engineering", "Mathematics"]
+      notable_research: ["Quantum Physics", "Robotics", "Climate Science"]
+
+  CORPORATIONS:
+    ibm:
+      name: IBM
+      location: Armonk, USA
+      founded: 1911
+      website: https://www.ibm.com
+      focus_areas: ["Computing", "AI", "Cloud", "Quantum"]
+      notable_research: ["Watson", "Quantum Computing", "Blockchain"]
+    att:
+      name: AT&T
+      location: Dallas, USA
+      founded: 1877
+      website: https://www.att.com
+      focus_areas: ["Telecommunications", "Entertainment", "Technology"]
+      notable_research: ["Bell Labs", "5G", "Fiber Optics"]
+    siemens:
+      name: Siemens
+      location: Berlin, Germany
+      founded: 1847
+      website: https://www.siemens.com
+      focus_areas: ["Electronics", "Engineering", "Healthcare", "Energy"]
+      notable_research: ["Electrification", "Automation", "Digitalization"]
+    ge:
+      name: General Electric
+      location: Boston, USA
+      founded: 1892
+      website: https://www.ge.com
+      focus_areas: ["Aviation", "Healthcare", "Energy", "Transportation"]
+      notable_research: ["Jet Engines", "MRI", "Power Generation"]
+    intel:
+      name: Intel
+      location: Santa Clara, USA
+      founded: 1968
+      website: https://www.intel.com
+      focus_areas: ["Semiconductors", "Computing", "AI"]
+      notable_research: ["Moore's Law", "Processor Architecture", "5G"]
+    microsoft:
+      name: Microsoft
+      location: Redmond, USA
+      founded: 1975
+      website: https://www.microsoft.com
+      focus_areas: ["Software", "Cloud Computing", "AI", "Gaming"]
+      notable_research: ["Azure AI", "Quantum Computing", "Mixed Reality"]

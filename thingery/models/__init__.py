@@ -184,6 +184,8 @@ class InstitutionType(Enum):
     RESEARCH_LAB = "research_lab"
     COMPANY = "company"
     GOVERNMENT = "government"
+    BANK = "bank"
+    INTERNATIONAL = "international"
     NONPROFIT = "nonprofit"
 
 

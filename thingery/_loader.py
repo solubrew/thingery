@@ -28,7 +28,7 @@ from functools import lru_cache
 
 
 # Get the thingery package directory
-THINGERY_DIR = Path(dirname(__file__)).parent
+THINGERY_DIR = Path(dirname(__file__))
 DATA_DIR = THINGERY_DIR / "_data_"
 
 
