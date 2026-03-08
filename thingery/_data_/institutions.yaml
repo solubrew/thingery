@@ -1,0 +1,23 @@
+---
+Institutions:
+  dstruct:
+    database:
+      objects:
+        table:
+          BANKS:
+            columns: ['UUID', 'charter_num', 'name_txt', 'address', 'city', 'state', 'cert', 'rssd']
+            records:
+international_banks:
+national_banks:
+regional_banks:
+local_banks:
+social_platforms:
+  facebook:
+  instagram:
+  x:
+  youtube:
+  rumble:
+  locals:
+  discord:
+  telegram:
+  slack:

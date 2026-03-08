@@ -1,0 +1,399 @@
+---
+Hydrogen:
+  atomic_number: 1
+  mass: 1.00794
+  symbol: H
+  production: 97000000
+Helium:
+  atomic_number: 2
+  mass: 4.002602
+  symbol: He
+  production: 6300
+Lithium:
+  atomic_number: 3
+  mass: 6.941
+  symbol: Li
+  production:
+Beryllium:
+  atomic_number: 4
+  mass: 9.012182
+  symbol: Be
+  production:
+Boron:
+  atomic_number: 5
+  mass: 10.811
+  symbol: B
+  production:
+Carbon:
+  atomic_number: 6
+  mass: 12.0107
+  symbol: C
+  production:
+Nitrogen:
+  atomic_number: 7
+  mass: 14.0067
+  symbol: N
+  production:
+Oxygen:
+  atomic_number: 8
+  mass: 15.9994
+  symbol: O
+  production:
+Fluorine:
+  atomic_number: 9
+  mass: 18.9984032
+  symbol: F
+  production:
+Neon:
+  atomic_number: 10
+  mass: 20.1797
+  symbol: Ne
+  production:
+Sodium:
+  atomic_number: 11
+  mass: 22.98976928
+  symbol: Na
+  production:
+Magnesium:
+  atomic_number: 12
+  mass: 24.3050
+  symbol: Mg
+  production:
+Aluminum:
+  atomic_number: 13
+  mass: 26.9815386
+  symbol: Al
+  production:
+Silicon:
+  atomic_number: 14
+  mass: 28.0855
+  symbol: Si
+  production:
+Phosphorus:
+  atomic_number: 15
+  mass: 30.973762
+  symbol: P
+  production:
+Sulfur:
+  atomic_number: 16
+  mass: 32.065
+  symbol: S
+  production:
+Chlorine:
+  atomic_number: 17
+  mass: 35.453
+  symbol: Cl
+  production:
+Argon:
+  atomic_number: 18
+  mass: 39.948
+  symbol: Ar
+  production:
+Potassium:
+  atomic_number: 19
+  mass: 39.0983
+  symbol: K
+  production:
+Calcium:
+  atomic_number: 20
+  mass: 40.078
+  symbol: Ca
+  production:
+Scandium:
+  atomic_number: 21
+  mass: 44.955912
+  symbol: Sc
+  production:
+Titanium:
+  atomic_number: 22
+  mass: 47.867
+  symbol: Ti
+  production:
+Vanadium:
+  atomic_number: 23
+  mass: 50.9415
+  symbol: V
+  production:
+Chromium:
+  atomic_number: 24
+  mass: 51.9961
+  symbol: Cr
+  production:
+Manganese:
+  atomic_number: 25
+  mass: 54.938045
+  symbol: Mn
+  production:
+Iron:
+  atomic_number: 26
+  mass: 55.845
+  symbol: Fe
+  production:
+Cobalt:
+  atomic_number: 27
+  mass: 58.933203
+  symbol: Co
+  production:
+Nickel:
+  atomic_number: 28
+  mass: 58.6934
+  symbol: Ni
+  production:
+Copper:
+  atomic_number: 29
+  mass: 63.546
+  symbol: Cu
+  production:
+Zinc:
+  atomic_number: 30
+  mass: 65.38
+  symbol: Zn
+  production:
+Gallium:
+  atomic_number: 31
+  mass: 69.723
+  symbol: Ga
+  production:
+Germanium:
+  atomic_number: 32
+  mass: 72.64
+  symbol: Ge
+  production:
+Arsenic:
+  atomic_number: 33
+  mass: 74.92160
+  symbol: As
+  production:
+Selenium:
+  atomic_number: 34
+  mass: 78.96
+  symbol: Se
+  production:
+Bromine:
+  atomic_number: 35
+  mass: 79.904
+  symbol: Br
+  production:
+Krypton:
+  atomic_number: 36
+  mass: 83.798
+  symbol: Kr
+  production:
+Rubidium:
+  atomic_number: 37
+  mass: 85.4678
+  symbol: Rb
+  production:
+Strontium:
+  atomic_number: 38
+  mass: 87.62
+  symbol: Sr
+  production:
+Yttrium:
+  atomic_number: 39
+  mass: 88.90585
+  symbol: Y
+  production:
+Zirconium:
+  atomic_number: 40
+  mass: 91.224
+  symbol: Zr
+  production:
+Niobium:
+  atomic_number: 41
+  mass: 92.90638
+  symbol: Nb
+  production:
+Molybdenum:
+  atomic_number: 42
+  mass: 95.94
+  symbol: Mo
+  production:
+Technetium:
+  atomic_number: 43
+  mass: 98
+  symbol: Tc
+  production:
+Ruthenium:
+  atomic_number: 44
+  mass: 101.07
+  symbol: Ru
+  production:
+Rhodium:
+  atomic_number: 45
+  mass: 102.90550
+  symbol: Rh
+  production:
+Palladium:
+  atomic_number: 46
+  mass: 106.42
+  symbol: Pd
+  production:
+Silver:
+  atomic_number: 47
+  mass: 107.8682
+  symbol: Ag
+  production:
+Cadmium:
+  atomic_number: 48
+  mass: 112.411
+  symbol: Cd
+  production:
+Indium:
+  atomic_number: 49
+  mass: 114.818
+  symbol: In
+  production:
+Tin:
+  atomic_number: 50
+  mass: 118.7107
+  symbol: Sn
+  production:
+Antimony:
+  atomic_number: 51
+  mass: 121.760
+  symbol: Sb
+  production:
+Tellurium:
+  atomic_number: 52
+  mass: 127.60
+  symbol: Te
+  production:
+Iodine:
+  atomic_number: 53
+  mass: 126.90447
+  symbol: I
+  production:
+Xenon:
+  atomic_number: 54
+  mass: 131.293
+  symbol: Xe
+  production:
+Cesium:
+  atomic_number: 55
+  mass: 132.90545196
+  symbol: Cs
+  production:
+Barium:
+  atomic_number: 56
+  mass: 137.327
+  symbol: Ba
+  production:
+Lanthanum:
+  atomic_number: 57
+  mass: 138.90547
+  symbol: La
+  production:
+Cerium:
+  atomic_number: 58
+  mass: 140.116
+  symbol: Ce
+  production:
+Praseodymium:
+  atomic_number: 59
+  mass: 140.90765
+  symbol: Pr
+  production:
+Neodymium:
+  atomic_number: 60
+  mass: 144.242
+  symbol: Nd
+  production:
+Samarium:
+  atomic_number: 61
+  mass: 145
+  symbol: Sm
+  production:
+Europium:
+  atomic_number: 62
+  mass: 150.36
+  symbol: Eu
+  production:
+Gadolinium:
+  atomic_number: 63
+  mass: 151.964
+  symbol: Gd
+  production:
+Terbium:
+  atomic_number: 64
+  mass: 157.25
+  symbol: Tb
+  production:
+Dysprosium:
+  atomic_number: 65
+  mass: 158.92535
+  symbol: Dy
+  production:
+Holmium:
+  atomic_number: 66
+  mass: 162.500
+  symbol: Ho
+  production:
+Erbium:
+  atomic_number: 67
+  mass: 164.93032
+  symbol: Er
+  production:
+Thulium:
+  atomic_number: 68
+  mass: 167.259
+  symbol: Tm
+  production:
+Ytterbium:
+  atomic_number: 69
+  mass: 168.93421
+  symbol: Yb
+  production:
+Lutetium:
+  atomic_number: 72
+  mass: 178.49
+  symbol: Ta
+  production:
+Tungsten:
+  atomic_number: 73
+  mass: 180.94788
+  symbol: W
+Tantalum:
+Osmium:
+Iridium:
+Platinum:
+Gold:
+Mercury:
+Thallium:
+Lead:
+Bismuth:
+Polonium:
+Astatine:
+Radon:
+Francium:
+Radium:
+Actinium:
+Thorium:
+Berkelium:
+Protactinium:
+Uranium:
+Neptunium:
+Plutonium:
+Americium:
+Curium:
+Lawrencium:
+Californium:
+Einsteinium:
+Fermium:
+Mendelevium:
+Nobelium:
+Rutherfordium:
+Dubnium:
+Seaborgium:
+Bohrium:
+Hassium:
+Meitnerium:
+Darmstadtium:
+Roentgenium:
+Copernicium:
+Nihonium:
+Flerovium:
+Moscovium:
+Livermorium:
+Tennessine:
+Oganesson:

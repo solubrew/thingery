@@ -1,0 +1,16 @@
+metric:
+  clear:
+    3mm:
+      dia: 2mm
+    4mm:
+    5mm:
+    6mm:
+    7mm:
+    8mm:
+    9mm:
+  tap:
+    3mm:
+      dia: 1.4mm
+  press:
+    3mm:
+      dia:

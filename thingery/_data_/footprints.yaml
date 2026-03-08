@@ -1,0 +1,13 @@
+arduino:
+  uuid:
+    description: >
+      version of device
+    positions:
+      0:
+        x:
+        y:
+        shape: circle
+        size:
+      1:
+raspberry_pi:
+  <+[UUID]+>
