@@ -1,1 +1,575 @@
+# Thingery Protocols Dataset
+# Laboratory and measurement protocols
 ---
+protocols:
+  # =========================== MEASUREMENT PROTOCOLS ===========================
+  measurement:
+    - name: "pH Measurement"
+      category: "measurement"
+      description: "Standard protocol for measuring pH of aqueous solutions using a calibrated pH meter"
+      steps:
+        - "Calibrate pH meter with standard buffer solutions (pH 4.0, 7.0, 10.0)"
+        - "Rinse electrode with distilled water"
+        - "Pat dry with lint-free tissue"
+        - "Immerse electrode in sample solution"
+        - "Allow reading to stabilize (30-60 seconds)"
+        - "Record pH value to nearest 0.01"
+        - "Rinse electrode between samples"
+      equipment: ["pH meter", "Electrode", "Buffer solutions", "Beakers", "Distilled water"]
+      safety_notes: ["Handle buffer solutions with care", "Dispose of waste properly"]
+      duration: "15-30 minutes"
+
+    - name: "Acid-Base Titration"
+      category: "measurement"
+      description: "Quantitative analysis method for determining unknown acid or base concentration"
+      steps:
+        - "Prepare burette with standardized titrant"
+        - "Pipette known volume of analyte into flask"
+        - "Add 2-3 drops of appropriate indicator"
+        - "Record initial burette reading"
+        - "Add titrant slowly while swirling"
+        - "Stop near endpoint (color change)"
+        - "Add titrant dropwise to endpoint"
+        - "Record final burette reading"
+        - "Calculate concentration"
+      equipment: ["Burette", "Pipette", "Flasks", "Indicator", "Stand", "Clamp"]
+      safety_notes: ["Wear safety goggles", "Handle acids and bases with care"]
+      duration: "30-60 minutes"
+
+    - name: "UV-Vis Spectrophotometry"
+      category: "measurement"
+      description: "Measure absorbance of samples to determine concentration using Beer-Lambert law"
+      steps:
+        - "Turn on spectrophotometer and allow warm-up"
+        - "Prepare blank solution"
+        - "Zero instrument with blank"
+        - "Scan sample or measure at specific wavelength"
+        - "Record absorbance value"
+        - "If needed, dilute sample and repeat"
+      equipment: ["UV-Vis Spectrophotometer", "Cuvettes", "Pipettes", "Volumetric flask"]
+      safety_notes: ["Handle cuvettes carefully", "Protect eyes from UV light"]
+      duration: "20-45 minutes"
+
+    - name: "Density Measurement"
+      category: "measurement"
+      description: "Determine density of solids and liquids using various methods"
+      steps:
+        - "Weigh empty container (for liquids)"
+        - "Weigh container with sample"
+        - "Calculate mass of sample"
+        - "Measure volume (graduated cylinder or pycnometer)"
+        - "Calculate density = mass/volume"
+      equipment: ["Balance", "Graduated cylinder", "Pycnometer", "Thermometer"]
+      safety_notes: ["Ensure temperature equilibrium", "Handle glassware carefully"]
+      duration: "15-30 minutes"
+
+    - name: "Conductivity Measurement"
+      category: "measurement"
+      description: "Measure electrical conductivity of aqueous solutions"
+      steps:
+        - "Calibrate conductivity meter with standard solutions"
+        - "Rinse electrode with distilled water"
+        - "Immerse electrode in sample"
+        - "Allow reading to stabilize"
+        - "Record conductivity value"
+        - "Rinse electrode between samples"
+      equipment: ["Conductivity meter", "Electrode", "Standard solutions", "Beakers"]
+      safety_notes: ["Ensure electrode is clean", "Temperature affects readings"]
+      duration: "10-20 minutes"
+
+    - name: "Refractometry"
+      category: "measurement"
+      description: "Measure refractive index of liquids"
+      steps:
+        - "Calibrate refractometer with distilled water"
+        - "Clean prism surface"
+        - "Apply sample drop to prism"
+        - "Close cover and view through eyepiece"
+        - "Read refractive index at boundary line"
+        - "Clean prism after use"
+      equipment: ["Refractometer", "Pipette", "Distilled water", "Soft cloth"]
+      safety_notes: ["Clean prism carefully", "Avoid scratching surface"]
+      duration: "5-15 minutes"
+
+  # =========================== SYNTHESIS PROTOCOLS ===========================
+  synthesis:
+    - name: "Synthesis of Sodium Chloride"
+      category: "synthesis"
+      description: "Laboratory synthesis of sodium chloride through neutralization"
+      steps:
+        - "Dissolve sodium hydroxide in distilled water"
+        - "Add hydrochloric acid slowly with stirring"
+        - "Monitor pH until neutral (pH 7)"
+        - "Heat solution to saturation"
+        - "Allow crystals to form upon cooling"
+        - "Filter and dry crystals"
+      equipment: ["Beaker", "Stirring rod", "pH meter", "Filter paper", "Funnel"]
+      safety_notes: ["HCl is corrosive - use fume hood", "NaOH is caustic"]
+      duration: "1-2 hours"
+
+    - name: "Free Radical Polymerization"
+      category: "synthesis"
+      description: "Synthesis of polymers via free radical mechanism"
+      steps:
+        - "Add monomer and solvent to reaction vessel"
+        - "Add initiator (e.g., AIBN)"
+        - "Degas solution with nitrogen"
+        - "Heat to initiation temperature"
+        - "Maintain temperature with stirring"
+        - "Terminate reaction after desired time"
+        - "Precipitate polymer in non-solvent"
+      equipment: ["Round bottom flask", "Reflux condenser", "Nitrogen supply", "Heating mantle"]
+      safety_notes: ["Work in fume hood", "Monitor temperature carefully"]
+      duration: "2-6 hours"
+
+    - name: "Fischer Esterification"
+      category: "synthesis"
+      description: "Synthesis of esters from carboxylic acids and alcohols"
+      steps:
+        - "Add carboxylic acid to round bottom flask"
+        - "Add excess alcohol"
+        - "Add concentrated sulfuric acid catalyst"
+        - "Heat under reflux for 2-4 hours"
+        - "Cool and neutralize with sodium bicarbonate"
+        - "Extract product with organic solvent"
+        - "Dry and concentrate"
+      equipment: ["Round bottom flask", "Reflux condenser", "Separatory funnel", "Drying tube"]
+      safety_notes: ["Conc. H2SO4 is corrosive", "Flammable solvents"]
+      duration: "3-5 hours"
+
+    - name: "Grignard Reaction"
+      category: "synthesis"
+      description: "Formation of carbon-carbon bonds using Grignard reagents"
+      steps:
+        - "Flame dry flask and equip with reflux condenser"
+        - "Add dry ether and magnesium turnings"
+        - "Add aryl/vinyl halide slowly"
+        - "Initiate reaction (may need iodine)"
+        - "Reflux until reaction complete"
+        - "Cool and add electrophile"
+        - "Work up with acid and extract"
+      equipment: ["Round bottom flask", "Reflux condenser", "Dropping funnel", "Dry ether"]
+      safety_notes: ["Keep dry - Grignard reagents are water sensitive", "Use inert atmosphere"]
+      duration: "2-4 hours"
+
+    - name: "Aldol Condensation"
+      category: "synthesis"
+      description: "Carbon-carbon bond formation via aldol reaction"
+      steps:
+        - "Prepare enolate from carbonyl compound"
+        - "Add second carbonyl compound"
+        - "Allow aldol addition to occur"
+        - "Heat to promote dehydration"
+        - "Cool and isolate product"
+        - "Purify by recrystallization or distillation"
+      equipment: ["Three-neck flask", "Ice bath", "Mechanical stirrer", "Condenser"]
+      safety_notes: ["Use base/acid safely", "May require heating"]
+      duration: "3-6 hours"
+
+  # =========================== ANALYSIS PROTOCOLS ===========================
+  analysis:
+    - name: "CHN Elemental Analysis"
+      category: "analysis"
+      description: "Determine carbon, hydrogen, and nitrogen content of compounds"
+      steps:
+        - "Weigh 1-2 mg of sample in tin capsule"
+        - "Load into autosampler"
+        - "Combust sample at high temperature"
+        - "Separate gases using chromatography"
+        - "Detect with thermal conductivity detector"
+        - "Calculate elemental percentages"
+      equipment: ["CHNS/O Analyzer", "Tin capsules", "Balance", "Autosampler"]
+      safety_notes: ["Sample must be dry", "Handle capsules carefully"]
+      duration: "10-15 minutes per sample"
+
+    - name: "Gas Chromatography-Mass Spectrometry"
+      category: "analysis"
+      description: "Identify and quantify volatile compounds in samples"
+      steps:
+        - "Prepare sample in appropriate solvent"
+        - "Inject sample into GC inlet"
+        - "Separate compounds in column"
+        - "Ionize compounds in MS source"
+        - "Detect ions by mass-to-charge ratio"
+        - "Identify compounds using library search"
+      equipment: ["GC-MS instrument", "Syringe", "GC columns", "Vials"]
+      safety_notes: ["Handle toxic solvents in fume hood", "Dispose of waste properly"]
+      duration: "30-60 minutes per sample"
+
+    - name: "High-Performance Liquid Chromatography"
+      category: "analysis"
+      description: "Separate, identify, and quantify compounds in mixtures"
+      steps:
+        - "Prepare mobile phase and filter"
+        - "Equilibrate column with mobile phase"
+        - "Inject sample via autosampler"
+        - "Separate compounds in column"
+        - "Detect with UV/Vis or other detector"
+        - "Record and analyze chromatogram"
+      equipment: ["HPLC system", "Columns", "Mobile phase", "Vials"]
+      safety_notes: ["Use appropriate solvents", "Check for pressure leaks"]
+      duration: "15-45 minutes per sample"
+
+    - name: "Nuclear Magnetic Resonance Spectroscopy"
+      category: "analysis"
+      description: "Determine molecular structure using NMR"
+      steps:
+        - "Prepare sample in deuterated solvent"
+        - "Fill NMR tube (typically 5mm)"
+        - "Insert tube into spectrometer"
+        - "Lock and shim the instrument"
+        - "Acquire NMR spectrum"
+        - "Process and analyze data"
+      equipment: ["NMR spectrometer", "NMR tubes", "Deuterated solvents"]
+      safety_notes: ["Keep samples away from magnet", "Handle deuterated solvents carefully"]
+      duration: "15-120 minutes per sample"
+
+    - name: "Infrared Spectroscopy"
+      category: "analysis"
+      description: "Identify functional groups using IR absorption"
+      steps:
+        - "Prepare sample (KBr pellet or ATR)"
+        - "Background scan"
+        - "Place sample in beam path"
+        - "Acquire spectrum"
+        - "Analyze absorption bands"
+      equipment: ["IR Spectrometer", "KBr plates", "Mortar and pestle", "ATR accessory"]
+      safety_notes: ["Keep samples dry", "Avoid moisture in KBr"]
+      duration: "5-15 minutes per sample"
+
+    - name: "Mass Spectrometry"
+      category: "analysis"
+      description: "Determine molecular weight and structure via ion mass/charge"
+      steps:
+        - "Prepare sample (solid or solution)"
+        - "Introduce sample to ion source"
+        - "Ionize molecules (EI, ESI, MALDI)"
+        - "Separate ions by m/z"
+        - "Detect and record spectrum"
+        - "Analyze fragmentation pattern"
+      equipment: ["Mass spectrometer", "Sample introduction system", "Data system"]
+      safety_notes: ["Handle samples appropriately", "Vacuum safety"]
+      duration: "5-30 minutes per sample"
+
+  # =========================== PURIFICATION PROTOCOLS ===========================
+  purification:
+    - name: "Recrystallization"
+      category: "purification"
+      description: "Purify solid compounds by crystallization from solution"
+      steps:
+        - "Dissolve compound in minimum hot solvent"
+        - "Filter hot solution if needed"
+        - "Allow solution to cool slowly"
+        - "Collect crystals by vacuum filtration"
+        - "Wash crystals with cold solvent"
+        - "Dry crystals under vacuum"
+      equipment: ["Beaker", "Hot plate", "Funnel", "Filter flask", "Buchner funnel"]
+      safety_notes: ["Use appropriate solvent", "Hot solutions can burn"]
+      duration: "1-3 hours"
+
+    - name: "Simple Distillation"
+      category: "purification"
+      description: "Separate liquids based on boiling point differences"
+      steps:
+        - "Add liquid to round bottom flask"
+        - "Add boiling stones"
+        - "Assemble distillation apparatus"
+        - "Heat and monitor temperature"
+        - "Collect fractions at specific boiling ranges"
+        - "Monitor for decomposition or hazards"
+      equipment: ["Round bottom flask", "Distillation head", "Condenser", "Receivers", "Thermometer"]
+      safety_notes: ["Never distill to dryness", "Use appropriate cooling"]
+      duration: "30-90 minutes"
+
+    - name: "Fractional Distillation"
+      category: "purification"
+      description: "Separate liquids with close boiling points"
+      steps:
+        - "Add liquid and boiling stones to flask"
+        - "Assemble with fractionating column"
+        - "Heat and monitor temperature"
+        - "Collect fractions at specific ranges"
+        - "Analyze fractions by GC or boiling point"
+      equipment: ["Round bottom flask", "Fractionating column", "Condenser", "Thermometer", "Receivers"]
+      safety_notes: ["Never leave unattended", "Ensure proper ventilation"]
+      duration: "1-3 hours"
+
+    - name: "Column Chromatography"
+      category: "purification"
+      description: "Separate mixture components using stationary phase"
+      steps:
+        - "Pack column with stationary phase"
+        - "Equilibrate with eluent"
+        - "Load sample dissolved in minimal solvent"
+        - "Elute with appropriate solvent system"
+        - "Collect fractions"
+        - "Analyze fractions by TLC"
+        - "Combine pure fractions"
+      equipment: ["Column", "Stationary phase", "Eluent", "Fraction collector", "TLC plates"]
+      safety_notes: ["Use fume hood for solvents", "Wear appropriate PPE"]
+      duration: "30 minutes to several hours"
+
+    - name: "Thin Layer Chromatography"
+      category: "purification"
+      description: "Quick analysis and small-scale purification"
+      steps:
+        - "Spot sample on TLC plate"
+        - "Develop plate in solvent chamber"
+        - "Dry and visualize (UV, stain)"
+        - "Calculate Rf values"
+        - "Scale up if needed"
+      equipment: ["TLC plates", "Capillary tubes", "Developing chamber", "UV lamp"]
+      safety_notes: ["Use fume hood for solvents", "UV light hazard"]
+      duration: "10-30 minutes"
+
+  # =========================== BIOLOGICAL PROTOCOLS ===========================
+  biological:
+    - name: "Polymerase Chain Reaction"
+      category: "biological"
+      description: "Amplify specific DNA sequences exponentially"
+      steps:
+        - "Prepare PCR master mix with primers, dNTPs, polymerase"
+        - "Aliquot master mix to tubes"
+        - "Add template DNA"
+        - "Run thermal cycling program"
+        - "Analyze products by gel electrophoresis"
+      equipment: ["PCR thermocycler", "Microcentrifuge", "Pipettes", "Ice bath"]
+      safety_notes: ["Use aerosol-resistant tips", "Keep reagents on ice"]
+      duration: "2-4 hours"
+
+    - name: "Genomic DNA Extraction"
+      category: "biological"
+      description: "Isolate genomic DNA from cells or tissue"
+      steps:
+        - "Lyse cells with buffer and proteinase K"
+        - "Remove proteins with salt precipitation"
+        - "Precipitate DNA with isopropanol"
+        - "Wash DNA with ethanol"
+        - "Resuspend in TE buffer or water"
+      equipment: ["Microcentrifuge", "Water bath", "Pipettes", "Vials"]
+      safety_notes: ["Work at room temperature", "Avoid shearing DNA"]
+      duration: "1-2 hours"
+
+    - name: "Plasmid DNA Extraction"
+      category: "biological"
+      description: "Isolate plasmid DNA from bacterial cells"
+      steps:
+        - "Culture bacteria with antibiotic selection"
+        - "Harvest cells by centrifugation"
+        - "Lyse cells with alkaline solution"
+        - "Neutralize and precipitate debris"
+        - "Bind DNA to column"
+        - "Wash and elute pure DNA"
+      equipment: ["Centrifuge", "Pipettes", "Column kit", "Water bath"]
+      safety_notes: ["Use RNase to remove RNA", "Keep samples cold"]
+      duration: "30-60 minutes"
+
+    - name: "Gel Electrophoresis"
+      category: "biological"
+      description: "Separate DNA fragments by size"
+      steps:
+        - "Prepare agarose gel"
+        - "Mix DNA sample with loading dye"
+        - "Load samples into wells"
+        - "Run gel at appropriate voltage"
+        - "Stain with ethidium bromide or alternative"
+        - "Visualize under UV light"
+      equipment: ["Gel apparatus", "Power supply", "Agarose", "DNA stain", "UV transilluminator"]
+      safety_notes: ["Ethidium bromide is mutagenic - use alternatives when possible", "UV light hazard"]
+      duration: "30-90 minutes"
+
+    - name: "Western Blot"
+      category: "biological"
+      description: "Detect specific proteins using antibodies"
+      steps:
+        - "Extract proteins from sample"
+        - "Run SDS-PAGE gel"
+        - "Transfer proteins to membrane"
+        - "Block membrane with milk/Tween"
+        - "Incubate with primary antibody"
+        - "Wash and incubate with secondary antibody"
+        - "Detect using ECL or colorimetric method"
+      equipment: ["Gel apparatus", "Transfer system", "Shaker", "Antibodies", "ECL kit"]
+      safety_notes: ["Handle antibodies appropriately", "Dispose of waste safely"]
+      duration: "1-2 days"
+
+  # =========================== MATERIALS PROTOCOLS ===========================
+  materials:
+    - name: "Thermal Evaporation Deposition"
+      category: "materials"
+      description: "Deposit thin films of materials onto substrates"
+      steps:
+        - "Clean substrate thoroughly"
+        - "Load source material into evaporation boat"
+        - "Mount substrate in holder"
+        - "Evacuate chamber to base pressure"
+        - "Heat source material to evaporation temperature"
+        - "Monitor film thickness with quartz crystal"
+        - "Allow to cool before venting"
+      equipment: ["Thermal evaporator", "Vacuum pump", "Quartz crystal monitor", "Substrate holder"]
+      safety_notes: ["High temperatures involved", "Watch for pressure spikes"]
+      duration: "1-3 hours"
+
+    - name: "Sol-Gel Synthesis"
+      category: "materials"
+      description: "Prepare oxide materials via sol-gel chemistry"
+      steps:
+        - "Dissolve metal alkoxide in alcohol"
+        - "Add water to initiate hydrolysis"
+        - "Add acid or base catalyst"
+        - "Stir at room temperature for gelation"
+        - "Age gel for network strengthening"
+        - "Dry and calcine to form oxide"
+      equipment: ["Beakers", "Stirrer", "Oven", "Furnace"]
+      safety_notes: ["Metal alkoxides hydrolyze violently", "Use fume hood"]
+      duration: "1-7 days"
+
+    - name: "Electroplating"
+      category: "materials"
+      description: "Deposit metal coatings via electrochemical reduction"
+      steps:
+        - "Clean substrate thoroughly"
+        - "Prepare electroplating solution"
+        - "Set up cathode (substrate) and anode"
+        - "Apply current at specified density"
+        - "Monitor thickness and time"
+        - "Remove, rinse, and dry"
+      equipment: ["Power supply", "Electroplating cell", "Anode material", "Solution bath"]
+      safety_notes: ["Handle chemicals safely", "Dispose of waste properly"]
+      duration: "15 minutes to several hours"
+
+    - name: "Sputtering Deposition"
+      category: "materials"
+      description: "Deposit thin films using plasma sputtering"
+      steps:
+        - "Clean substrate"
+        - "Load target material"
+        - "Evacuate chamber"
+        - "Introduce process gas (Ar)"
+        - "Apply RF/DC power"
+        - "Sputter deposit onto substrate"
+        - "Monitor film growth"
+      equipment: ["Sputtering system", "Target material", "Substrate holder", "Mass flow controller"]
+      safety_notes: ["High vacuum safety", "RF radiation precautions"]
+      duration: "30 minutes to several hours"
+
+  # =========================== SAFETY PROTOCOLS ===========================
+  safety:
+    - name: "Chemical Spill Response"
+      category: "safety"
+      description: "Procedures for responding to chemical spills"
+      steps:
+        - "Alert people in the area"
+        - "Evacuate if necessary"
+        - "Identify the spilled chemical"
+        - "Select appropriate absorbent"
+        - "Contain the spill with absorbent"
+        - "Clean from outside inward"
+        - "Dispose of waste properly"
+        - "Report incident"
+      equipment: ["Spill kit", "Absorbent materials", "PPE", "Waste containers"]
+      safety_notes: ["Know spill kit location", "Never attempt large spills without training"]
+      duration: "Varies"
+
+    - name: "Fume Hood Operation"
+      category: "safety"
+      description: "Proper use and operation of laboratory fume hoods"
+      steps:
+        - "Check face velocity (100 fpm)"
+        - "Ensure sash is at proper height"
+        - "Verify airflow indicator"
+        - "Work at least 6 inches inside hood"
+        - "Minimize traffic in front of hood"
+        - "Close sash when not in use"
+        - "Keep hood clean and clear"
+      equipment: ["Fume hood", "Airflow monitor", "Sash"]
+      safety_notes: ["Never lower sash below minimum", "Do not block rear airflow"]
+      duration: "Ongoing"
+
+    - name: "Cryogen Safety"
+      category: "safety"
+      description: "Safe handling of cryogenic liquids"
+      steps:
+        - "Wear appropriate PPE (face shield, insulated gloves)"
+        - "Use only approved containers"
+        - "Ensure proper ventilation"
+        - "Never seal cryogens in closed containers"
+        - "Add cryogens slowly to avoid splashing"
+        - "Handle transfer lines carefully"
+      equipment: ["Cryogenic gloves", "Face shield", "Dewars", "Transfer lines"]
+      safety_notes: ["Never touch cryogen-exposed materials", "Asphyxiation risk in enclosed spaces"]
+      duration: "Per procedure"
+
+    - name: "Chemical Waste Disposal"
+      category: "safety"
+      description: "Proper disposal of chemical waste"
+      steps:
+        - "Identify waste type and compatibility"
+        - "Use appropriate waste container"
+        - "Label container with contents"
+        - "Store in designated area"
+        - "Do not mix incompatible wastes"
+        - "Schedule pickup with EHS"
+        - "Complete disposal documentation"
+      equipment: ["Waste containers", "Labels", "Satellite accumulation area"]
+      safety_notes: ["Never pour down drain unless approved", "Keep wastes segregated"]
+      duration: "Per generation"
+
+  # =========================== SAMPLE PREPARATION PROTOCOLS ===========================
+  sample_prep:
+    - name: "KBr Pellet Preparation"
+      category: "sample_prep"
+      description: "Prepare IR samples as KBr pellets"
+      steps:
+        - "Dry KBr thoroughly"
+        - "Mix small amount of sample with KBr"
+        - "Grind to fine powder"
+        - "Press in pellet die under vacuum"
+        - "Eject pellet carefully"
+        - "Mount in sample holder"
+      equipment: ["KBr", "Mortar and pestle", "Pellet press", "Die"]
+      safety_notes: ["Keep everything dry", "Avoid contamination"]
+      duration: "15-30 minutes"
+
+    - name: "Sample Digestion (Microwave)"
+      category: "sample_prep"
+      description: "Dissolve samples using microwave-assisted acid digestion"
+      steps:
+        - "Weigh sample into digestion vessel"
+        - "Add appropriate acid mixture"
+        - "Seal vessels in rotor"
+        - "Program microwave digestor"
+        - "Run digestion program"
+        - "Cool and vent"
+        - "Dilute and analyze"
+      equipment: ["Microwave digestor", "Digestion vessels", "Acid", "Fume hood"]
+      safety_notes: ["Use HF in fume hood only", "Pressure hazards"]
+      duration: "30-60 minutes"
+
+    - name: "Solid Phase Extraction"
+      category: "sample_prep"
+      description: "Extract and purify analytes using solid phase"
+      steps:
+        - "Condition SPE cartridge"
+        - "Load sample solution"
+        - "Wash interferences"
+        - "Elute target analytes"
+        - "Concentrate if needed"
+        - "Analyze eluate"
+      equipment: ["SPE cartridges", "Vacuum manifold", "Solvents", "Vials"]
+      safety_notes: ["Use appropriate solvents", "Handle concentrated extracts carefully"]
+      duration: "20-45 minutes"
+
+    - name: "Derivatization (Silylation)"
+      category: "sample_prep"
+      description: "Derivatize samples for GC analysis"
+      steps:
+        - "Dry sample completely"
+        - "Add derivatizing reagent (BSTFA, MSTFA)"
+        - "Add catalyst if needed"
+        - "Heat for specified time"
+        - "Cool and inject"
+        - "Use anhydrous conditions"
+      equipment: ["Reacti-vials", "Heating block", "Derivatizing reagents", "Syringe"]
+      safety_notes: ["Moisture will destroy reagents", "Use fume hood"]
+      duration: "30-60 minutes"

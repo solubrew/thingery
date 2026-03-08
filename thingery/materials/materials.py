@@ -614,6 +614,648 @@ class Ethanol(Material):
         )
 
 
+# ===========================PLATINUM GROUP METALS===================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class Platinum(Material):
+    def __init__(self):
+        super().__init__(
+            name="Platinum",
+            formula="Pt",
+            category=MaterialCategory.METAL.value,
+            density=21.45,
+            melting_point=2041.4,
+            boiling_point=4098.0,
+            hardness=4.5,
+            tensile_strength=125.0,
+            thermal_conductivity=71.6,
+            electrical_resistivity=1.06e-7,
+            properties={"precious": True, "catalytic": True, "corrosion_resistant": True}
+        )
+
+
+@dataclass
+class Palladium(Material):
+    def __init__(self):
+        super().__init__(
+            name="Palladium",
+            formula="Pd",
+            category=MaterialCategory.METAL.value,
+            density=12.02,
+            melting_point=1828.05,
+            boiling_point=3236.0,
+            hardness=4.75,
+            tensile_strength=140.0,
+            thermal_conductivity=71.8,
+            electrical_resistivity=1.07e-7,
+            properties={"catalytic": True, "hydrogen_absorption": True}
+        )
+
+
+@dataclass
+class Rhodium(Material):
+    def __init__(self):
+        super().__init__(
+            name="Rhodium",
+            formula="Rh",
+            category=MaterialCategory.METAL.value,
+            density=12.41,
+            melting_point=2237.0,
+            boiling_point=3968.0,
+            hardness=6.0,
+            tensile_strength=290.0,
+            thermal_conductivity=150.0,
+            electrical_resistivity=4.33e-8,
+            properties={"highest_reflectivity": True, "catalytic": True}
+        )
+
+
+# ===========================REFRACTORY METALS=======================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class Tungsten(Material):
+    def __init__(self):
+        super().__init__(
+            name="Tungsten",
+            formula="W",
+            category=MaterialCategory.METAL.value,
+            density=19.25,
+            melting_point=3695.0,
+            boiling_point=6203.0,
+            hardness=7.5,
+            tensile_strength=980.0,
+            thermal_conductivity=173.0,
+            electrical_resistivity=5.6e-8,
+            properties={"highest_melting_point": True, "very_hard": True}
+        )
+
+
+@dataclass
+class Tantalum(Material):
+    def __init__(self):
+        super().__init__(
+            name="Tantalum",
+            formula="Ta",
+            category=MaterialCategory.METAL.value,
+            density=16.654,
+            melting_point=3290.0,
+            boiling_point=5731.0,
+            hardness=6.5,
+            tensile_strength=140.0,
+            thermal_conductivity=57.5,
+            electrical_resistivity=1.35e-7,
+            properties={"corrosion_resistant": True, "biocompatible": True}
+        )
+
+
+# ===========================ALKALI METALS===========================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class LithiumMetal(Material):
+    def __init__(self):
+        super().__init__(
+            name="Lithium",
+            formula="Li",
+            category=MaterialCategory.METAL.value,
+            density=0.534,
+            melting_point=453.69,
+            boiling_point=1560.0,
+            hardness=0.6,
+            thermal_conductivity=84.7,
+            electrical_resistivity=9.48e-8,
+            properties={"lightest_metal": True, "reactive": True}
+        )
+
+
+@dataclass
+class SodiumMetal(Material):
+    def __init__(self):
+        super().__init__(
+            name="Sodium",
+            formula="Na",
+            category=MaterialCategory.METAL.value,
+            density=0.971,
+            melting_point=370.87,
+            boiling_point=1156.0,
+            hardness=0.5,
+            thermal_conductivity=142.0,
+            electrical_resistivity=4.77e-8,
+            properties={"highly_reactive": True, "soft": True}
+        )
+
+
+@dataclass
+class PotassiumMetal(Material):
+    def __init__(self):
+        super().__init__(
+            name="Potassium",
+            formula="K",
+            category=MaterialCategory.METAL.value,
+            density=0.862,
+            melting_point=336.53,
+            boiling_point=1032.0,
+            hardness=0.4,
+            thermal_conductivity=102.5,
+            electrical_resistivity=7.06e-8,
+            properties={"highly_reactive": True, "soft": True}
+        )
+
+
+# ===========================RARE EARTH METALS=======================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class Neodymium(Material):
+    def __init__(self):
+        super().__init__(
+            name="Neodymium",
+            formula="Nd",
+            category=MaterialCategory.METAL.value,
+            density=7.01,
+            melting_point=1297.0,
+            boiling_point=3347.0,
+            hardness=4.5,
+            thermal_conductivity=16.5,
+            electrical_resistivity=6.43e-7,
+            properties={"magnetic": True, "used_in_permanent_magnets": True}
+        )
+
+
+@dataclass
+class Cerium(Material):
+    def __init__(self):
+        super().__init__(
+            name="Cerium",
+            formula="Ce",
+            category=MaterialCategory.METAL.value,
+            density=6.77,
+            melting_point=1068.0,
+            boiling_point=3716.0,
+            hardness=2.5,
+            thermal_conductivity=11.3,
+            electrical_resistivity=7.4e-7,
+            properties={"most_abundant_rare_earth": True, "pyrophoric": True}
+        )
+
+
+# ===========================ADDITIONAL ALLOYS=======================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class CarbonSteel(Alloy):
+    def __init__(self):
+        super().__init__(
+            name="Carbon Steel",
+            formula="Fe+C",
+            category=MaterialCategory.ALLOY.value,
+            density=7.85,
+            melting_point=1510.0,
+            hardness=4.0,
+            tensile_strength=515.0,
+            thermal_conductivity=50.0,
+            electrical_resistivity=1.5e-7,
+            components={"iron": 0.98, "carbon": 0.02}
+        )
+
+
+@dataclass
+class ToolSteel(Alloy):
+    def __init__(self):
+        super().__init__(
+            name="Tool Steel",
+            formula="Fe+Cr+W+V+C",
+            category=MaterialCategory.ALLOY.value,
+            density=7.85,
+            melting_point=1510.0,
+            hardness=8.0,
+            tensile_strength=1000.0,
+            thermal_conductivity=24.0,
+            electrical_resistivity=5.0e-7,
+            components={"iron": 0.85, "chromium": 0.12, "tungsten": 0.025, "vanadium": 0.01}
+        )
+
+
+@dataclass
+class Invar(Alloy):
+    def __init__(self):
+        super().__init__(
+            name="Invar",
+            formula="Fe+Ni",
+            category=MaterialCategory.ALLOY.value,
+            density=8.05,
+            melting_point=1450.0,
+            hardness=3.0,
+            tensile_strength=380.0,
+            thermal_conductivity=11.0,
+            electrical_resistivity=7.6e-7,
+            components={"iron": 0.64, "nickel": 0.36},
+            properties={"low_thermal_expansion": True}
+        )
+
+
+# ===========================ADDITIONAL POLYMERS=====================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class PTFE(Polymer):
+    def __init__(self):
+        super().__init__(
+            name="Polytetrafluoroethylene",
+            formula="(C2F4)n",
+            category=MaterialCategory.POLYMER.value,
+            density=2.2,
+            melting_point=600.0,
+            hardness=0.5,
+            tensile_strength=20.0,
+            thermal_conductivity=0.25,
+            electrical_resistivity=1.0e18,
+            polymer_type="thermoplastic",
+            monomer="tetrafluoroethylene",
+            glass_transition_temp=115.0
+        )
+
+
+@dataclass
+class PET(Polymer):
+    def __init__(self):
+        super().__init__(
+            name="Polyethylene Terephthalate",
+            formula="(C10H8O4)n",
+            category=MaterialCategory.POLYMER.value,
+            density=1.38,
+            melting_point=523.0,
+            hardness=2.5,
+            tensile_strength=55.0,
+            thermal_conductivity=0.15,
+            electrical_resistivity=1.0e16,
+            polymer_type="thermoplastic",
+            monomer="ethylene glycol + terephthalic acid",
+            glass_transition_temp=343.0
+        )
+
+
+@dataclass
+class PMMA(Polymer):
+    def __init__(self):
+        super().__init__(
+            name="Polymethyl Methacrylate",
+            formula="(C5O2H8)n",
+            category=MaterialCategory.POLYMER.value,
+            density=1.18,
+            melting_point=433.0,
+            hardness=2.0,
+            tensile_strength=50.0,
+            thermal_conductivity=0.19,
+            electrical_resistivity=1.0e15,
+            polymer_type="thermoplastic",
+            monomer="methyl methacrylate",
+            glass_transition_temp=378.0,
+            properties={"transparent": True, "optical": True}
+        )
+
+
+@dataclass
+class Polycarbonate(Polymer):
+    def __init__(self):
+        super().__init__(
+            name="Polycarbonate",
+            formula="(C15H16O2)n",
+            category=MaterialCategory.POLYMER.value,
+            density=1.20,
+            melting_point=577.0,
+            hardness=2.5,
+            tensile_strength=60.0,
+            thermal_conductivity=0.20,
+            electrical_resistivity=1.0e14,
+            polymer_type="thermoplastic",
+            monomer="bisphenol A + phosgene",
+            glass_transition_temp=420.0,
+            properties={"transparent": True, "impact_resistant": True}
+        )
+
+
+# ===========================ADDITIONAL CERAMICS=====================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class SiliconNitride(Ceramic):
+    def __init__(self):
+        super().__init__(
+            name="Silicon Nitride",
+            formula="Si3N4",
+            category=MaterialCategory.CERAMIC.value,
+            density=3.44,
+            melting_point=2173.0,
+            hardness=9.0,
+            tensile_strength=600.0,
+            thermal_conductivity=30.0,
+            electrical_resistivity=1.0e12,
+            crystal_structure="hexagonal"
+        )
+
+
+@dataclass
+class BoronCarbide(Ceramic):
+    def __init__(self):
+        super().__init__(
+            name="Boron Carbide",
+            formula="B4C",
+            category=MaterialCategory.CERAMIC.value,
+            density=2.52,
+            melting_point=2723.0,
+            hardness=9.5,
+            tensile_strength=350.0,
+            thermal_conductivity=120.0,
+            electrical_resistivity=1.0e5,
+            crystal_structure="rhombohedral"
+        )
+
+
+# ===========================ADDITIONAL SEMICONDUCTORS===============================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class GalliumNitride(Material):
+    def __init__(self):
+        super().__init__(
+            name="Gallium Nitride",
+            formula="GaN",
+            category=MaterialCategory.SEMICONDUCTOR.value,
+            density=6.15,
+            melting_point=1973.0,
+            hardness=9.0,
+            tensile_strength=200.0,
+            thermal_conductivity=130.0,
+            electrical_resistivity=1.0e6,
+            properties={"bandgap": 3.4, "type": "direct", "wide_bandgap": True}
+        )
+
+
+# ===========================GLASS TYPES=============================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class BorosilicateGlass(Material):
+    def __init__(self):
+        super().__init__(
+            name="Borosilicate Glass",
+            formula="SiO2+B2O3",
+            category=MaterialCategory.GLASS.value,
+            density=2.23,
+            melting_point=1443.0,
+            hardness=5.5,
+            tensile_strength=70.0,
+            thermal_conductivity=1.2,
+            electrical_resistivity=1.0e14,
+            properties={"low_thermal_expansion": True, "chemical_resistant": True}
+        )
+
+
+# ===========================MINERALS & CARBON======================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class Diamond(Material):
+    def __init__(self):
+        super().__init__(
+            name="Diamond",
+            formula="C",
+            category=MaterialCategory.MINERAL.value,
+            density=3.51,
+            melting_point=4000.0,
+            hardness=10.0,
+            thermal_conductivity=2000.0,
+            electrical_resistivity=1.0e12,
+            properties={"hardest_known": True, "thermal_conductor": True, "optical": True}
+        )
+
+
+@dataclass
+class Corundum(Material):
+    def __init__(self):
+        super().__init__(
+            name="Corundum",
+            formula="Al2O3",
+            category=MaterialCategory.MINERAL.value,
+            density=3.98,
+            melting_point=2327.0,
+            hardness=9.0,
+            thermal_conductivity=30.0,
+            electrical_resistivity=1.0e14,
+            properties={"gem_quality": True, "abrasive": True}
+        )
+
+
+# ===========================BUILDING MATERIALS=====================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class Concrete(Material):
+    def __init__(self):
+        super().__init__(
+            name="Concrete",
+            formula="Portland Cement + Aggregate",
+            category=MaterialCategory.COMPOSITE.value,
+            density=2.4,
+            melting_point=None,
+            hardness=5.0,
+            tensile_strength=3.0,
+            thermal_conductivity=0.8,
+            electrical_resistivity=1.0e8,
+            properties={"composite": True, "versatile": True}
+        )
+
+
+@dataclass
+class Brick(Material):
+    def __init__(self):
+        super().__init__(
+            name="Brick",
+            formula="Clay + Shale",
+            category=MaterialCategory.CERAMIC.value,
+            density=1.8,
+            melting_point=1700.0,
+            hardness=6.0,
+            tensile_strength=10.0,
+            thermal_conductivity=0.6,
+            electrical_resistivity=1.0e6,
+            properties={"durable": True, "insulating": True}
+        )
+
+
+# ===========================FLUIDS & SOLVENTS=======================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class Acetone(Material):
+    def __init__(self):
+        super().__init__(
+            name="Acetone",
+            formula="C3H6O",
+            category=MaterialCategory.FLUID.value,
+            density=0.784,
+            melting_point=178.0,
+            boiling_point=329.0,
+            thermal_conductivity=0.16,
+            properties={"polar_aprotic": True, "flammable": True, "solvent": True}
+        )
+
+
+@dataclass
+class Glycerol(Material):
+    def __init__(self):
+        super().__init__(
+            name="Glycerol",
+            formula="C3H8O3",
+            category=MaterialCategory.FLUID.value,
+            density=1.26,
+            melting_point=291.0,
+            boiling_point=563.0,
+            thermal_conductivity=0.29,
+            properties={"hygroscopic": True, "viscous": True, "nontoxic": True}
+        )
+
+
+# ===========================GASES====================================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class HydrogenGas(Material):
+    def __init__(self):
+        super().__init__(
+            name="Hydrogen",
+            formula="H2",
+            category=MaterialCategory.FLUID.value,
+            density=0.00008988,
+            melting_point=14.01,
+            boiling_point=20.28,
+            properties={"flammable": True, "lowest_density": True, "highly_reactive": True}
+        )
+
+
+@dataclass
+class NitrogenGas(Material):
+    def __init__(self):
+        super().__init__(
+            name="Nitrogen",
+            formula="N2",
+            category=MaterialCategory.FLUID.value,
+            density=0.0012506,
+            melting_point=63.15,
+            boiling_point=77.36,
+            properties={"inert": True, "cryogenic": True}
+        )
+
+
+# ===========================ORGANIC COMPOUNDS=======================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class Glucose(Material):
+    def __init__(self):
+        super().__init__(
+            name="Glucose",
+            formula="C6H12O6",
+            category=MaterialCategory.CHEMICAL.value,
+            density=1.54,
+            melting_point=419.0,
+            boiling_point=None,
+            properties={"carbohydrate": True, "reducing_sugar": True}
+        )
+
+
+@dataclass
+class SodiumHydroxide(Material):
+    def __init__(self):
+        super().__init__(
+            name="Sodium Hydroxide",
+            formula="NaOH",
+            category=MaterialCategory.CHEMICAL.value,
+            density=2.13,
+            melting_point=591.0,
+            boiling_point=1663.0,
+            properties={"caustic": True, "strong_base": True, "hygroscopic": True}
+        )
+
+
+@dataclass
+class HydrochloricAcid(Material):
+    def __init__(self):
+        super().__init__(
+            name="Hydrochloric Acid",
+            formula="HCl",
+            category=MaterialCategory.CHEMICAL.value,
+            density=1.18,
+            melting_point=247.0,
+            boiling_point=323.0,
+            properties={"strong_acid": True, "corrosive": True, "strong_acid": True}
+        )
+
+
+# ===========================ADVANCED MATERIALS======================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class Graphene(Material):
+    def __init__(self):
+        super().__init__(
+            name="Graphene",
+            formula="C",
+            category=MaterialCategory.NANOMATERIAL.value,
+            density=2.2,
+            melting_point=4000.0,
+            thermal_conductivity=5000.0,
+            electrical_resistivity=1.0e-6,
+            properties={"single_layer": True, "extremely_strong": True, "high_conductivity": True}
+        )
+
+
+@dataclass
+class CarbonNanotube(Material):
+    def __init__(self):
+        super().__init__(
+            name="Carbon Nanotube",
+            formula="C",
+            category=MaterialCategory.NANOMATERIAL.value,
+            density=1.3,
+            melting_point=4000.0,
+            thermal_conductivity=3000.0,
+            electrical_resistivity=1.0e-5,
+            properties={"cylindrical": True, "high_aspect_ratio": True, "strong": True}
+        )
+
+
+@dataclass
+class Fullerene(Material):
+    def __init__(self):
+        super().__init__(
+            name="Fullerene",
+            formula="C60",
+            category=MaterialCategory.NANOMATERIAL.value,
+            density=1.65,
+            melting_point=1200.0,
+            properties={"spherical": True, "cage_structure": True}
+        )
+
+
 # ===========================EXPORTS===================================================================================||
 # ====================================================================================================================||
 
@@ -621,20 +1263,50 @@ class Ethanol(Material):
 __all__ = [
     # Metals
     'Iron', 'Copper', 'Aluminum', 'Gold', 'Silver', 'Titanium', 'Magnesium', 'Zinc', 'Nickel', 'Lead',
+    'Platinum', 'Palladium', 'Rhodium', 'Iridium', 'Osmium', 'Ruthenium', 'Chromium', 'Manganese',
+    'Vanadium', 'Cobalt', 'Tungsten', 'Molybdenum', 'Tantalum', 'Niobium', 'Zirconium', 'Hafnium',
+    'Scandium', 'Yttrium', 'Lanthanum', 'Cerium', 'Neodymium', 'Samarium', 'Gadolinium', 'Dysprosium',
+    # Alkali Metals
+    'Lithium', 'Sodium', 'Potassium', 'Rubidium', 'Cesium', 'Francium',
+    # Alkaline Earth Metals
+    'Beryllium', 'Calcium', 'Strontium', 'Barium', 'Radium',
+    # Post-Transition Metals
+    'Indium', 'Tin', 'Thallium', 'LeadMat', 'Bismuth',
+    # Metalloids
+    'Boron', 'Silicon', 'GermaniumMat', 'Arsenic', 'Antimony', 'Tellurium',
+    # Nonmetals
+    'CarbonNonmetal', 'Nitrogen', 'Oxygen', 'Phosphorus', 'Sulfur', 'Selenium',
+    # Halogens
+    'Fluorine', 'Chlorine', 'Bromine', 'Iodine', 'Astatine',
+    # Noble Gases
+    'Helium', 'Neon', 'Argon', 'Krypton', 'Xenon', 'Radon',
     # Alloys
     'Steel', 'StainlessSteel', 'Brass', 'Bronze', 'CastIron',
+    'CarbonSteel', 'ToolSteel', 'NickelSilver', 'Solder', 'Pewter', 'Duralumin', 'Invar', 'Kovar',
     # Polymers
     'Polyethylene', 'Polypropylene', 'Polystyrene', 'PolyvinylChloride', 'Nylon',
+    'PTFE', 'PET', 'PMMA', 'PVC', 'ABS', 'Polycarbonate', 'PPS', 'PEEK', 'PVDF',
     # Ceramics
-    'Alumina', 'Zirconia', 'SiliconCarbide',
+    'Alumina', 'Zirconia', 'SiliconCarbide', 'SiliconNitride', 'BoronCarbide', 'TitaniumCarbide',
+    'AluminumNitride', 'TungstenCarbide', 'MolybdenumDisilicide',
     # Semiconductors
-    'SiliconSemiconductor', 'Germanium', 'GalliumArsenide',
+    'SiliconSemiconductor', 'Germanium', 'GalliumArsenide', 'GalliumNitride', 'IndiumPhosphide', 'CadmiumTelluride',
     # Glass
-    'Glass',
+    'Glass', 'BorosilicateGlass', 'QuartzGlass', 'LeadGlass',
     # Composites
-    'CarbonFiberComposite',
+    'CarbonFiberComposite', 'GlassFiberComposite', 'KevlarComposite', 'CFRP', 'GFRP',
     # Minerals
-    'Quartz', 'Graphite',
+    'Quartz', 'Graphite', 'Diamond', 'Corundum', 'Topaz', 'Fluorite', 'Mica', 'Talc', 'Clay', 'Sand',
     # Fluids
-    'Water', 'Ethanol',
+    'Water', 'Ethanol', 'Acetone', 'Benzene', 'Toluene', 'Methanol', 'Isopropanol', 'Glycerol',
+    'Mercury', 'Bromine', 'Gallium',
+    # Gases
+    'HydrogenGas', 'NitrogenGas', 'OxygenGas', 'ArgonGas', 'HeliumGas', 'CarbonDioxide', 'Methane', 'Ammonia',
+    # Organic Compounds
+    'Glucose', 'Sucrose', 'AceticAcid', 'SodiumHydroxide', 'SodiumChloride', 'HydrochloricAcid',
+    'SulfuricAcid', 'NitricAcid', 'AcetoneCompound', 'Chloroform', 'Dichloromethane', 'Hexane',
+    # Building Materials
+    'Concrete', 'Brick', 'Cement', 'Mortite', 'Asphalt', 'Wood', 'Granite', 'Marble', 'Limestone',
+    # Advanced Materials
+    'Graphene', 'CarbonNanotube', 'Fullerene', 'MXene', 'Perovskite', 'Superconductor',
 ]

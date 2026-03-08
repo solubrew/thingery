@@ -685,6 +685,318 @@ class OliveOil(Food):
         )
 
 
+# ===========================ADDITIONAL FRUITS=======================================================================||
+
+
+@dataclass
+class Pear(Food):
+    def __init__(self):
+        super().__init__(
+            name="Pear",
+            category="fruit",
+            serving_size=178.0,
+            nutrition=Nutrition(
+                calories=102.0, protein=0.6, carbohydrates=27.0, fat=0.2,
+                fiber=5.5, sugar=17.0, sodium=2.0, cholesterol=0.0,
+                vitamins={"C": 7.5, "K": 4.0}, minerals={"potassium": 212.0, "copper": 0.2}
+            )
+        )
+
+
+@dataclass
+class Peach(Food):
+    def __init__(self):
+        super().__init__(
+            name="Peach", category="fruit", serving_size=150.0,
+            nutrition=Nutrition(calories=59.0, protein=1.4, carbohydrates=14.0, fat=0.4,
+                fiber=2.3, sugar=13.0, sodium=0.0, cholesterol=0.0,
+                vitamins={"C": 10.0, "A": 489.0}, minerals={"potassium": 285.0})
+        )
+
+
+@dataclass
+class Kiwi(Food):
+    def __init__(self):
+        super().__init__(
+            name="Kiwi", category="fruit", serving_size=69.0,
+            nutrition=Nutrition(calories=42.0, protein=0.8, carbohydrates=10.0, fat=0.4,
+                fiber=2.1, sugar=6.0, sodium=2.0, cholesterol=0.0,
+                vitamins={"C": 64.0, "K": 40.0}, minerals={"potassium": 252.0})
+        )
+
+
+@dataclass
+class Pineapple(Food):
+    def __init__(self):
+        super().__init__(
+            name="Pineapple", category="fruit", serving_size=165.0,
+            nutrition=Nutrition(calories=82.0, protein=0.9, carbohydrates=22.0, fat=0.2,
+                fiber=2.3, sugar=16.0, sodium=2.0, cholesterol=0.0,
+                vitamins={"C": 78.0}, minerals={"potassium": 180.0})
+        )
+
+
+# ===========================ADDITIONAL VEGETABLES===================================================================||
+
+
+@dataclass
+class Celery(Food):
+    def __init__(self):
+        super().__init__(
+            name="Celery", category="vegetable", serving_size=101.0,
+            nutrition=Nutrition(calories=16.0, protein=0.7, carbohydrates=3.0, fat=0.2,
+                fiber=1.6, sugar=1.3, sodium=88.0, cholesterol=0.0,
+                vitamins={"K": 29.0}, minerals={"potassium": 260.0})
+        )
+
+
+@dataclass
+class BellPepper(Food):
+    def __init__(self):
+        super().__init__(
+            name="Bell Pepper", category="vegetable", serving_size=119.0,
+            nutrition=Nutrition(calories=31.0, protein=1.0, carbohydrates=6.0, fat=0.3,
+                fiber=2.1, sugar=4.2, sodium=4.0, cholesterol=0.0,
+                vitamins={"C": 152.0, "A": 3131.0}, minerals={"potassium": 211.0})
+        )
+
+
+@dataclass
+class Kale(Food):
+    def __init__(self):
+        super().__init__(
+            name="Kale", category="vegetable", serving_size=67.0,
+            nutrition=Nutrition(calories=33.0, protein=2.2, carbohydrates=6.0, fat=0.5,
+                fiber=2.6, sugar=1.3, sodium=25.0, cholesterol=0.0,
+                vitamins={"C": 90.0, "K": 499.0}, minerals={"potassium": 329.0})
+        )
+
+
+@dataclass
+class Mushroom(Food):
+    def __init__(self):
+        super().__init__(
+            name="Mushroom", category="vegetable", serving_size=96.0,
+            nutrition=Nutrition(calories=21.0, protein=3.0, carbohydrates=3.3, fat=0.3,
+                fiber=1.0, sugar=2.0, sodium=5.0, cholesterol=0.0,
+                vitamins={"D": 7.0}, minerals={"potassium": 318.0})
+        )
+
+
+# ===========================ADDITIONAL PROTEINS=====================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class Turkey(Food):
+    def __init__(self):
+        super().__init__(
+            name="Turkey", category="protein", serving_size=170.0,
+            nutrition=Nutrition(calories=189.0, protein=41.0, carbohydrates=0.0, fat=2.0,
+                fiber=0.0, sugar=0.0, sodium=74.0, cholesterol=99.0,
+                vitamins={"B3": 10.0, "B6": 0.7}, minerals={"selenium": 36.0})
+        )
+
+
+@dataclass
+class Pork(Food):
+    def __init__(self):
+        super().__init__(
+            name="Pork", category="protein", serving_size=170.0,
+            nutrition=Nutrition(calories=243.0, protein=33.0, carbohydrates=0.0, fat=11.0,
+                fiber=0.0, sugar=0.0, sodium=86.0, cholesterol=94.0,
+                vitamins={"B1": 0.9, "B6": 0.5}, minerals={"selenium": 36.0})
+        )
+
+
+@dataclass
+class Shrimp(Food):
+    def __init__(self):
+        super().__init__(
+            name="Shrimp", category="protein", serving_size=85.0,
+            nutrition=Nutrition(calories=84.0, protein=18.0, carbohydrates=0.2, fat=0.9,
+                fiber=0.0, sugar=0.0, sodium=805.0, cholesterol=189.0,
+                vitamins={"B12": 1.3, "D": 2.0}, minerals={"selenium": 34.0})
+        )
+
+
+@dataclass
+class Tuna(Food):
+    def __init__(self):
+        super().__init__(
+            name="Tuna", category="protein", serving_size=85.0,
+            nutrition=Nutrition(calories=110.0, protein=22.0, carbohydrates=0.0, fat=2.0,
+                fiber=0.0, sugar=0.0, sodium=301.0, cholesterol=36.0,
+                vitamins={"B12": 2.2, "D": 1.8}, minerals={"selenium": 62.0})
+        )
+
+
+# ===========================ADDITIONAL GRAINS=======================================================================||
+
+
+@dataclass
+class Quinoa(Food):
+    def __init__(self):
+        super().__init__(
+            name="Quinoa", category="grain", serving_size=185.0,
+            nutrition=Nutrition(calories=222.0, protein=8.0, carbohydrates=39.0, fat=4.0,
+                fiber=5.0, sugar=0.0, sodium=13.0, cholesterol=0.0,
+                vitamins={"B1": 0.2, "B6": 0.2}, minerals={"magnesium": 118.0})
+        )
+
+
+@dataclass
+class Barley(Food):
+    def __init__(self):
+        super().__init__(
+            name="Barley", category="grain", serving_size=157.0,
+            nutrition=Nutrition(calories=193.0, protein=4.0, carbohydrates=44.0, fat=1.0,
+                fiber=6.0, sugar=0.4, sodium=5.0, cholesterol=0.0,
+                vitamins={"B1": 0.2, "B3": 3.0}, minerals={"selenium": 17.0})
+        )
+
+
+# ===========================NUTS & SEEDS=============================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class Almonds(Food):
+    def __init__(self):
+        super().__init__(
+            name="Almonds", category="nuts", serving_size=28.0,
+            nutrition=Nutrition(calories=164.0, protein=6.0, carbohydrates=6.0, fat=14.0,
+                fiber=3.5, sugar=1.2, sodium=0.0, cholesterol=0.0,
+                vitamins={"E": 7.3, "B2": 0.3}, minerals={"magnesium": 76.0})
+        )
+
+
+@dataclass
+class Walnuts(Food):
+    def __init__(self):
+        super().__init__(
+            name="Walnuts", category="nuts", serving_size=28.0,
+            nutrition=Nutrition(calories=185.0, protein=4.3, carbohydrates=4.0, fat=18.0,
+                fiber=1.9, sugar=0.7, sodium=1.0, cholesterol=0.0,
+                vitamins={"B6": 0.2, "E": 0.2}, minerals={"magnesium": 45.0})
+        )
+
+
+@dataclass
+class ChiaSeeds(Food):
+    def __init__(self):
+        super().__init__(
+            name="Chia Seeds", category="seeds", serving_size=28.0,
+            nutrition=Nutrition(calories=138.0, protein=5.0, carbohydrates=12.0, fat=9.0,
+                fiber=10.0, sugar=0.0, sodium=5.0, cholesterol=0.0,
+                vitamins={"B3": 2.5, "B1": 0.2}, minerals={"calcium": 179.0})
+        )
+
+
+# ===========================LEGUMES=================================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class BlackBeans(Food):
+    def __init__(self):
+        super().__init__(
+            name="Black Beans", category="legumes", serving_size=172.0,
+            nutrition=Nutrition(calories=227.0, protein=15.0, carbohydrates=41.0, fat=0.9,
+                fiber=15.0, sugar=0.6, sodium=1.0, cholesterol=0.0,
+                vitamins={"B1": 0.4, "B9": 64.0}, minerals={"magnesium": 70.0})
+        )
+
+
+@dataclass
+class Chickpeas(Food):
+    def __init__(self):
+        super().__init__(
+            name="Chickpeas", category="legumes", serving_size=164.0,
+            nutrition=Nutrition(calories=269.0, protein=15.0, carbohydrates=45.0, fat=4.0,
+                fiber=12.0, sugar=8.0, sodium=11.0, cholesterol=0.0,
+                vitamins={"B6": 0.4, "B9": 141.0}, minerals={"manganese": 1.7})
+        )
+
+
+@dataclass
+class Lentils(Food):
+    def __init__(self):
+        super().__init__(
+            name="Lentils", category="legumes", serving_size=198.0,
+            nutrition=Nutrition(calories=230.0, protein=18.0, carbohydrates=40.0, fat=0.8,
+                fiber=16.0, sugar=3.6, sodium=4.0, cholesterol=0.0,
+                vitamins={"B9": 134.0, "B1": 0.5}, minerals={"iron": 6.6})
+        )
+
+
+# ===========================OILS & FATS=============================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class CoconutOil(Food):
+    def __init__(self):
+        super().__init__(
+            name="Coconut Oil", category="oils", serving_size=14.0,
+            nutrition=Nutrition(calories=121.0, protein=0.0, carbohydrates=0.0, fat=13.5,
+                fiber=0.0, sugar=0.0, sodium=0.0, cholesterol=0.0,
+                vitamins={"E": 0.1, "K": 0.1}, minerals={"iron": 0.0})
+        )
+
+
+# ===========================HERBS==================================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class Basil(Food):
+    def __init__(self):
+        super().__init__(
+            name="Basil", category="herbs", serving_size=2.0,
+            nutrition=Nutrition(calories=1.0, protein=0.1, carbohydrates=0.1, fat=0.0,
+                fiber=0.0, sugar=0.0, sodium=0.0, cholesterol=0.0,
+                vitamins={"K": 4.3, "A": 43.0}, minerals={"potassium": 5.0})
+        )
+
+
+# ===========================CONDIMENTS==============================================================================||
+# ====================================================================================================================||
+
+
+@dataclass
+class Honey(Food):
+    def __init__(self):
+        super().__init__(
+            name="Honey", category="condiments", serving_size=21.0,
+            nutrition=Nutrition(calories=64.0, protein=0.1, carbohydrates=17.0, fat=0.0,
+                fiber=0.0, sugar=17.0, sodium=1.0, cholesterol=0.0,
+                vitamins={"B2": 0.0, "C": 0.1}, minerals={"potassium": 11.0})
+        )
+
+
+@dataclass
+class Ketchup(Food):
+    def __init__(self):
+        super().__init__(
+            name="Ketchup", category="condiments", serving_size=17.0,
+            nutrition=Nutrition(calories=19.0, protein=0.2, carbohydrates=5.0, fat=0.0,
+                fiber=0.1, sugar=4.0, sodium=154.0, cholesterol=0.0,
+                vitamins={"A": 28.0, "C": 1.7}, minerals={"potassium": 67.0})
+        )
+
+
+@dataclass
+class Mustard(Food):
+    def __init__(self):
+        super().__init__(
+            name="Mustard", category="condiments", serving_size=5.0,
+            nutrition=Nutrition(calories=3.0, protein=0.2, carbohydrates=0.3, fat=0.2,
+                fiber=0.2, sugar=0.1, sodium=57.0, cholesterol=0.0,
+                vitamins={"K": 0.3}, minerals={"manganese": 0.1})
+        )
+
+
 # ===========================EXPORTS===================================================================================||
 # ====================================================================================================================||
 
@@ -692,14 +1004,54 @@ class OliveOil(Food):
 __all__ = [
     # Fruits
     'Apple', 'Banana', 'Orange', 'Strawberry', 'Blueberry', 'Grape', 'Watermelon', 'Mango',
+    'Pear', 'Peach', 'Plum', 'Cherry', 'Kiwi', 'Pineapple', 'Papaya', 'Cantaloupe', 
+    'Honeydew', 'Grapefruit', 'Lemon', 'Lime', 'Pomegranate', 'Avocado', 'Coconut',
     # Vegetables
-    'Broccoli', 'Carrot', 'Spinach', 'Tomato', 'Potato', 'Onion',
+    'Broccoli', 'Carrot', 'Spinach', 'Tomato', 'Potato', 'Onion', 'Celery', 'BellPepper',
+    'Cucumber', 'Lettuce', 'Kale', 'Cabbage', 'Cauliflower', 'BrusselsSprouts', 'Asparagus',
+    'GreenBeans', 'Peas', 'Corn', 'SweetPotato', 'Beet', 'Radish', 'Zucchini', 'Eggplant',
+    'Mushroom', 'Garlic', 'Ginger', 'Scallion', 'Leek', 'Artichoke',
     # Proteins
-    'ChickenBreast', 'Beef', 'Salmon', 'Egg', 'Tofu',
+    'ChickenBreast', 'Beef', 'Salmon', 'Egg', 'Tofu', 'Turkey', 'Pork', 'Lamb', 'Duck',
+    'Shrimp', 'Crab', 'Lobster', 'Tuna', 'Cod', 'Tilapia', 'Halibut', 'Sardines',
+    'TurkeyBreast', 'GroundBeef', 'Bacon', 'Ham', 'TofuFirm', 'Tempeh', 'Seitan',
+    'Venison', 'Bison', 'Rabbit', 'Anchovies',
     # Grains
-    'Rice', 'Wheat', 'Oatmeal',
+    'Rice', 'Wheat', 'Oatmeal', 'Quinoa', 'Barley', 'Couscous', 'Farro', 'Bulgur',
+    'Millet', 'Buckwheat', 'Amaranth', 'Sorghum', 'Spelt', 'Rye', 'Cornmeal',
+    'Pasta', 'BreadWholeWheat', 'BreadWhite', 'Bagel', 'EnglishMuffin', 'Tortilla',
     # Dairy
-    'Milk', 'Cheese', 'Yogurt',
+    'Milk', 'Cheese', 'Yogurt', 'Butter', 'CreamCheese', 'SourCream', 'CottageCheese',
+    'HeavyCream', 'HalfAndHalf', 'EvaporatedMilk', 'CondensedMilk', 'Ghee',
     # Beverages
-    'Coffee', 'Tea', 'OrangeJuice', 'OliveOil',
+    'Coffee', 'Tea', 'OrangeJuice', 'OliveOil', 'AppleJuice', 'CranberryJuice', 
+    'GrapeJuice', 'Lemonade', 'AlmondMilk', 'SoyMilk', 'CoconutMilk', 'RiceMilk',
+    'ProteinShake', 'Smoothie', 'Cola', 'LemonLimeSoda', 'EnergyDrink', 'SportsDrink',
+    # Nuts & Seeds
+    'Almonds', 'Walnuts', 'Cashews', 'Peanuts', 'Pistachios', 'Hazelnuts', 'Macadamia',
+    'BrazilNuts', 'Pecans', 'ChiaSeeds', 'FlaxSeeds', 'SunflowerSeeds', 'PumpkinSeeds',
+    'SesameSeeds', 'HempSeeds', 'PoppySeeds',
+    # Legumes
+    'BlackBeans', 'KidneyBeans', 'Chickpeas', 'Lentils', 'NavyBeans', 'PintoBeans',
+    'LimaBeans', 'BlackEyedPeas', 'Soybeans', 'AdzukiBeans', 'CannelliniBeans',
+    # Condiments & Sauces
+    'Ketchup', 'Mustard', 'Mayonnaise', 'SoySauce', 'HotSauce', 'BarbecueSauce',
+    'Salsa', 'Guacamole', 'Hummus', 'Tahini', 'PeanutButter', 'AlmondButter',
+    'Jam', 'Jelly', 'Honey', 'MapleSyrup', 'Agave', 'Molasses',
+    # Oils & Fats
+    'OliveOil', 'CoconutOil', 'SesameOil', 'VegetableOil', 'CanolaOil', 'FlaxseedOil',
+    'WalnutOil', 'AvocadoOil', 'GrapeseedOil', 'SunflowerOil', 'PalmOil', 'Lard',
+    # Herbs & Spices
+    'Basil', 'Oregano', 'Thyme', 'Rosemary', 'Parsley', 'Cilantro', 'Mint', 'Dill',
+    'Sage', 'Tarragon', 'BayLeaves', 'Cumin', 'Coriander', 'Paprika', 'Cayenne',
+    'BlackPepper', 'Salt', 'Cinnamon', 'Nutmeg', 'GingerSpice', 'Turmeric', 'Saffron',
+    'Cardamom', 'Cloves', 'AllSpice', 'MustardSeed', 'Fennel', 'Caraway',
+    # Sweets & Desserts
+    'ChocolateDark', 'ChocolateMilk', 'WhiteChocolate', 'CocoaPowder', 'VanillaExtract',
+    'BakingPowder', 'BakingSoda', 'CornStarch', 'Gelatin', 'WhippedCream', 'IceCream',
+    'FrozenYogurt', 'Sherbet', 'Sorbet', 'Candy', 'GummyBears', 'HardCandy',
+    # Prepared Foods
+    'Pizza', 'Burger', 'Sandwich', 'HotDog', 'FrenchFries', 'OnionRings', 'Nachos',
+    'Taco', 'Burrito', 'Sushi', 'Ramen', 'FriedRice', 'PadThai', ' Curry',
+    'Chili', 'Stew', 'Soup', 'Salad', 'Coleslaw', 'PotatoSalad', 'MacAndCheese',
 ]

@@ -105,6 +105,7 @@ class MaterialCategory(Enum):
     GLASS = "glass"
     MINERAL = "mineral"
     CHEMICAL = "chemical"
+    NANOMATERIAL = "nanomaterial"
 
 
 @dataclass

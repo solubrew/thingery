@@ -7,6 +7,7 @@
 	description: >
 		Thingery - Physical/Chemical Data Library
 		Complete database of elements, materials, foods, institutions, colors, scales, and protocols
+		Data loaded from YAML configs for easy updates and expansion.
 	version: 0.1.0.0.0
 	authority: filesystem
 	security: seclvl2
@@ -57,6 +58,7 @@ from thingery.institutions.institutions import (
 	SpaceX, Tesla, Google, Microsoft, IBM, Intel, NVIDIA, AppleCompany
 )
 
+# Colors - backward compatible imports + new functions
 from thingery.colors import (
 	Red, Maroon, Crimson, Coral, Tomato as TomatoColor, FireBrick,
 	Orange, DarkOrange, Yellow, Gold, LemonChiffon,
@@ -68,7 +70,10 @@ from thingery.colors import (
 	SkyBlueNatural, ForestGreenNatural, OceanBlue, Sand, EarthBrown,
 	LeafGreen, SunsetOrange, RosePink, LavenderNatural, MintGreen,
 	CadmiumYellow, CadmiumRed, CobaltBlue, TitaniumWhite, IvoryBlack,
-	Viridian, RawUmber, BurntSienna, Ultramarine, PhthaloBlue
+	Viridian, RawUmber, BurntSienna, Ultramarine, PhthaloBlue,
+	# New exports
+	Color as ThingeryColor, get_color, get_Color, get_colors_by_category,
+	list_categories as list_color_categories, list_colors
 )
 
 from thingery.pantone import (
@@ -86,6 +91,7 @@ from thingery.pantone import (
 	PantoneFashionEmerald, PantoneFashionTangerine
 )
 
+# Scales - backward compatible imports + new functions
 from thingery.scales import (
 	Kelvin, Celsius, Fahrenheit, Rankine,
 	Pascal, Atmosphere, Bar, PSI, Torr,
@@ -96,7 +102,39 @@ from thingery.scales import (
 	Second, Minute, Hour, Day,
 	Joule, Calorie, ElectronVolt, BTU,
 	Hertz, Kilohertz, Megahertz,
-	Byte, Kilobyte, Megabyte
+	Byte, Kilobyte, Megabyte,
+	# New exports
+	get_scale, get_scales_by_category,
+	list_categories as list_scale_categories, list_scales
+)
+
+# Protocols - new exports
+from thingery.protocols import (
+	Protocol, get_protocol, get_Protocol, get_protocols_by_category,
+	list_categories as list_protocol_categories, list_protocols
+)
+
+# Constants - backward compatible imports + new
+from thingery.constants import (
+	avogadro, boltzmann, charge, speed_of_light,
+	planks, reduced_planks, gravitational_constant, gravitational_constant_earth,
+	permittivity, permeability, stefan_boltzmann, rydberg, faraday,
+	ideal_gas, electron_mass, proton_mass, neutron_mass, atomic_mass_unit,
+	e, pi, phi, sqrt2, sqrt3, tao, primes,
+	earth_mass, earth_radius, earth_surface_gravity, earth_atmosphere,
+	moon_mass, solar_mass, solar_luminosity, astronomical_unit,
+	fine_structure, weak_mixing_angle,
+	planck_time, planck_length, planck_temperature,
+	standard_temperature, standard_pressure, absolute_zero, triple_point_water,
+	# New exports
+	Constant, get_constant, get_all_constants, list_constant_names
+)
+
+# YAML Loader
+from thingery._loader import (
+	ThingeryLoader, get_loader, load_yaml, load_category,
+	create_dataclass_from_dict, create_dataclasses_from_list,
+	DATA_DIR, THINGERY_DIR
 )
 
 # ====================================================================================================================||
@@ -105,6 +143,9 @@ from thingery.scales import (
 __version__ = "0.1.0"
 
 __all__ = [
+	# Version
+	'__version__',
+	
 	# Models
 	'Element', 'Isotope', 'Material', 'Alloy', 'Polymer', 'Ceramic',
 	'Food', 'Nutrition', 'Institution', 'Color', 'Scale', 'Protocol',
@@ -152,6 +193,7 @@ __all__ = [
 	'LeafGreen', 'SunsetOrange', 'RosePink', 'LavenderNatural', 'MintGreen',
 	'CadmiumYellow', 'CadmiumRed', 'CobaltBlue', 'TitaniumWhite', 'IvoryBlack',
 	'Viridian', 'RawUmber', 'BurntSienna', 'Ultramarine', 'PhthaloBlue',
+	'ThingeryColor', 'get_color', 'get_Color', 'get_colors_by_category', 'list_colors',
 	
 	# Pantone Colors
 	'PantoneYellow', 'PantoneGoldenYellow', 'PantoneOrange', 'PantoneWarmRed',
@@ -178,4 +220,26 @@ __all__ = [
 	'Joule', 'Calorie', 'ElectronVolt', 'BTU',
 	'Hertz', 'Kilohertz', 'Megahertz',
 	'Byte', 'Kilobyte', 'Megabyte',
+	'get_scale', 'get_scales_by_category', 'list_scales',
+	
+	# Protocols
+	'Protocol', 'get_protocol', 'get_Protocol', 'get_protocols_by_category', 'list_protocols',
+	
+	# Constants
+	'avogadro', 'boltzmann', 'charge', 'speed_of_light',
+	'planks', 'reduced_planks', 'gravitational_constant', 'gravitational_constant_earth',
+	'permittivity', 'permeability', 'stefan_boltzmann', 'rydberg', 'faraday',
+	'ideal_gas', 'electron_mass', 'proton_mass', 'neutron_mass', 'atomic_mass_unit',
+	'e', 'pi', 'phi', 'sqrt2', 'sqrt3', 'tao', 'primes',
+	'earth_mass', 'earth_radius', 'earth_surface_gravity', 'earth_atmosphere',
+	'moon_mass', 'solar_mass', 'solar_luminosity', 'astronomical_unit',
+	'fine_structure', 'weak_mixing_angle',
+	'planck_time', 'planck_length', 'planck_temperature',
+	'standard_temperature', 'standard_pressure', 'absolute_zero', 'triple_point_water',
+	'Constant', 'get_constant', 'get_all_constants', 'list_constant_names',
+	
+	# YAML Loader
+	'ThingeryLoader', 'get_loader', 'load_yaml', 'load_category',
+	'create_dataclass_from_dict', 'create_dataclasses_from_list',
+	'DATA_DIR', 'THINGERY_DIR',
 ]
