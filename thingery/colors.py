@@ -560,11 +560,8 @@ class PhthaloBlue:
     category: str = "paint"
 
 
-# ===========================EXPORTS===================================================================================||
-# ====================================================================================================================||
-
-
-__all__ = [
+from thingery.colors import *  # Web, natural, paint colors
+from thingery.pantone import *  # Pantone color system
     # Web Colors - Reds
     'Red', 'Maroon', 'Crimson', 'Coral', 'Tomato', 'FireBrick',
     # Web Colors - Oranges & Yellows

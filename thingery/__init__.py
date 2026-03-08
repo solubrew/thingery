@@ -71,6 +71,21 @@ from thingery.colors import (
 	Viridian, RawUmber, BurntSienna, Ultramarine, PhthaloBlue
 )
 
+from thingery.pantone import (
+	PantoneYellow, PantoneGoldenYellow, PantoneOrange, PantoneWarmRed,
+	PantoneRed, PantoneRubineRed, PantoneRhodamineRed, PantoneMagenta,
+	PantoneViolet, PantoneBlue, PantoneProcessBlue, PantoneGreen,
+	PantoneBlack, PantoneCoolGray1, PantoneCoolGray5, PantoneCoolGray10,
+	PantonePlusYellow, PantonePlusOrange021, PantonePlusWarmRed,
+	PantonePlusRed, PantonePlusPink, PantonePlusRhodamineRed,
+	PantonePlusPurple, PantonePlusViolet, PantonePlusBlue072,
+	PantonePlusProcessBlue, PantonePlusGreen, PantonePlusBlack,
+	PantoneMetallicGold, PantoneMetallicSilver,
+	PantoneSkintoneLight, PantoneSkintoneMedium, PantoneSkintoneDark,
+	PantoneFashionLilac, PantoneFashionBlue, PantoneFashionFuchsia,
+	PantoneFashionEmerald, PantoneFashionTangerine
+)
+
 from thingery.scales import (
 	Kelvin, Celsius, Fahrenheit, Rankine,
 	Pascal, Atmosphere, Bar, PSI, Torr,
@@ -137,6 +152,20 @@ __all__ = [
 	'LeafGreen', 'SunsetOrange', 'RosePink', 'LavenderNatural', 'MintGreen',
 	'CadmiumYellow', 'CadmiumRed', 'CobaltBlue', 'TitaniumWhite', 'IvoryBlack',
 	'Viridian', 'RawUmber', 'BurntSienna', 'Ultramarine', 'PhthaloBlue',
+	
+	# Pantone Colors
+	'PantoneYellow', 'PantoneGoldenYellow', 'PantoneOrange', 'PantoneWarmRed',
+	'PantoneRed', 'PantoneRubineRed', 'PantoneRhodamineRed', 'PantoneMagenta',
+	'PantoneViolet', 'PantoneBlue', 'PantoneProcessBlue', 'PantoneGreen',
+	'PantoneBlack', 'PantoneCoolGray1', 'PantoneCoolGray5', 'PantoneCoolGray10',
+	'PantonePlusYellow', 'PantonePlusOrange021', 'PantonePlusWarmRed',
+	'PantonePlusRed', 'PantonePlusPink', 'PantonePlusRhodamineRed',
+	'PantonePlusPurple', 'PantonePlusViolet', 'PantonePlusBlue072',
+	'PantonePlusProcessBlue', 'PantonePlusGreen', 'PantonePlusBlack',
+	'PantoneMetallicGold', 'PantoneMetallicSilver',
+	'PantoneSkintoneLight', 'PantoneSkintoneMedium', 'PantoneSkintoneDark',
+	'PantoneFashionLilac', 'PantoneFashionBlue', 'PantoneFashionFuchsia',
+	'PantoneFashionEmerald', 'PantoneFashionTangerine',
 	
 	# Scales
 	'Kelvin', 'Celsius', 'Fahrenheit', 'Rankine',
