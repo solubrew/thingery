@@ -1,6 +1,7 @@
 ---
 # Thingery Institutions Configuration
-# Only government institutions, established banks (>50 years), and prestigious universities/labs
+# Only government institutions, established banks (>100 years), and prestigious universities/labs
+# Filter: Founded <= 1926
 # Last Updated: 2026-03-08
 Institutions:
   BANKS:
@@ -20,15 +21,6 @@ Institutions:
       website: https://www.bankofengland.co.uk
       focus_areas: ["Monetary Policy", "Financial Stability", "Currency"]
       notable_research: ["Macroeconomics", "Financial Markets", "Central Banking"]
-    european_central_bank:
-      name: European Central Bank
-      location: Frankfurt, Germany
-      founded: 1998
-      type: central_bank
-      website: https://www.ecb.europa.eu
-      focus_areas: ["Euro Monetary Policy", "Price Stability", "Banking Union"]
-      notable_research: ["Inflation Targeting", "Financial Integration", "Digital Euro"]
-      # Note: Only 28 years old - filtered out of established
     bank_of_japan:
       name: Bank of Japan
       location: Tokyo, Japan
@@ -37,22 +29,6 @@ Institutions:
       website: https://www.boj.or.jp
       focus_areas: ["Monetary Policy", "Financial System", "Currency"]
       notable_research: ["Macro Economics", "Price Stability", "Quantitative Easing"]
-    bundesbank:
-      name: Deutsche Bundesbank
-      location: Frankfurt, Germany
-      founded: 1957
-      type: central_bank
-      website: https://www.bundesbank.de
-      focus_areas: ["Monetary Policy", "Banking Supervision", "Cash Operations"]
-      notable_research: ["Euro System", "Financial Stability", "Payment Systems"]
-    bank_of_canada:
-      name: Bank of Canada
-      location: Ottawa, Canada
-      founded: 1935
-      type: central_bank
-      website: https://www.bankofcanada.ca
-      focus_areas: ["Monetary Policy", "Financial System", "Currency"]
-      notable_research: ["Inflation Targeting", "Digital Currency", "Financial Stability"]
     swiss_national_bank:
       name: Swiss National Bank
       location: Zurich, Switzerland
@@ -77,71 +53,6 @@ Institutions:
       website: https://www.nist.gov
       focus_areas: ["Measurement Standards", "Technology", "Standards"]
       notable_research: ["Atomic Clocks", "Quantum Measurement", "Cybersecurity"]
-    los_alamos:
-      name: Los Alamos National Laboratory
-      location: Los Alamos, USA
-      founded: 1943
-      website: https://www.lanl.gov
-      focus_areas: ["Nuclear Physics", "Computational Science", "Energy"]
-      notable_research: ["Manhattan Project", "Supercomputing", "Cybersecurity"]
-    oak_ridge:
-      name: Oak Ridge National Laboratory
-      location: Oak Ridge, USA
-      founded: 1943
-      website: https://www.ornl.gov
-      focus_areas: ["Energy", "Computational Science", "Materials"]
-      notable_research: ["Supercomputing", "Nuclear Energy", "Neutron Science"]
-    argonne:
-      name: Argonne National Laboratory
-      location: Lemont, USA
-      founded: 1946
-      website: https://www.anl.gov
-      focus_areas: ["Energy", "Materials Science", "Computing"]
-      notable_research: ["Particle Physics", "Advanced Batteries", "AI"]
-    jpl:
-      name: Jet Propulsion Laboratory
-      location: Pasadena, USA
-      founded: 1936
-      website: https://www.jpl.nasa.gov
-      focus_areas: ["Space Exploration", "Robotics", "Earth Observation"]
-      notable_research: ["Mars Rovers", "Voyager", "James Webb Telescope"]
-    noaa:
-      name: National Oceanic and Atmospheric Administration
-      location: Silver Spring, USA
-      founded: 1970
-      website: https://www.noaa.gov
-      focus_areas: ["Weather", "Climate", "Oceanography", "Fisheries"]
-      notable_research: ["Climate Models", "Hurricane Tracking", "Satellite Imaging"]
-    nasa:
-      name: National Aeronautics and Space Administration
-      location: Washington D.C., USA
-      founded: 1958
-      website: https://www.nasa.gov
-      focus_areas: ["Space Exploration", "Aeronautics", "Earth Science"]
-      notable_research: ["Apollo", "Space Shuttle", "James Webb", "Mars Program"]
-    cern:
-      name: European Organization for Nuclear Research
-      location: Geneva, Switzerland
-      founded: 1954
-      website: https://home.cern
-      focus_areas: ["Particle Physics", "Accelerator Science"]
-      notable_research: ["Higgs Boson", "Large Hadron Collider", "Antimatter"]
-
-  INTERNATIONAL:
-    imf:
-      name: International Monetary Fund
-      location: Washington D.C., USA
-      founded: 1944
-      website: https://www.imf.org
-      focus_areas: ["Global Finance", "Economic Surveillance", "Technical Assistance"]
-      notable_research: ["Balance of Payments", "Exchange Rates", "Poverty Reduction"]
-    world_bank:
-      name: World Bank Group
-      location: Washington D.C., USA
-      founded: 1944
-      website: https://www.worldbank.org
-      focus_areas: ["Development", "Poverty Reduction", "Infrastructure"]
-      notable_research: ["Sustainable Development", "Climate Finance", "Health"]
 
   UNIVERSITIES:
     harvard:
@@ -230,17 +141,3 @@ Institutions:
       website: https://www.ge.com
       focus_areas: ["Aviation", "Healthcare", "Energy", "Transportation"]
       notable_research: ["Jet Engines", "MRI", "Power Generation"]
-    intel:
-      name: Intel
-      location: Santa Clara, USA
-      founded: 1968
-      website: https://www.intel.com
-      focus_areas: ["Semiconductors", "Computing", "AI"]
-      notable_research: ["Moore's Law", "Processor Architecture", "5G"]
-    microsoft:
-      name: Microsoft
-      location: Redmond, USA
-      founded: 1975
-      website: https://www.microsoft.com
-      focus_areas: ["Software", "Cloud Computing", "AI", "Gaming"]
-      notable_research: ["Azure AI", "Quantum Computing", "Mixed Reality"]

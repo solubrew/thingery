@@ -6,7 +6,7 @@
 	name: Thingery Institutions
 	description: >
 		Curated institutions database - only government institutions, 
-		established banks, and prestigious universities/labs (>50 years old)
+		established banks, and prestigious universities/labs (founded <= 1926)
 	version: 0.0.1.0.0.0
 	authority: filesystem
 	security: seclvl2
@@ -78,8 +78,8 @@ def get_institutions_by_type(institution_type: str) -> List[Institution]:
     return [i for i in all_inst if i.institution_type == institution_type]
 
 
-def get_institutions_by_founded(min_year: int = 1975) -> List[Institution]:
-    """Get institutions founded before a given year (default: >50 years old = before 1976)."""
+def get_institutions_by_founded(min_year: int = 1926) -> List[Institution]:
+    """Get institutions founded before a given year (default: >100 years old = before 1926)."""
     all_inst = load_institutions()
     return [i for i in all_inst if i.founded and i.founded <= min_year]
 
@@ -107,7 +107,7 @@ universities = get_institutions_by_type(InstitutionType.UNIVERSITY.value)
 international_orgs = get_institutions_by_type(InstitutionType.INTERNATIONAL.value)
 corporations = get_institutions_by_type(InstitutionType.COMPANY.value)
 
-# Filtered: >50 years old (founded <= 1976)
+# Filtered: founded <= 1926 (founded <= 1926)
 established = get_institutions_by_founded(1976)
 
 
