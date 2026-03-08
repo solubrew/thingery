@@ -1,0 +1,113 @@
+---
+# Thingery Institutions Archive
+# Institutions founded after 1926 (younger than 100 years)
+# Archived: 2026-03-08
+Institutions:
+  BANKS:
+    european_central_bank:
+      name: European Central Bank
+      location: Frankfurt, Germany
+      founded: 1998
+      type: central_bank
+      website: https://www.ecb.europa.eu
+      focus_areas: ["Monetary Policy", "Price Stability", "Financial Stability"]
+      notable_research: ["Euro Area Economics", "Inflation Targeting", "Digital Euro"]
+    bundesbank:
+      name: Deutsche Bundesbank
+      location: Frankfurt, Germany
+      founded: 1957
+      type: central_bank
+      website: https://www.bundesbank.de
+      focus_areas: ["Monetary Policy", "Payment Systems", "Financial Stability"]
+      notable_research: ["Monetary Economics", "Risk Management", "Gold Reserves"]
+    bank_of_canada:
+      name: Bank of Canada
+      location: Ottawa, Canada
+      founded: 1935
+      type: central_bank
+      website: https://www.bankofcanada.ca
+      focus_areas: ["Monetary Policy", "Financial System", "Currency"]
+      notable_research: ["Inflation Targeting", "Financial Stability", "Digital Currency"]
+
+  GOVERNMENT_LABS:
+    los_alamos_national_lab:
+      name: Los Alamos National Laboratory
+      location: Los Alamos, USA
+      founded: 1943
+      website: https://www.lanl.gov
+      focus_areas: ["Nuclear Physics", "Computing", "National Security"]
+      notable_research: ["Manhattan Project", "Supercomputing", "Cyber Security"]
+    oak_ridge_national_lab:
+      name: Oak Ridge National Laboratory
+      location: Oak Ridge, USA
+      founded: 1943
+      website: https://www.ornl.gov
+      focus_areas: ["Energy", "Computing", "Materials Science"]
+      notable_research: ["Nuclear Research", "Supercomputing", "Clean Energy"]
+    argonne_national_lab:
+      name: Argonne National Laboratory
+      location: Lemont, USA
+      founded: 1946
+      website: https://www.anl.gov
+      focus_areas: ["Energy", "Computing", "Environmental Science"]
+      notable_research: ["Battery Technology", "Advanced Photon Source", "AI"]
+    lawrence_livermore_national_lab:
+      name: Lawrence Livermore National Laboratory
+      location: Livermore, USA
+      founded: 1952
+      website: https://www.llnl.gov
+      focus_areas: ["National Security", "Energy", "Bioscience"]
+      notable_research: ["Nuclear Weapons", "Laser Fusion", "Computational Science"]
+    nasa:
+      name: National Aeronautics and Space Administration
+      location: Washington D.C., USA
+      founded: 1958
+      website: https://www.nasa.gov
+      focus_areas: ["Space Exploration", "Aeronautics", "Science"]
+      notable_research: ["Moon Landing", "Mars Rovers", "James Webb Telescope"]
+    noaa:
+      name: National Oceanic and Atmospheric Administration
+      location: Silver Spring, USA
+      founded: 1970
+      website: https://www.noaa.gov
+      focus_areas: ["Weather", "Oceanography", "Climate"]
+      notable_research: ["Weather Forecasting", "Climate Monitoring", "Ocean Exploration"]
+    jpl:
+      name: Jet Propulsion Laboratory
+      location: Pasadena, USA
+      founded: 1936
+      website: https://www.jpl.nasa.gov
+      focus_areas: ["Space Exploration", "Robotics", "Planetary Science"]
+      notable_research: ["Mars Rovers", "Voyager", "Cassini", "Deep Space Network"]
+
+  INTERNATIONAL:
+    imf:
+      name: International Monetary Fund
+      location: Washington D.C., USA
+      founded: 1944
+      website: https://www.imf.org
+      focus_areas: ["Global Finance", "Economic Stability", "Poverty Reduction"]
+      notable_research: ["Global Economics", "Exchange Rates", "Debt Sustainability"]
+    world_bank:
+      name: World Bank Group
+      location: Washington D.C., USA
+      founded: 1944
+      website: https://www.worldbank.org
+      focus_areas: ["Development", "Poverty Reduction", "Infrastructure"]
+      notable_research: ["Development Economics", "Climate Change", "Health"]
+
+  CORPORATIONS:
+    intel:
+      name: Intel Corporation
+      location: Santa Clara, USA
+      founded: 1968
+      website: https://www.intel.com
+      focus_areas: ["Semiconductors", "Computing", "AI"]
+      notable_research: ["Microprocessors", "Moore's Law", "Chip Architecture"]
+    microsoft:
+      name: Microsoft Corporation
+      location: Redmond, USA
+      founded: 1975
+      website: https://www.microsoft.com
+      focus_areas: ["Software", "Cloud Computing", "AI"]
+      notable_research: ["Windows", "Azure", "OpenAI Partnership"]

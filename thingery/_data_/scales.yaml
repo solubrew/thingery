@@ -1,1 +1,809 @@
+# Thingery Scales Dataset
+# Complete measurement scales - temperature, pressure, length, mass, electrical, radiation, etc.
 ---
+scales:
+  # =========================== TEMPERATURE SCALES ===========================
+  temperature:
+    - name: "Kelvin"
+      symbol: "K"
+      category: "temperature"
+      absolute_zero: 0.0
+      conversion_to_celsius: -273.15
+      conversion_to_fahrenheit: -459.67
+      conversion_to_rankine: 0.0
+      description: "SI base unit of thermodynamic temperature"
+
+    - name: "Celsius"
+      symbol: "°C"
+      category: "temperature"
+      absolute_zero: -273.15
+      conversion_to_kelvin: 273.15
+      conversion_to_fahrenheit: 32.0
+      conversion_to_rankine: 491.67
+      description: "Metric temperature scale based on water freezing/boiling"
+
+    - name: "Fahrenheit"
+      symbol: "°F"
+      category: "temperature"
+      absolute_zero: -459.67
+      conversion_to_kelvin: 255.37
+      conversion_to_celsius: -17.78
+      conversion_to_rankine: 0.0
+      description: "US customary temperature scale"
+
+    - name: "Rankine"
+      symbol: "°R"
+      category: "temperature"
+      absolute_zero: 0.0
+      conversion_to_kelvin: 0.555556
+      conversion_to_celsius: -273.15
+      conversion_to_fahrenheit: -459.67
+      description: "Absolute temperature scale using Fahrenheit intervals"
+
+    - name: "Delisle"
+      symbol: "°De"
+      category: "temperature"
+      absolute_zero: 559.725
+      conversion_to_celsius: -273.15
+      description: "Historical French temperature scale"
+
+    - name: "Réaumur"
+      symbol: "°Ré"
+      category: "temperature"
+      absolute_zero: -218.52
+      conversion_to_celsius: -273.15
+      description: "Historical temperature scale with 80° between freezing/boiling"
+
+  # =========================== PRESSURE SCALES ===========================
+  pressure:
+    - name: "Pascal"
+      symbol: "Pa"
+      category: "pressure"
+      base_unit: "Pa"
+      conversion_to_pascal: 1.0
+      conversion_to_atmosphere: 9.8692e-6
+      conversion_to_bar: 1.0e-5
+      conversion_to_psi: 0.000145
+      description: "SI unit of pressure (N/m²)"
+
+    - name: "Atmosphere"
+      symbol: "atm"
+      category: "pressure"
+      base_unit: "Pa"
+      conversion_to_pascal: 101325.0
+      conversion_to_bar: 1.01325
+      conversion_to_psi: 14.696
+      conversion_to_torr: 760.0
+      description: "Standard atmospheric pressure"
+
+    - name: "Bar"
+      symbol: "bar"
+      category: "pressure"
+      base_unit: "Pa"
+      conversion_to_pascal: 100000.0
+      conversion_to_atmosphere: 0.986923
+      conversion_to_psi: 14.5038
+      conversion_to_torr: 750.062
+      description: "Meteorological and industrial pressure unit"
+
+    - name: "Pounds per Square Inch"
+      symbol: "psi"
+      category: "pressure"
+      base_unit: "Pa"
+      conversion_to_pascal: 6894.76
+      conversion_to_atmosphere: 0.068046
+      conversion_to_bar: 0.0689476
+      conversion_to_torr: 51.7149
+      description: "US customary pressure unit"
+
+    - name: "Torr"
+      symbol: "Torr"
+      category: "pressure"
+      base_unit: "Pa"
+      conversion_to_pascal: 133.322
+      conversion_to_atmosphere: 0.00131579
+      conversion_to_bar: 0.00133322
+      conversion_to_psi: 0.0193368
+      description: "Vacuum pressure unit named after Torricelli"
+
+    - name: "Millimeter of Mercury"
+      symbol: "mmHg"
+      category: "pressure"
+      base_unit: "Pa"
+      conversion_to_pascal: 133.322
+      conversion_to_atmosphere: 0.00131579
+      description: "Blood pressure and vacuum measurement"
+
+  # =========================== LENGTH SCALES ===========================
+  length:
+    - name: "Meter"
+      symbol: "m"
+      category: "length"
+      base_unit: "m"
+      conversion_to_kilometer: 0.001
+      conversion_to_centimeter: 100.0
+      conversion_to_millimeter: 1000.0
+      conversion_to_mile: 0.000621371
+      conversion_to_foot: 3.28084
+      conversion_to_inch: 39.3701
+      description: "SI base unit of length"
+
+    - name: "Kilometer"
+      symbol: "km"
+      category: "length"
+      base_unit: "m"
+      conversion_to_meter: 1000.0
+      conversion_to_centimeter: 100000.0
+      conversion_to_mile: 0.621371
+      conversion_to_foot: 3280.84
+      description: "1000 meters"
+
+    - name: "Centimeter"
+      symbol: "cm"
+      category: "length"
+      base_unit: "m"
+      conversion_to_meter: 0.01
+      conversion_to_millimeter: 10.0
+      conversion_to_inch: 0.393701
+      description: "1/100 meter"
+
+    - name: "Millimeter"
+      symbol: "mm"
+      category: "length"
+      base_unit: "m"
+      conversion_to_meter: 0.001
+      conversion_to_centimeter: 0.1
+      conversion_to_inch: 0.0393701
+      description: "1/1000 meter"
+
+    - name: "Micrometer"
+      symbol: "μm"
+      category: "length"
+      base_unit: "m"
+      conversion_to_meter: 1.0e-6
+      conversion_to_nanometer: 1000.0
+      description: "Micron - used for microscopy"
+
+    - name: "Nanometer"
+      symbol: "nm"
+      category: "length"
+      base_unit: "m"
+      conversion_to_meter: 1.0e-9
+      conversion_to_angstrom: 10.0
+      description: "Atomic and molecular scale"
+
+    - name: "Angstrom"
+      symbol: "Å"
+      category: "length"
+      base_unit: "m"
+      conversion_to_meter: 1.0e-10
+      conversion_to_nanometer: 0.1
+      description: "Atomic scale unit"
+
+    - name: "Mile"
+      symbol: "mi"
+      category: "length"
+      base_unit: "m"
+      conversion_to_meter: 1609.34
+      conversion_to_kilometer: 1.60934
+      conversion_to_foot: 5280.0
+      conversion_to_yard: 1760.0
+      description: "US customary length unit"
+
+    - name: "Yard"
+      symbol: "yd"
+      category: "length"
+      base_unit: "m"
+      conversion_to_meter: 0.9144
+      conversion_to_foot: 3.0
+      conversion_to_inch: 36.0
+      description: "US customary length unit"
+
+    - name: "Foot"
+      symbol: "ft"
+      category: "length"
+      base_unit: "m"
+      conversion_to_meter: 0.3048
+      conversion_to_inch: 12.0
+      conversion_to_centimeter: 30.48
+      conversion_to_yard: 0.333333
+      description: "US customary length unit"
+
+    - name: "Inch"
+      symbol: "in"
+      category: "length"
+      base_unit: "m"
+      conversion_to_meter: 0.0254
+      conversion_to_centimeter: 2.54
+      conversion_to_millimeter: 25.4
+      description: "US customary length unit"
+
+    - name: "Light Year"
+      symbol: "ly"
+      category: "length"
+      base_unit: "m"
+      conversion_to_meter: 9.4607e15
+      conversion_to_au: 63241.1
+      description: "Distance light travels in one year"
+
+    - name: "Astronomical Unit"
+      symbol: "AU"
+      category: "length"
+      base_unit: "m"
+      conversion_to_meter: 1.496e11
+      conversion_to_light_year: 0.000015813
+      description: "Mean Earth-Sun distance"
+
+    - name: "Parsec"
+      symbol: "pc"
+      category: "length"
+      base_unit: "m"
+      conversion_to_meter: 3.086e16
+      conversion_to_au: 206264.8
+      conversion_to_light_year: 3.26156
+      description: "Astronomical distance unit"
+
+  # =========================== MASS SCALES ===========================
+  mass:
+    - name: "Kilogram"
+      symbol: "kg"
+      category: "mass"
+      base_unit: "kg"
+      conversion_to_gram: 1000.0
+      conversion_to_milligram: 1.0e6
+      conversion_to_pound: 2.20462
+      conversion_to_ounce: 35.274
+      conversion_to_ton: 0.00110231
+      description: "SI base unit of mass"
+
+    - name: "Gram"
+      symbol: "g"
+      category: "mass"
+      base_unit: "kg"
+      conversion_to_kilogram: 0.001
+      conversion_to_milligram: 1000.0
+      conversion_to_ounce: 0.035274
+      conversion_to_grain: 15.4324
+      description: "1/1000 kilogram"
+
+    - name: "Milligram"
+      symbol: "mg"
+      category: "mass"
+      base_unit: "kg"
+      conversion_to_kilogram: 1.0e-6
+      conversion_to_gram: 0.001
+      conversion_to_microgram: 1000.0
+      description: "1/1000 gram"
+
+    - name: "Microgram"
+      symbol: "μg"
+      category: "mass"
+      base_unit: "kg"
+      conversion_to_kilogram: 1.0e-9
+      conversion_to_milligram: 0.001
+      description: "1/1000 milligram"
+
+    - name: "Metric Ton"
+      symbol: "t"
+      category: "mass"
+      base_unit: "kg"
+      conversion_to_kilogram: 1000.0
+      conversion_to_pound: 2204.62
+      conversion_to_us_ton: 1.10231
+      description: "1000 kilograms"
+
+    - name: "Pound"
+      symbol: "lb"
+      category: "mass"
+      base_unit: "kg"
+      conversion_to_kilogram: 0.453592
+      conversion_to_gram: 453.592
+      conversion_to_ounce: 16.0
+      description: "US customary mass unit"
+
+    - name: "Ounce"
+      symbol: "oz"
+      category: "mass"
+      base_unit: "kg"
+      conversion_to_kilogram: 0.0283495
+      conversion_to_gram: 28.3495
+      conversion_to_pound: 0.0625
+      description: "US customary mass unit"
+
+    - name: "Stone"
+      symbol: "st"
+      category: "mass"
+      base_unit: "kg"
+      conversion_to_kilogram: 6.35029
+      conversion_to_pound: 14.0
+      description: "British mass unit"
+
+    - name: "Atomic Mass Unit"
+      symbol: "u"
+      category: "mass"
+      base_unit: "kg"
+      conversion_to_kilogram: 1.66053906660e-27
+      description: "1/12 mass of carbon-12"
+
+  # =========================== ELECTRICAL SCALES ===========================
+  electrical:
+    - name: "Ampere"
+      symbol: "A"
+      category: "electrical"
+      base_unit: "A"
+      conversion_to_milliampere: 1000.0
+      conversion_to_microampere: 1.0e6
+      description: "SI base unit of electric current"
+
+    - name: "Volt"
+      symbol: "V"
+      category: "electrical"
+      base_unit: "V"
+      conversion_to_millivolt: 1000.0
+      conversion_to_microvolt: 1.0e6
+      conversion_to_kilovolt: 0.001
+      description: "SI unit of electric potential"
+
+    - name: "Ohm"
+      symbol: "Ω"
+      category: "electrical"
+      base_unit: "Ω"
+      conversion_to_milliohm: 1000.0
+      conversion_to_kilohm: 0.001
+      conversion_to_megohm: 1.0e-6
+      description: "SI unit of electrical resistance"
+
+    - name: "Watt"
+      symbol: "W"
+      category: "electrical"
+      base_unit: "W"
+      conversion_to_milliwatt: 1000.0
+      conversion_to_kilowatt: 0.001
+      conversion_to_megawatt: 1.0e-6
+      description: "SI unit of power"
+
+    - name: "Coulomb"
+      symbol: "C"
+      category: "electrical"
+      base_unit: "C"
+      conversion_to_millicoulomb: 1000.0
+      conversion_to_microcoulomb: 1.0e6
+      description: "SI unit of electric charge"
+
+    - name: "Farad"
+      symbol: "F"
+      category: "electrical"
+      base_unit: "F"
+      conversion_to_microfarad: 1.0e6
+      conversion_to_nanofarad: 1.0e9
+      conversion_to_picofarad: 1.0e12
+      description: "SI unit of capacitance"
+
+    - name: "Henry"
+      symbol: "H"
+      category: "electrical"
+      base_unit: "H"
+      conversion_to_millihenry: 1000.0
+      conversion_to_microhenry: 1.0e6
+      description: "SI unit of inductance"
+
+    - name: "Siemens"
+      symbol: "S"
+      category: "electrical"
+      base_unit: "S"
+      conversion_to_millisiemens: 1000.0
+      conversion_to_microsiemens: 1.0e6
+      description: "SI unit of electrical conductance"
+
+    - name: "Tesla"
+      symbol: "T"
+      category: "electrical"
+      base_unit: "T"
+      conversion_to_gauss: 10000.0
+      conversion_to_millitesla: 1000.0
+      description: "SI unit of magnetic flux density"
+
+    - name: "Weber"
+      symbol: "Wb"
+      category: "electrical"
+      base_unit: "Wb"
+      conversion_to_maxwell: 1.0e8
+      description: "SI unit of magnetic flux"
+
+  # =========================== RADIATION SCALES ===========================
+  radiation:
+    - name: "Becquerel"
+      symbol: "Bq"
+      category: "radiation"
+      base_unit: "Bq"
+      conversion_to_kilobecquerel: 0.001
+      conversion_to_megabecquerel: 1.0e-6
+      conversion_to_curie: 2.7027e-11
+      description: "SI unit of radioactivity (decays/second)"
+
+    - name: "Gray"
+      symbol: "Gy"
+      category: "radiation"
+      base_unit: "Gy"
+      conversion_to_milligray: 1000.0
+      conversion_to_radiation_absorbed_dose: 100.0
+      description: "SI unit of absorbed radiation dose"
+
+    - name: "Sievert"
+      symbol: "Sv"
+      category: "radiation"
+      base_unit: "Sv"
+      conversion_to_millisievert: 1000.0
+      conversion_to_microsievert: 1.0e6
+      conversion_to_rem: 100.0
+      description: "SI unit of radiation dose equivalent"
+
+    - name: "Curie"
+      symbol: "Ci"
+      category: "radiation"
+      base_unit: "Bq"
+      conversion_to_becquerel: 3.7e10
+      conversion_to_millicurie: 1000.0
+      description: "Historical radioactivity unit"
+
+    - name: "Roentgen"
+      symbol: "R"
+      category: "radiation"
+      base_unit: "C/kg"
+      conversion_to_coulomb_per_kg: 0.000258
+      description: "Historical radiation exposure unit"
+
+  # =========================== TIME SCALES ===========================
+  time:
+    - name: "Second"
+      symbol: "s"
+      category: "time"
+      base_unit: "s"
+      conversion_to_millisecond: 1000.0
+      conversion_to_microsecond: 1.0e6
+      conversion_to_minute: 0.0166667
+      conversion_to_hour: 0.000277778
+      conversion_to_day: 1.1574e-5
+      description: "SI base unit of time"
+
+    - name: "Minute"
+      symbol: "min"
+      category: "time"
+      base_unit: "s"
+      conversion_to_second: 60.0
+      conversion_to_hour: 0.0166667
+      conversion_to_day: 0.000694444
+      description: "60 seconds"
+
+    - name: "Hour"
+      symbol: "h"
+      category: "time"
+      base_unit: "s"
+      conversion_to_second: 3600.0
+      conversion_to_minute: 60.0
+      conversion_to_day: 0.0416667
+      description: "60 minutes"
+
+    - name: "Day"
+      symbol: "d"
+      category: "time"
+      base_unit: "s"
+      conversion_to_second: 86400.0
+      conversion_to_hour: 24.0
+      conversion_to_week: 0.142857
+      conversion_to_year: 0.00273973
+      description: "24 hours"
+
+    - name: "Week"
+      symbol: "wk"
+      category: "time"
+      base_unit: "s"
+      conversion_to_day: 7.0
+      conversion_to_hour: 168.0
+      description: "7 days"
+
+    - name: "Year"
+      symbol: "yr"
+      category: "time"
+      base_unit: "s"
+      conversion_to_day: 365.25
+      conversion_to_hour: 8766.0
+      description: "365.25 days (Julian year)"
+
+    - name: "Millisecond"
+      symbol: "ms"
+      category: "time"
+      base_unit: "s"
+      conversion_to_second: 0.001
+      conversion_to_microsecond: 1000.0
+      description: "1/1000 second"
+
+    - name: "Microsecond"
+      symbol: "μs"
+      category: "time"
+      base_unit: "s"
+      conversion_to_second: 1.0e-6
+      conversion_to_nanosecond: 1000.0
+      description: "1/1000000 second"
+
+    - name: "Nanosecond"
+      symbol: "ns"
+      category: "time"
+      base_unit: "s"
+      conversion_to_second: 1.0e-9
+      conversion_to_picosecond: 1000.0
+      description: "1/1000000000 second"
+
+  # =========================== ENERGY SCALES ===========================
+  energy:
+    - name: "Joule"
+      symbol: "J"
+      category: "energy"
+      base_unit: "J"
+      conversion_to_kilojoule: 0.001
+      conversion_to_calorie: 0.239006
+      conversion_to_kilocalorie: 0.000239006
+      conversion_to_electronvolt: 6.242e18
+      conversion_to_watt_hour: 2.7778e-7
+      description: "SI unit of energy"
+
+    - name: "Electron Volt"
+      symbol: "eV"
+      category: "energy"
+      base_unit: "J"
+      conversion_to_joule: 1.6022e-19
+      conversion_to_kiloelectronvolt: 0.001
+      conversion_to_megaelectronvolt: 1.0e-6
+      description: "Energy of electron accelerating through 1V"
+
+    - name: "Calorie"
+      symbol: "cal"
+      category: "energy"
+      base_unit: "J"
+      conversion_to_joule: 4.184
+      conversion_to_kilocalorie: 0.001
+      description: "Heat energy unit"
+
+    - name: "Kilocalorie"
+      symbol: "kcal"
+      category: "energy"
+      base_unit: "J"
+      conversion_to_joule: 4184.0
+      conversion_to_calorie: 1000.0
+      description: "Food calorie (big Calorie)"
+
+    - name: "British Thermal Unit"
+      symbol: "BTU"
+      category: "energy"
+      base_unit: "J"
+      conversion_to_joule: 1055.06
+      conversion_to_kilowatt_hour: 0.000293071
+      description: "US energy unit"
+
+    - name: "Watt Hour"
+      symbol: "Wh"
+      category: "energy"
+      base_unit: "J"
+      conversion_to_joule: 3600.0
+      conversion_to_kilowatt_hour: 0.001
+      description: "Electrical energy unit"
+
+    - name: "Kilowatt Hour"
+      symbol: "kWh"
+      category: "energy"
+      base_unit: "J"
+      conversion_to_joule: 3.6e6
+      conversion_to_watt_hour: 1000.0
+      description: "Common electricity billing unit"
+
+    - name: "Erg"
+      symbol: "erg"
+      category: "energy"
+      base_unit: "J"
+      conversion_to_joule: 1.0e-7
+      description: "CGS unit of energy"
+
+  # =========================== FREQUENCY SCALES ===========================
+  frequency:
+    - name: "Hertz"
+      symbol: "Hz"
+      category: "frequency"
+      base_unit: "Hz"
+      conversion_to_kilohertz: 0.001
+      conversion_to_megahertz: 1.0e-6
+      conversion_to_gigahertz: 1.0e-9
+      description: "SI unit of frequency (cycles/second)"
+
+    - name: "Kilohertz"
+      symbol: "kHz"
+      category: "frequency"
+      base_unit: "Hz"
+      conversion_to_hertz: 1000.0
+      conversion_to_megahertz: 0.001
+      description: "1000 Hz"
+
+    - name: "Megahertz"
+      symbol: "MHz"
+      category: "frequency"
+      base_unit: "Hz"
+      conversion_to_hertz: 1.0e6
+      conversion_to_gigahertz: 0.001
+      description: "1 million Hz"
+
+    - name: "Gigahertz"
+      symbol: "GHz"
+      category: "frequency"
+      base_unit: "Hz"
+      conversion_to_hertz: 1.0e9
+      conversion_to_megahertz: 1000.0
+      description: "1 billion Hz"
+
+    - name: "RPM"
+      symbol: "rpm"
+      category: "frequency"
+      base_unit: "Hz"
+      conversion_to_hertz: 0.0166667
+      conversion_to_rad_per_sec: 0.10472
+      description: "Rotations per minute"
+
+  # =========================== DATA STORAGE SCALES ===========================
+  data:
+    - name: "Byte"
+      symbol: "B"
+      category: "data"
+      base_unit: "B"
+      conversion_to_bit: 8.0
+      conversion_to_kilobyte: 0.001
+      conversion_to_megabyte: 1.0e-6
+      description: "8 bits"
+
+    - name: "Kilobyte"
+      symbol: "KB"
+      category: "data"
+      base_unit: "B"
+      conversion_to_byte: 1024.0
+      conversion_to_megabyte: 0.0009765625
+      conversion_to_gigabyte: 9.5367e-7
+      description: "1024 bytes (binary)"
+
+    - name: "Megabyte"
+      symbol: "MB"
+      category: "data"
+      base_unit: "B"
+      conversion_to_byte: 1.048576e6
+      conversion_to_kilobyte: 1024.0
+      conversion_to_gigabyte: 0.0009765625
+      description: "1024² bytes"
+
+    - name: "Gigabyte"
+      symbol: "GB"
+      category: "data"
+      base_unit: "B"
+      conversion_to_byte: 1.073741824e9
+      conversion_to_megabyte: 1024.0
+      conversion_to_terabyte: 0.0009765625
+      description: "1024³ bytes"
+
+    - name: "Terabyte"
+      symbol: "TB"
+      category: "data"
+      base_unit: "B"
+      conversion_to_byte: 1.099511628e12
+      conversion_to_gigabyte: 1024.0
+      conversion_to_petabyte: 0.0009765625
+      description: "1024⁴ bytes"
+
+  # =========================== ANGLE SCALES ===========================
+  angle:
+    - name: "Degree"
+      symbol: "°"
+      category: "angle"
+      base_unit: "rad"
+      conversion_to_radian: 0.0174533
+      conversion_to_gradian: 1.11111
+      conversion_to_minute: 60.0
+      conversion_to_second: 3600.0
+      description: "1/360 of a circle"
+
+    - name: "Radian"
+      symbol: "rad"
+      category: "angle"
+      base_unit: "rad"
+      conversion_to_degree: 57.2958
+      conversion_to_gradian: 63.66198
+      conversion_to_minute: 3437.75
+      description: "Angle with arc equal to radius"
+
+    - name: "Gradian"
+      symbol: "grad"
+      category: "angle"
+      base_unit: "rad"
+      conversion_to_degree: 0.9
+      conversion_to_radian: 0.015708
+      description: "1/400 of a circle"
+
+    - name: "Minute of Arc"
+      symbol: "'"
+      category: "angle"
+      base_unit: "rad"
+      conversion_to_degree: 0.0166667
+      conversion_to_second: 60.0
+      description: "1/60 degree"
+
+    - name: "Second of Arc"
+      symbol: '"'
+      category: "angle"
+      base_unit: "rad"
+      conversion_to_degree: 0.000277778
+      conversion_to_minute: 0.0166667
+      description: "1/60 minute of arc"
+
+  # =========================== FORCE SCALES ===========================
+  force:
+    - name: "Newton"
+      symbol: "N"
+      category: "force"
+      base_unit: "N"
+      conversion_to_dyne: 100000.0
+      conversion_to_pound_force: 0.224809
+      conversion_to_kilogram_force: 0.101972
+      description: "SI unit of force (kg·m/s²)"
+
+    - name: "Dyne"
+      symbol: "dyn"
+      category: "force"
+      base_unit: "N"
+      conversion_to_newton: 1.0e-5
+      description: "CGS unit of force"
+
+    - name: "Pound Force"
+      symbol: "lbf"
+      category: "force"
+      base_unit: "N"
+      conversion_to_newton: 4.44822
+      conversion_to_dyne: 444822.0
+      description: "US customary force unit"
+
+    - name: "Kilogram Force"
+      symbol: "kgf"
+      category: "force"
+      base_unit: "N"
+      conversion_to_newton: 9.80665
+      description: "Force of gravity on 1kg"
+
+  # =========================== POWER SCALES ===========================
+  power:
+    - name: "Watt"
+      symbol: "W"
+      category: "power"
+      base_unit: "W"
+      conversion_to_milliwatt: 1000.0
+      conversion_to_kilowatt: 0.001
+      conversion_to_megawatt: 1.0e-6
+      conversion_to_horsepower: 0.00134102
+      description: "SI unit of power (J/s)"
+
+    - name: "Kilowatt"
+      symbol: "kW"
+      category: "power"
+      base_unit: "W"
+      conversion_to_watt: 1000.0
+      conversion_to_megawatt: 0.001
+      conversion_to_horsepower: 1.34102
+      description: "1000 watts"
+
+    - name: "Horsepower"
+      symbol: "hp"
+      category: "power"
+      base_unit: "W"
+      conversion_to_watt: 745.7
+      conversion_to_kilowatt: 0.7457
+      description: "Mechanical power unit"
+
+    - name: "BTU per Hour"
+      symbol: "BTU/h"
+      category: "power"
+      base_unit: "W"
+      conversion_to_watt: 0.293071
+      conversion_to_kilowatt: 0.000293071
+      description: "Heat power unit"

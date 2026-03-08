@@ -1,399 +1,822 @@
+# Thingery Elements Dataset
+# Complete periodic table with atomic properties
 ---
 Hydrogen:
   atomic_number: 1
   mass: 1.00794
   symbol: H
   production: 97000000
+  category: nonmetal
+  state: gas
 Helium:
   atomic_number: 2
   mass: 4.002602
   symbol: He
   production: 6300
+  category: noble_gas
+  state: gas
 Lithium:
   atomic_number: 3
   mass: 6.941
   symbol: Li
-  production:
+  production: 52000
+  category: alkali_metal
+  state: solid
 Beryllium:
   atomic_number: 4
   mass: 9.012182
   symbol: Be
-  production:
+  production: 220
+  category: alkaline_earth_metal
+  state: solid
 Boron:
   atomic_number: 5
   mass: 10.811
   symbol: B
-  production:
+  production: 3700000
+  category: metalloid
+  state: solid
 Carbon:
   atomic_number: 6
   mass: 12.0107
   symbol: C
-  production:
+  production: 11000000
+  category: nonmetal
+  state: solid
 Nitrogen:
   atomic_number: 7
   mass: 14.0067
   symbol: N
-  production:
+  production: 140000000
+  category: nonmetal
+  state: gas
 Oxygen:
   atomic_number: 8
   mass: 15.9994
   symbol: O
-  production:
+  production: 1000000000
+  category: nonmetal
+  state: gas
 Fluorine:
   atomic_number: 9
   mass: 18.9984032
   symbol: F
-  production:
+  production: 100000
+  category: halogen
+  state: gas
 Neon:
   atomic_number: 10
   mass: 20.1797
   symbol: Ne
-  production:
+  production: 1200
+  category: noble_gas
+  state: gas
 Sodium:
   atomic_number: 11
   mass: 22.98976928
   symbol: Na
-  production:
+  production: 180000
+  category: alkali_metal
+  state: solid
 Magnesium:
   atomic_number: 12
   mass: 24.3050
   symbol: Mg
-  production:
+  production: 1000000
+  category: alkaline_earth_metal
+  state: solid
 Aluminum:
   atomic_number: 13
   mass: 26.9815386
   symbol: Al
-  production:
+  production: 60000000
+  category: post_transition_metal
+  state: solid
 Silicon:
   atomic_number: 14
   mass: 28.0855
   symbol: Si
-  production:
+  production: 8000000
+  category: metalloid
+  state: solid
 Phosphorus:
   atomic_number: 15
   mass: 30.973762
   symbol: P
-  production:
+  production: 90000000
+  category: nonmetal
+  state: solid
 Sulfur:
   atomic_number: 16
   mass: 32.065
   symbol: S
-  production:
+  production: 70000000
+  category: nonmetal
+  state: solid
 Chlorine:
   atomic_number: 17
   mass: 35.453
   symbol: Cl
-  production:
+  production: 12000000
+  category: halogen
+  state: gas
 Argon:
   atomic_number: 18
   mass: 39.948
   symbol: Ar
-  production:
+  production: 700000
+  category: noble_gas
+  state: gas
 Potassium:
   atomic_number: 19
   mass: 39.0983
   symbol: K
-  production:
+  production: 9000000
+  category: alkali_metal
+  state: solid
 Calcium:
   atomic_number: 20
   mass: 40.078
   symbol: Ca
-  production:
+  production: 80000000
+  category: alkaline_earth_metal
+  state: solid
 Scandium:
   atomic_number: 21
   mass: 44.955912
   symbol: Sc
-  production:
+  production: 1800
+  category: transition_metal
+  state: solid
 Titanium:
   atomic_number: 22
   mass: 47.867
   symbol: Ti
-  production:
+  production: 170000
+  category: transition_metal
+  state: solid
 Vanadium:
   atomic_number: 23
   mass: 50.9415
   symbol: V
-  production:
+  production: 7000
+  category: transition_metal
+  state: solid
 Chromium:
   atomic_number: 24
   mass: 51.9961
   symbol: Cr
-  production:
+  production: 8000000
+  category: transition_metal
+  state: solid
 Manganese:
   atomic_number: 25
   mass: 54.938045
   symbol: Mn
-  production:
+  production: 14000000
+  category: transition_metal
+  state: solid
 Iron:
   atomic_number: 26
   mass: 55.845
   symbol: Fe
-  production:
+  production: 1200000000
+  category: transition_metal
+  state: solid
 Cobalt:
   atomic_number: 27
   mass: 58.933203
   symbol: Co
-  production:
+  production: 110000
+  category: transition_metal
+  state: solid
 Nickel:
   atomic_number: 28
   mass: 58.6934
   symbol: Ni
-  production:
+  production: 2500000
+  category: transition_metal
+  state: solid
 Copper:
   atomic_number: 29
   mass: 63.546
   symbol: Cu
-  production:
+  production: 16000000
+  category: transition_metal
+  state: solid
 Zinc:
   atomic_number: 30
   mass: 65.38
   symbol: Zn
-  production:
+  production: 12000000
+  category: transition_metal
+  state: solid
 Gallium:
   atomic_number: 31
   mass: 69.723
   symbol: Ga
-  production:
+  production: 500
+  category: post_transition_metal
+  state: solid
 Germanium:
   atomic_number: 32
   mass: 72.64
   symbol: Ge
-  production:
+  production: 100
+  category: metalloid
+  state: solid
 Arsenic:
   atomic_number: 33
   mass: 74.92160
   symbol: As
-  production:
+  production: 24000
+  category: metalloid
+  state: solid
 Selenium:
   atomic_number: 34
   mass: 78.96
   symbol: Se
-  production:
+  production: 2100
+  category: nonmetal
+  state: solid
 Bromine:
   atomic_number: 35
   mass: 79.904
   symbol: Br
-  production:
+  production: 400000
+  category: halogen
+  state: liquid
 Krypton:
   atomic_number: 36
   mass: 83.798
   symbol: Kr
-  production:
+  production: 80
+  category: noble_gas
+  state: gas
 Rubidium:
   atomic_number: 37
   mass: 85.4678
   symbol: Rb
-  production:
+  production: 5
+  category: alkali_metal
+  state: solid
 Strontium:
   atomic_number: 38
   mass: 87.62
   symbol: Sr
-  production:
+  production: 150000
+  category: alkaline_earth_metal
+  state: solid
 Yttrium:
   atomic_number: 39
   mass: 88.90585
   symbol: Y
-  production:
+  production: 1100
+  category: transition_metal
+  state: solid
 Zirconium:
   atomic_number: 40
   mass: 91.224
   symbol: Zr
-  production:
+  production: 90000
+  category: transition_metal
+  state: solid
 Niobium:
   atomic_number: 41
   mass: 92.90638
   symbol: Nb
-  production:
+  production: 79000
+  category: transition_metal
+  state: solid
 Molybdenum:
   atomic_number: 42
   mass: 95.94
   symbol: Mo
-  production:
+  production: 250000
+  category: transition_metal
+  state: solid
 Technetium:
   atomic_number: 43
   mass: 98
   symbol: Tc
-  production:
+  production: 0
+  category: transition_metal
+  state: solid
 Ruthenium:
   atomic_number: 44
   mass: 101.07
   symbol: Ru
-  production:
+  production: 15
+  category: transition_metal
+  state: solid
 Rhodium:
   atomic_number: 45
   mass: 102.90550
   symbol: Rh
-  production:
+  production: 30
+  category: transition_metal
+  state: solid
 Palladium:
   atomic_number: 46
   mass: 106.42
   symbol: Pd
-  production:
+  production: 200000
+  category: transition_metal
+  state: solid
 Silver:
   atomic_number: 47
   mass: 107.8682
   symbol: Ag
-  production:
+  production: 27000
+  category: transition_metal
+  state: solid
 Cadmium:
   atomic_number: 48
   mass: 112.411
   symbol: Cd
-  production:
+  production: 23000
+  category: transition_metal
+  state: solid
 Indium:
   atomic_number: 49
   mass: 114.818
   symbol: In
-  production:
+  production: 700
+  category: post_transition_metal
+  state: solid
 Tin:
   atomic_number: 50
   mass: 118.7107
   symbol: Sn
-  production:
+  production: 280000
+  category: post_transition_metal
+  state: solid
 Antimony:
   atomic_number: 51
   mass: 121.760
   symbol: Sb
-  production:
+  production: 130000
+  category: metalloid
+  state: solid
 Tellurium:
   atomic_number: 52
   mass: 127.60
   symbol: Te
-  production:
+  production: 220
+  category: metalloid
+  state: solid
 Iodine:
   atomic_number: 53
   mass: 126.90447
   symbol: I
-  production:
+  production: 28000
+  category: halogen
+  state: solid
 Xenon:
   atomic_number: 54
   mass: 131.293
   symbol: Xe
-  production:
+  production: 50
+  category: noble_gas
+  state: gas
 Cesium:
   atomic_number: 55
   mass: 132.90545196
   symbol: Cs
-  production:
+  production: 1
+  category: alkali_metal
+  state: solid
 Barium:
   atomic_number: 56
   mass: 137.327
   symbol: Ba
-  production:
+  production: 60000
+  category: alkaline_earth_metal
+  state: solid
 Lanthanum:
   atomic_number: 57
   mass: 138.90547
   symbol: La
-  production:
+  production: 3500
+  category: lanthanide
+  state: solid
 Cerium:
   atomic_number: 58
   mass: 140.116
   symbol: Ce
-  production:
+  production: 25000
+  category: lanthanide
+  state: solid
 Praseodymium:
   atomic_number: 59
   mass: 140.90765
   symbol: Pr
-  production:
+  production: 1700
+  category: lanthanide
+  state: solid
 Neodymium:
   atomic_number: 60
   mass: 144.242
   symbol: Nd
-  production:
+  production: 16000
+  category: lanthanide
+  state: solid
 Samarium:
   atomic_number: 61
   mass: 145
   symbol: Sm
-  production:
+  production: 700
+  category: lanthanide
+  state: solid
 Europium:
   atomic_number: 62
   mass: 150.36
   symbol: Eu
-  production:
+  production: 100
+  category: lanthanide
+  state: solid
 Gadolinium:
   atomic_number: 63
   mass: 151.964
   symbol: Gd
-  production:
+  production: 1600
+  category: lanthanide
+  state: solid
 Terbium:
   atomic_number: 64
   mass: 157.25
   symbol: Tb
-  production:
+  production: 30
+  category: lanthanide
+  state: solid
 Dysprosium:
   atomic_number: 65
   mass: 158.92535
   symbol: Dy
-  production:
+  production: 2000
+  category: lanthanide
+  state: solid
 Holmium:
   atomic_number: 66
   mass: 162.500
   symbol: Ho
-  production:
+  production: 10
+  category: lanthanide
+  state: solid
 Erbium:
   atomic_number: 67
   mass: 164.93032
   symbol: Er
-  production:
+  production: 2000
+  category: lanthanide
+  state: solid
 Thulium:
   atomic_number: 68
   mass: 167.259
   symbol: Tm
-  production:
+  production: 10
+  category: lanthanide
+  state: solid
 Ytterbium:
   atomic_number: 69
   mass: 168.93421
   symbol: Yb
-  production:
+  production: 50
+  category: lanthanide
+  state: solid
 Lutetium:
+  atomic_number: 71
+  mass: 174.9668
+  symbol: Lu
+  production: 10
+  category: lanthanide
+  state: solid
+Hafnium:
   atomic_number: 72
   mass: 178.49
-  symbol: Ta
-  production:
-Tungsten:
+  symbol: Hf
+  production: 5000
+  category: transition_metal
+  state: solid
+Tantalum:
   atomic_number: 73
   mass: 180.94788
+  symbol: Ta
+  production: 8400
+  category: transition_metal
+  state: solid
+Tungsten:
+  atomic_number: 74
+  mass: 183.84
   symbol: W
-Tantalum:
+  production: 52000
+  category: transition_metal
+  state: solid
+Rhenium:
+  atomic_number: 75
+  mass: 186.207
+  symbol: Re
+  production: 7
+  category: transition_metal
+  state: solid
 Osmium:
+  atomic_number: 76
+  mass: 190.23
+  symbol: Os
+  production: 0.05
+  category: transition_metal
+  state: solid
 Iridium:
+  atomic_number: 77
+  mass: 192.217
+  symbol: Ir
+  production: 0.3
+  category: transition_metal
+  state: solid
 Platinum:
+  atomic_number: 78
+  mass: 195.084
+  symbol: Pt
+  production: 160
+  category: transition_metal
+  state: solid
 Gold:
+  atomic_number: 79
+  mass: 196.966569
+  symbol: Au
+  production: 2700
+  category: transition_metal
+  state: solid
 Mercury:
+  atomic_number: 80
+  mass: 200.59
+  symbol: Hg
+  production: 1500
+  category: transition_metal
+  state: liquid
 Thallium:
+  atomic_number: 81
+  mass: 204.3833
+  symbol: Tl
+  production: 10
+  category: post_transition_metal
+  state: solid
 Lead:
+  atomic_number: 82
+  mass: 207.2
+  symbol: Pb
+  production: 5000000
+  category: post_transition_metal
+  state: solid
 Bismuth:
+  atomic_number: 83
+  mass: 208.98040
+  symbol: Bi
+  production: 7500
+  category: post_transition_metal
+  state: solid
 Polonium:
+  atomic_number: 84
+  mass: 209
+  symbol: Po
+  production: 0
+  category: post_transition_metal
+  state: solid
 Astatine:
+  atomic_number: 85
+  mass: 210
+  symbol: At
+  production: 0
+  category: halogen
+  state: solid
 Radon:
+  atomic_number: 86
+  mass: 222
+  symbol: Rn
+  production: 0
+  category: noble_gas
+  state: gas
 Francium:
+  atomic_number: 87
+  mass: 223
+  symbol: Fr
+  production: 0
+  category: alkali_metal
+  state: solid
 Radium:
+  atomic_number: 88
+  mass: 226
+  symbol: Ra
+  production: 0
+  category: alkaline_earth_metal
+  state: solid
 Actinium:
+  atomic_number: 89
+  mass: 227
+  symbol: Ac
+  production: 0
+  category: actinide
+  state: solid
 Thorium:
-Berkelium:
+  atomic_number: 90
+  mass: 232.03806
+  symbol: Th
+  production: 70000
+  category: actinide
+  state: solid
 Protactinium:
+  atomic_number: 91
+  mass: 231.03588
+  symbol: Pa
+  production: 0
+  category: actinide
+  state: solid
 Uranium:
+  atomic_number: 92
+  mass: 238.02891
+  symbol: U
+  production: 70000
+  category: actinide
+  state: solid
 Neptunium:
+  atomic_number: 93
+  mass: 237
+  symbol: Np
+  production: 0
+  category: actinide
+  state: solid
 Plutonium:
+  atomic_number: 94
+  mass: 244
+  symbol: Pu
+  production: 0
+  category: actinide
+  state: solid
 Americium:
+  atomic_number: 95
+  mass: 243
+  symbol: Am
+  production: 0
+  category: actinide
+  state: solid
 Curium:
-Lawrencium:
+  atomic_number: 96
+  mass: 247
+  symbol: Cm
+  production: 0
+  category: actinide
+  state: solid
+Berkelium:
+  atomic_number: 97
+  mass: 247
+  symbol: Bk
+  production: 0
+  category: actinide
+  state: solid
 Californium:
+  atomic_number: 98
+  mass: 251
+  symbol: Cf
+  production: 0
+  category: actinide
+  state: solid
 Einsteinium:
+  atomic_number: 99
+  mass: 252
+  symbol: Es
+  production: 0
+  category: actinide
+  state: solid
 Fermium:
+  atomic_number: 100
+  mass: 257
+  symbol: Fm
+  production: 0
+  category: actinide
+  state: solid
 Mendelevium:
+  atomic_number: 101
+  mass: 258
+  symbol: Md
+  production: 0
+  category: actinide
+  state: solid
 Nobelium:
+  atomic_number: 102
+  mass: 259
+  symbol: No
+  production: 0
+  category: actinide
+  state: solid
+Lawrencium:
+  atomic_number: 103
+  mass: 266
+  symbol: Lr
+  production: 0
+  category: actinide
+  state: solid
 Rutherfordium:
+  atomic_number: 104
+  mass: 267
+  symbol: Rf
+  production: 0
+  category: transition_metal
+  state: solid
 Dubnium:
+  atomic_number: 105
+  mass: 268
+  symbol: Db
+  production: 0
+  category: transition_metal
+  state: solid
 Seaborgium:
+  atomic_number: 106
+  mass: 269
+  symbol: Sg
+  production: 0
+  category: transition_metal
+  state: solid
 Bohrium:
+  atomic_number: 107
+  mass: 270
+  symbol: Bh
+  production: 0
+  category: transition_metal
+  state: solid
 Hassium:
+  atomic_number: 108
+  mass: 277
+  symbol: Hs
+  production: 0
+  category: transition_metal
+  state: solid
 Meitnerium:
+  atomic_number: 109
+  mass: 278
+  symbol: Mt
+  production: 0
+  category: transition_metal
+  state: solid
 Darmstadtium:
+  atomic_number: 110
+  mass: 281
+  symbol: Ds
+  production: 0
+  category: transition_metal
+  state: solid
 Roentgenium:
+  atomic_number: 111
+  mass: 282
+  symbol: Rg
+  production: 0
+  category: post_transition_metal
+  state: solid
 Copernicium:
+  atomic_number: 112
+  mass: 285
+  symbol: Cn
+  production: 0
+  category: transition_metal
+  state: liquid
 Nihonium:
+  atomic_number: 113
+  mass: 286
+  symbol: Nh
+  production: 0
+  category: post_transition_metal
+  state: solid
 Flerovium:
+  atomic_number: 114
+  mass: 289
+  symbol: Fl
+  production: 0
+  category: post_transition_metal
+  state: solid
 Moscovium:
+  atomic_number: 115
+  mass: 290
+  symbol: Mc
+  production: 0
+  category: post_transition_metal
+  state: solid
 Livermorium:
+  atomic_number: 116
+  mass: 293
+  symbol: Lv
+  production: 0
+  category: post_transition_metal
+  state: solid
 Tennessine:
+  atomic_number: 117
+  mass: 294
+  symbol: Ts
+  production: 0
+  category: halogen
+  state: solid
 Oganesson:
+  atomic_number: 118
+  mass: 294
+  symbol: Og
+  production: 0
+  category: noble_gas
+  state: solid

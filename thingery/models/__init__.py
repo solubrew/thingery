@@ -105,6 +105,7 @@ class MaterialCategory(Enum):
     GLASS = "glass"
     MINERAL = "mineral"
     CHEMICAL = "chemical"
+    NANOMATERIAL = "nanomaterial"
 
 
 @dataclass
@@ -183,6 +184,8 @@ class InstitutionType(Enum):
     RESEARCH_LAB = "research_lab"
     COMPANY = "company"
     GOVERNMENT = "government"
+    BANK = "bank"
+    INTERNATIONAL = "international"
     NONPROFIT = "nonprofit"
 
 
