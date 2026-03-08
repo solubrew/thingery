@@ -61,6 +61,17 @@ from thingery.institutions.institutions import (
 	load_institutions, get_institutions_by_type, get_institutions_by_founded, get_institution
 )
 
+# Institutions Archive - institutions founded after 1926 (younger than 100 years)
+from thingery.institutions_archive import (
+	all_institutions as archive_institutions,
+	banks as archive_banks,
+	government_labs,
+	international_orgs as archive_international_orgs,
+	corporations as archive_corporations,
+	younger_than_100,
+	load_institutions as load_archived_institutions
+)
+
 # Colors - backward compatible imports + new functions
 from thingery.colors import (
 	Color as ThingeryColor, get_color, get_Color, get_colors_by_category,
@@ -160,6 +171,11 @@ __all__ = [
 	'all_institutions', 'banks', 'government', 'universities', 'international_orgs',
 	'corporations', 'established',
 	'load_institutions', 'get_institutions_by_type', 'get_institutions_by_founded', 'get_institution',
+	
+	# Institutions Archive - younger than 100 years
+	'archive_institutions', 'archive_banks', 'government_labs', 
+	'archive_international_orgs', 'archive_corporations', 'younger_than_100',
+	'load_archived_institutions',
 	
 	# Colors
 	'ThingeryColor', 'get_color', 'get_Color', 'get_colors_by_category', 'list_colors',
