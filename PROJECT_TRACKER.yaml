@@ -1,0 +1,1105 @@
+agent: arthr
+analysis:
+  counts:
+    directories: 19
+    file_sizes:
+      thingery/__init__.py: 8902
+      thingery/_loader.py: 5226
+      thingery/cli.py: 2691
+      thingery/colors.py: 4781
+      thingery/constants.py: 8690
+      thingery/elements/__init__.py: 2478
+      thingery/elements/carbon.py: 4487
+      thingery/elements/copper.py: 2512
+      thingery/elements/elements.py: 39220
+      thingery/elements/gold.py: 2732
+      thingery/elements/helium.py: 3600
+      thingery/elements/hydrogen.py: 3343
+      thingery/elements/iron.py: 5816
+      thingery/elements/lithium.py: 3563
+      thingery/elements/nitrogen.py: 4155
+      thingery/elements/oxygen.py: 4487
+      thingery/elements/silver.py: 2931
+      thingery/elements/uranium.py: 4982
+      thingery/food/__init__.py: 740
+      thingery/food/almonds.py: 1362
+      thingery/food/beef.py: 1362
+      thingery/food/foods.py: 5545
+      thingery/food/milk.py: 1362
+      thingery/food/orangejuice.py: 1362
+      thingery/food/pork.py: 1362
+      thingery/food/sugar.py: 1362
+      thingery/food/wheat.py: 1362
+      thingery/institutions/__init__.py: 887
+      thingery/institutions/institutions.py: 4900
+      thingery/institutions_archive/__init__.py: 989
+      thingery/institutions_archive/institutions.py: 3702
+      thingery/materials/__init__.py: 913
+      thingery/materials/materials.py: 6045
+      thingery/materials/mining.py: 6384
+      thingery/materials/steel.py: 1362
+      thingery/models/__init__.py: 7968
+      thingery/pantone.py: 11928
+      thingery/protocols.py: 4117
+      thingery/scales.py: 4037
+      thingery/words/__init__.py: 0
+      thingery/words/english.py: 1408
+      thingery/words/names.py: 3533
+    files_by_type:
+      (no extension): 4
+      .TAG: 1
+      .iml: 1
+      .ini: 1
+      .md: 6
+      .py: 45
+      .toml: 1
+      .xml: 6
+      .yaml: 12
+    per_file:
+      thingery/__init__.py:
+        class_count: 0
+        file_size: 8902
+        function_count: 0
+        import_count: 13
+        word_count: 692
+      thingery/_loader.py:
+        class_count: 1
+        file_size: 5226
+        function_count: 5
+        import_count: 7
+        word_count: 489
+      thingery/cli.py:
+        class_count: 0
+        file_size: 2691
+        function_count: 6
+        import_count: 1
+        word_count: 217
+      thingery/colors.py:
+        class_count: 2
+        file_size: 4781
+        function_count: 7
+        import_count: 3
+        word_count: 442
+      thingery/constants.py:
+        class_count: 1
+        file_size: 8690
+        function_count: 46
+        import_count: 4
+        word_count: 743
+      thingery/elements/__init__.py:
+        class_count: 0
+        file_size: 2478
+        function_count: 0
+        import_count: 8
+        word_count: 171
+      thingery/elements/carbon.py:
+        class_count: 4
+        file_size: 4487
+        function_count: 0
+        import_count: 3
+        word_count: 241
+      thingery/elements/copper.py:
+        class_count: 0
+        file_size: 2512
+        function_count: 0
+        import_count: 1
+        word_count: 176
+      thingery/elements/elements.py:
+        class_count: 39
+        file_size: 39220
+        function_count: 0
+        import_count: 3
+        word_count: 1894
+      thingery/elements/gold.py:
+        class_count: 0
+        file_size: 2732
+        function_count: 0
+        import_count: 1
+        word_count: 188
+      thingery/elements/helium.py:
+        class_count: 3
+        file_size: 3600
+        function_count: 0
+        import_count: 3
+        word_count: 194
+      thingery/elements/hydrogen.py:
+        class_count: 3
+        file_size: 3343
+        function_count: 0
+        import_count: 3
+        word_count: 188
+      thingery/elements/iron.py:
+        class_count: 5
+        file_size: 5816
+        function_count: 0
+        import_count: 2
+        word_count: 266
+      thingery/elements/lithium.py:
+        class_count: 3
+        file_size: 3563
+        function_count: 0
+        import_count: 2
+        word_count: 171
+      thingery/elements/nitrogen.py:
+        class_count: 3
+        file_size: 4155
+        function_count: 0
+        import_count: 3
+        word_count: 216
+      thingery/elements/oxygen.py:
+        class_count: 4
+        file_size: 4487
+        function_count: 0
+        import_count: 3
+        word_count: 240
+      thingery/elements/silver.py:
+        class_count: 0
+        file_size: 2931
+        function_count: 0
+        import_count: 1
+        word_count: 196
+      thingery/elements/uranium.py:
+        class_count: 4
+        file_size: 4982
+        function_count: 0
+        import_count: 2
+        word_count: 233
+      thingery/food/__init__.py:
+        class_count: 0
+        file_size: 740
+        function_count: 0
+        import_count: 1
+        word_count: 66
+      thingery/food/almonds.py:
+        class_count: 0
+        file_size: 1362
+        function_count: 0
+        import_count: 4
+        word_count: 80
+      thingery/food/beef.py:
+        class_count: 0
+        file_size: 1362
+        function_count: 0
+        import_count: 4
+        word_count: 80
+      thingery/food/foods.py:
+        class_count: 1
+        file_size: 5545
+        function_count: 9
+        import_count: 3
+        word_count: 496
+      thingery/food/milk.py:
+        class_count: 0
+        file_size: 1362
+        function_count: 0
+        import_count: 4
+        word_count: 80
+      thingery/food/orangejuice.py:
+        class_count: 0
+        file_size: 1362
+        function_count: 0
+        import_count: 4
+        word_count: 80
+      thingery/food/pork.py:
+        class_count: 0
+        file_size: 1362
+        function_count: 0
+        import_count: 4
+        word_count: 80
+      thingery/food/sugar.py:
+        class_count: 0
+        file_size: 1362
+        function_count: 0
+        import_count: 4
+        word_count: 80
+      thingery/food/wheat.py:
+        class_count: 0
+        file_size: 1362
+        function_count: 0
+        import_count: 4
+        word_count: 80
+      thingery/institutions/__init__.py:
+        class_count: 0
+        file_size: 887
+        function_count: 0
+        import_count: 1
+        word_count: 68
+      thingery/institutions/institutions.py:
+        class_count: 0
+        file_size: 4900
+        function_count: 5
+        import_count: 4
+        word_count: 318
+      thingery/institutions_archive/__init__.py:
+        class_count: 0
+        file_size: 989
+        function_count: 0
+        import_count: 1
+        word_count: 78
+      thingery/institutions_archive/institutions.py:
+        class_count: 2
+        file_size: 3702
+        function_count: 4
+        import_count: 4
+        word_count: 386
+      thingery/materials/__init__.py:
+        class_count: 0
+        file_size: 913
+        function_count: 0
+        import_count: 1
+        word_count: 80
+      thingery/materials/materials.py:
+        class_count: 1
+        file_size: 6045
+        function_count: 9
+        import_count: 3
+        word_count: 504
+      thingery/materials/mining.py:
+        class_count: 0
+        file_size: 6384
+        function_count: 0
+        import_count: 10
+        word_count: 563
+      thingery/materials/steel.py:
+        class_count: 0
+        file_size: 1362
+        function_count: 0
+        import_count: 4
+        word_count: 80
+      thingery/models/__init__.py:
+        class_count: 17
+        file_size: 7968
+        function_count: 0
+        import_count: 3
+        word_count: 647
+      thingery/pantone.py:
+        class_count: 38
+        file_size: 11928
+        function_count: 0
+        import_count: 2
+        word_count: 1344
+      thingery/protocols.py:
+        class_count: 2
+        file_size: 4117
+        function_count: 7
+        import_count: 2
+        word_count: 332
+      thingery/scales.py:
+        class_count: 2
+        file_size: 4037
+        function_count: 6
+        import_count: 2
+        word_count: 354
+      thingery/words/__init__.py:
+        class_count: 0
+        file_size: 0
+        function_count: 0
+        import_count: 0
+        word_count: 0
+      thingery/words/english.py:
+        class_count: 0
+        file_size: 1408
+        function_count: 0
+        import_count: 4
+        word_count: 89
+      thingery/words/names.py:
+        class_count: 0
+        file_size: 3533
+        function_count: 2
+        import_count: 6
+        word_count: 281
+audit_date: '1773856837.440492'
+coverage_penalty:
+  applied: true
+  message: -10% penalty (file-level coverage 2.9% < 60%)
+dimensions:
+  agent_awareness:
+    details:
+      score: 0
+      status: fail
+    score: 0
+    status: fail
+  base_class_duplication:
+    details:
+      base_class_duplication_count: 2
+      issues:
+      - fix: Consider creating a shared base class or mixin for common methods
+        patterns:
+        - arg_count: 1
+          base: Element
+          classes:
+          - Uranium
+          - Iron
+          - Hydrogen
+          - Helium
+          - Lithium
+          - Beryllium
+          - Boron
+          - Carbon
+          - Nitrogen
+          - Oxygen
+          - Fluorine
+          - Neon
+          - Sodium
+          - Magnesium
+          - Aluminum
+          - Silicon
+          - Phosphorus
+          - Sulfur
+          - Chlorine
+          - Argon
+          - Potassium
+          - Calcium
+          - Cobalt
+          - Nickel
+          - Copper
+          - Zinc
+          - Gallium
+          - Germanium
+          - Arsenic
+          - Selenium
+          - Bromine
+          - Krypton
+          - Rubidium
+          - Strontium
+          - Yttrium
+          - Zirconium
+          - Niobium
+          - Molybdenum
+          - Silver
+          - Gold
+          method: __init__
+        - arg_count: 1
+          base: Isotope
+          classes:
+          - Uranium234
+          - Uranium235
+          - Uranium238
+          - Iron54
+          - Iron56
+          - Iron57
+          - Iron60
+          - Helium3
+          - Helium4
+          - Carbon12
+          - Carbon13
+          - Carbon14
+          - Nitrogen14
+          - Nitrogen15
+          - Lithium6
+          - Lithium7
+          - Oxygen16
+          - Oxygen17
+          - Oxygen18
+          - Deuterium
+          - Tritium
+          method: __init__
+        rule: 'Base class duplication detected: 2 patterns'
+        severity: medium
+      score: 60
+      status: partial
+    score: 60
+    status: partial
+  changelog_tracking:
+    details:
+      issues:
+      - fix: Add entries to CHANGES.md for recent changes
+        rule: 'Low changelog coverage: 18%'
+        severity: high
+        unmatched_commits:
+        - 5e3c711 Merge remote-tracking branch 'local/morg-ws' into ga
+        - '32232f8 institutions: expand worldwide 100+ year institution'
+        - 'e7fbbba archive: add institutions_archive package for instit'
+        - 'e267d41 institutions: filter to 100+ years only'
+        - '00223f9 feat(institutions): YAML-based institution loader wi'
+      score: 20
+      status: partial
+    score: 20
+    status: partial
+  ci_cd_config:
+    details:
+      ci_cd_found:
+      - GitHub Actions
+      issues: []
+      score: 100
+      status: pass
+    score: 100
+    status: pass
+  ci_cd_documentation:
+    details:
+      ci_cd_docs_found: []
+      issues:
+      - fix: Create CONTRIBUTING.md or docs/ci-cd.md with CI/CD pipeline documentation
+        rule: No CI/CD documentation found
+        severity: high
+      score: 0
+      status: fail
+    score: 0
+    status: fail
+  circular_dependencies:
+    details:
+      cycles: []
+      import_cycle_count: 0
+      issues: []
+      score: 100
+      status: pass
+    score: 100
+    status: pass
+  cli_documentation:
+    details:
+      exists: false
+      score: 0
+      status: fail
+    score: 0
+    status: fail
+  code_quality_pylint:
+    details:
+      issues:
+      - fix: Fix pylint errors
+        rule: 'Pylint errors: 176'
+        severity: critical
+      score: 0
+      status: fail
+    score: 0
+    status: fail
+  configuration:
+    details:
+      config_exists: false
+      score: 0
+      status: fail
+    score: 0
+    status: fail
+  data_clumps:
+    details:
+      data_clump_count: 0
+      issues: []
+      score: 100
+      status: pass
+    score: 100
+    status: pass
+  dead_code:
+    details:
+      issues:
+      - fix: Remove unused imports
+        items:
+        - file: thingery/_loader.py
+          name: from __future__ import annotations
+          type: import_from
+        - file: thingery/_loader.py
+          name: from os.path import abspath
+          type: import_from
+        - file: thingery/_loader.py
+          name: from os.path import join
+          type: import_from
+        - file: thingery/colors.py
+          name: from thingery.pantone import *
+          type: import_from
+        - file: thingery/constants.py
+          name: math
+          type: import
+        - file: thingery/constants.py
+          name: from thingery._loader import create_dataclass_from_dict
+          type: import_from
+        - file: thingery/elements/elements.py
+          name: from dataclasses import field
+          type: import_from
+        - file: thingery/materials/mining.py
+          name: from os.path import abspath
+          type: import_from
+        - file: thingery/materials/mining.py
+          name: from condor import condor
+          type: import_from
+        - file: thingery/materials/mining.py
+          name: pandas
+          type: import
+        rule: 'Unused imports: 34'
+        severity: medium
+      - fix: Remove or export unused functions
+        items:
+        - file: thingery/institutions_archive/institutions.py
+          name: get_institution
+          type: function
+        - file: thingery/institutions_archive/institutions.py
+          name: get_institutions_by_type
+          type: function
+        - file: thingery/institutions_archive/institutions.py
+          name: get_institutions_by_founded
+          type: function
+        - file: thingery/words/names.py
+          name: random_name_generator
+          type: function
+        rule: 'Unused functions: 4'
+        severity: medium
+      - fix: Remove or export unused classes
+        items:
+        - file: thingery/institutions_archive/institutions.py
+          name: InstitutionType
+          type: class
+        rule: 'Unused classes: 1'
+        severity: medium
+      score: 55.5
+      status: partial
+      total_unused: 39
+      unused_class_count: 1
+      unused_function_count: 4
+      unused_import_count: 34
+    score: 55.5
+    status: partial
+  dependency_strategy:
+    details:
+      external_imports: 138
+      info: 'Hint: 63 GitVein projects available but not used: PyQt5Pandas, apig,
+        asolutionfor, axn, basicbot...'
+      internal_import_details:
+      - file: thingery/constants.py
+        module: thingery._loader
+        project: thingery
+      - file: thingery/constants.py
+        module: thingery._loader
+        project: thingery
+      - file: thingery/__init__.py
+        module: thingery.institutions
+        project: thingery
+      - file: thingery/elements/copper.py
+        module: thingery.models
+        project: thingery
+      - file: thingery/elements/copper.py
+        module: thingery.models
+        project: thingery
+      - file: thingery/elements/copper.py
+        module: thingery.models
+        project: thingery
+      - file: thingery/elements/copper.py
+        module: thingery.models
+        project: thingery
+      - file: thingery/elements/copper.py
+        module: thingery.models
+        project: thingery
+      - file: thingery/elements/gold.py
+        module: thingery.models
+        project: thingery
+      - file: thingery/elements/gold.py
+        module: thingery.models
+        project: thingery
+      internal_imports: 51
+      internal_projects_used:
+      - condor
+      - thingery
+      leverage_score: 26.98
+      score: 100
+      status: pass
+      total_imports: 189
+    score: 100
+    status: pass
+  documentation:
+    details:
+      missing:
+      - CONTRIBUTING.md
+      present:
+      - README.md
+      - CHANGES.md
+      - STATE.md
+      score: 75
+      status: pass
+    score: 75
+    status: pass
+  duplicate_files:
+    details:
+      duplicate_count: 1
+      duplicates:
+        institutions.py:
+        - thingery/institutions_archive/institutions.py
+        - thingery/institutions/institutions.py
+      issues:
+      - filename: institutions.py
+        fix: 'Review files for potential code duplication or rename: institutions.py'
+        location_count: 2
+        locations:
+        - thingery/institutions_archive/institutions.py
+        - thingery/institutions/institutions.py
+        rule: Duplicate filename found
+        severity: high
+      score: 90
+      status: pass
+    score: 90
+    status: pass
+  error_handling:
+    details:
+      bare_excepts: 0
+      generic_excepts: 0
+      issues: []
+      proper_try_except: 1
+      score: 100
+      status: pass
+    score: 100
+    status: pass
+  external_dependencies_declared:
+    details:
+      declared_count: 2
+      declared_internal: []
+      issues:
+      - fix: Add these packages to [project.dependencies] in pyproject.toml
+        packages:
+        - geopandas
+        - pandas
+        - plotly
+        - requests
+        rule: 'External dependencies not declared in pyproject.toml: 4 packages'
+        severity: critical
+      score: 40
+      status: partial
+      undeclared_external:
+      - geopandas
+      - pandas
+      - plotly
+      - requests
+      used_external_count: 5
+    score: 40
+    status: partial
+  feature_envy:
+    details:
+      feature_envy_count: 0
+      issues: []
+      score: 100
+      status: pass
+    score: 100
+    status: pass
+  file_sizes:
+    details:
+      large_file_count: 0
+      score: 100
+      small_file_count: 0
+      status: pass
+    score: 100
+    status: pass
+  git_workflow:
+    details:
+      error: Remote named 'origin' didn't exist
+      score: 0
+      status: error
+    score: 0
+    status: error
+  god_class:
+    details:
+      god_class_count: 0
+      issues: []
+      score: 100
+      status: pass
+    score: 100
+    status: pass
+  import_cycle:
+    details:
+      cycles: []
+      import_cycle_count: 0
+      issues: []
+      score: 100
+      status: pass
+    score: 100
+    status: pass
+  import_organization:
+    details:
+      has_isort_config: false
+      issues:
+      - fix: Add isort configuration to pyproject.toml or .isort.cfg
+        rule: No isort configuration found
+        severity: low
+      potential_misordered: 0
+      score: 75
+      status: partial
+    score: 75
+    status: partial
+  kiss_dry:
+    details:
+      duplicate_warnings: 0
+      magic_numbers_found: 0
+      score: 100
+      status: pass
+    score: 100
+    status: pass
+  lambda_antipattern:
+    details:
+      antipattern_count: 1
+      issues:
+      - antipatterns:
+        - file: thingery/cli.py
+          line: 20
+        fix: Replace lambda anti-patterns with proper functions or direct calls
+        rule: 'Lambda anti-patterns detected: 1/1 (100.0%)'
+        severity: high
+      score: 0
+      status: fail
+      total_lambdas: 1
+    score: 0
+    status: fail
+  license_dependencies:
+    details:
+      issues:
+      - fix: Replace with MIT-licensed alternatives
+        packages:
+        - CairoSVG (LGPL-3.0-or-later)
+        - GitPython (BSD-3-Clause)
+        - ImageIO (BSD-2-Clause)
+        - Jinja2 (BSD License)
+        - Markdown (BSD-3-Clause)
+        rule: 'Non-MIT licenses: 188/384'
+        severity: high
+      - fix: Verify license manually or remove dependency
+        packages:
+        - atheris
+        - euclid3
+        - lark-oapi
+        - logma
+        - owl
+        rule: 'Unknown licenses: 7/384'
+        severity: high
+      mit_percentage: 49.2
+      score: 80
+      status: pass
+      tools_available:
+      - pip-licenses
+      tools_checked:
+      - fossa
+      - safety
+      - pip-licenses
+      - dependency-check
+    score: 80
+    status: pass
+  licenses:
+    details:
+      issues: []
+      score: 100
+      status: pass
+    score: 100
+    status: pass
+  logging:
+    details:
+      print_files:
+      - thingery/materials/mining.py
+      print_statements: 11
+      score: 0
+      status: fail
+      uses_logging: false
+      uses_logma: false
+    score: 0
+    status: fail
+  long_method:
+    details:
+      issues: []
+      long_method_count: 0
+      score: 100
+      status: pass
+    score: 100
+    status: pass
+  magic_numbers:
+    details:
+      issues:
+      - fix: Replace magic numbers with named constants
+        items:
+        - file: thingery/institutions_archive/institutions.py
+          line: 94
+          type: int
+          value: 2026
+        - file: thingery/institutions_archive/institutions.py
+          line: 56
+          type: int
+          value: 1926
+        - file: thingery/institutions_archive/institutions.py
+          line: 61
+          type: int
+          value: 2026
+        - file: thingery/institutions_archive/institutions.py
+          line: 109
+          type: int
+          value: 1926
+        - file: thingery/elements/copper.py
+          line: 80
+          type: float
+          value: 63.546
+        - file: thingery/elements/copper.py
+          line: 83
+          type: int
+          value: 8960
+        - file: thingery/elements/copper.py
+          line: 84
+          type: float
+          value: 1357.77
+        - file: thingery/elements/copper.py
+          line: 85
+          type: int
+          value: 2835
+        - file: thingery/elements/copper.py
+          line: 87
+          type: float
+          value: 1.9
+        - file: thingery/elements/copper.py
+          line: 88
+          type: float
+          value: 7.726
+        rule: 'Magic numbers detected: 555'
+        severity: medium
+      magic_number_count: 555
+      score: 0
+      status: fail
+    score: 0
+    status: fail
+  message_chains:
+    details:
+      chain_count: 0
+      issues: []
+      score: 100
+      status: pass
+    score: 100
+    status: pass
+  mkdocs_mkdocstrings:
+    details:
+      coverage_percentage: 0
+      covered_modules: 0
+      docs_directory: true
+      has_index_md: true
+      has_mkdocstrings: false
+      issues:
+      - fix: Create mkdocs.yml with mkdocstrings plugin for API documentation
+        rule: docs/ directory exists but no MkDocs configuration
+        severity: high
+      mkdocs_config: null
+      score: 50
+      status: partial
+      total_modules: 0
+      uncovered_modules: []
+    score: 50
+    status: partial
+  module_cli_coverage:
+    details:
+      cli_commands:
+      - element
+      - list-elements
+      - list-materials
+      - scale
+      - search
+      context:
+        actual: 3/14 modules have CLI commands (21%)
+        description: Ensures every module has a corresponding CLI command for accessibility
+        dimension: module_cli_coverage
+        expected: All modules should have CLI commands (100% coverage at 80% threshold)
+        fix_guidance: 'Add CLI commands for: _loader, cli, colors, constants, food,
+          institutions, institutions_archive, models, pantone, protocols, words. Map
+          each module to a CLI command in cli.py using subparsers.add_parser(''pantone'').'
+        what_it_tests: Whether each Python module in the package has a matching CLI
+          command entry point
+        why_partial_or_fail: 'Modules missing CLI commands: _loader, cli, colors,
+          constants, food, institutions, institutions_archive, models, pantone, protocols,
+          words. Available CLI commands found: element, list-elements, list-materials,
+          scale, search. Each module should have either: (1) a matching @cli.command()/@app.command()
+          decorator, (2) a subparsers.add_parser() call matching the module name,
+          or (3) a cmd_XXX function in cli.py that maps to the module.'
+      covered_modules: 3
+      issues:
+      - available_cli_commands:
+        - search
+        - list-elements
+        - element
+        - list-materials
+        - scale
+        covered_modules:
+        - elements
+        - scales
+        - materials
+        fix: 'Add CLI commands for: pantone, _loader, food, models, institutions,
+          institutions_archive, cli, constants, words, colors, protocols'
+        rule: 'CLI coverage: 3/14 modules'
+        severity: medium
+        uncovered_modules:
+        - pantone
+        - _loader
+        - food
+        - models
+        - institutions
+        - institutions_archive
+        - cli
+        - constants
+        - words
+        - colors
+        - protocols
+      module_list:
+      - _loader
+      - cli
+      - colors
+      - constants
+      - elements
+      - food
+      - institutions
+      - institutions_archive
+      - materials
+      - models
+      - pantone
+      - protocols
+      - scales
+      - words
+      score: 21
+      status: partial
+      total_modules: 14
+      uncovered_modules: 11
+    score: 21
+    status: partial
+  parallel_inheritance:
+    details:
+      issues: []
+      parallel_inheritance_count: 0
+      score: 100
+      status: pass
+    score: 100
+    status: pass
+  pii_secrets:
+    details:
+      files_with_secrets: 0
+      findings: []
+      score: 100
+      secrets_found: 0
+      status: pass
+    score: 100
+    status: pass
+  private_leak:
+    details:
+      issues: []
+      private_leak_count: 0
+      score: 100
+      status: pass
+    score: 100
+    status: pass
+  readme_quality:
+    details:
+      issues:
+      - fix: 'Add sections: features'
+        rule: 'Missing sections: features'
+        severity: medium
+      score: 60
+      sections_found:
+      - installation
+      - usage
+      sections_required:
+      - installation
+      - usage
+      - features
+      status: partial
+      word_count: 181
+    score: 60
+    status: partial
+  security_bandit:
+    details:
+      details:
+        files_scanned: 43
+        high: 0
+        low: 2
+        medium: 0
+        total: 2
+      issues: []
+      score: 80
+      status: pass
+    score: 80
+    status: pass
+  security_ruff:
+    details:
+      issues: []
+      score: 80
+      status: pass
+    score: 80
+    status: pass
+  structure:
+    details:
+      missing_dirs: []
+      missing_files:
+      - CLI.md
+      present_dirs:
+      - tests
+      - skills
+      - docs
+      - thingery
+      present_files:
+      - CHANGES.md
+      - Dockerfile
+      - pyproject.toml
+      - CODING_STANDARDS.md
+      - pytest.ini
+      - STATE.md
+      - LICENSE
+      - README.md
+      score: 85
+      status: pass
+    score: 85
+    status: pass
+  switch_abuse:
+    details:
+      issues: []
+      score: 100
+      status: pass
+      switch_abuse_count: 0
+    score: 100
+    status: pass
+  testing:
+    details:
+      coverage: 2.941176470588235
+      files_with_tests: 1
+      score: 40
+      status: partial
+      test_dir: tests
+      test_file_count: 1
+      total_source_files: 34
+    score: 40
+    status: partial
+  todo_tracking:
+    details:
+      issues: []
+      score: 100
+      status: pass
+      todo_count: 0
+    score: 100
+    status: pass
+  try_except_imports:
+    details:
+      issues: []
+      score: 100
+      status: pass
+      violation_count: 0
+    score: 100
+    status: pass
+  type_annotations:
+    details:
+      annotated_functions: 106
+      annotation_percentage: 52.2
+      issues: []
+      score: 100
+      status: pass
+      total_functions: 203
+    score: 100
+    status: pass
+  type_check_pyright:
+    details:
+      issues:
+      - fix: Fix type errors
+        rule: 'Pyright errors: 102'
+        severity: critical
+      score: 39.8
+      status: partial
+    score: 39.8
+    status: partial
+  wrapper_antipattern:
+    details:
+      issues: []
+      score: 100
+      status: pass
+      total_functions: 203
+      wrapper_count: 0
+    score: 100
+    status: pass
+overall_score: 63.28
+project: thingery
+summary:
+  failing: 8
+  gitvein_projects_available: 65
+  passing: 27
+  total_dimensions: 46
+versions:
+  project: 5e3c711
+  project_status: dirty
+  project_uncommitted_changes: 2
+  sasquatch: unknown
