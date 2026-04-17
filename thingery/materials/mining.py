@@ -2,14 +2,15 @@
 """
 ---
 <(META)>:
-	docid:
-	name:
-	description: >
-	version: 0.0.0.0.0.0
-	authority: filesystem
-	security: seclvl2
-	<(WT)>: -32
+        docid:
+        name:
+        description: >
+        version: 0.0.0.0.0.0
+        authority: filesystem
+        security: seclvl2
+        <(WT)>: -32
 """
+
 # -*- coding: utf-8 -*
 # ======================================Standard Library Modules======================================================||
 from os.path import abspath, dirname, join
@@ -18,8 +19,8 @@ import datetime as dt
 # ======================================3rd Party Library Modules=====================================================||
 
 # ======================================Solutions Brewer Library Modules==============================================||
-from condor import condor
-from ogma.logma import Logma
+from kahndor import kahndor
+from kahndor.logma import Logma
 
 # ====================================================================================================================||
 here = join(dirname(__file__), "")  # ||
@@ -95,7 +96,15 @@ df = df[(df["latitude"].between(-90, 90)) & (df["longitude"].between(-180, 180))
 
 # Try to find commodity / mineral type
 commodity_col = None
-possible_names = ["commodity", "Commodity", "primary_commodity", "mineral", "deposit_type", "metal", "name"]
+possible_names = [
+    "commodity",
+    "Commodity",
+    "primary_commodity",
+    "mineral",
+    "deposit_type",
+    "metal",
+    "name",
+]
 for name in possible_names:
     if any(name in col.lower() for col in df.columns):
         commodity_col = [col for col in df.columns if name in col.lower()][0]
@@ -108,10 +117,14 @@ else:
 
 # Optional: Top commodities for better visualization
 top_commodities = df["commodity"].value_counts().head(15).index
-df["display_commodity"] = df["commodity"].where(df["commodity"].isin(top_commodities), "Other")
+df["display_commodity"] = df["commodity"].where(
+    df["commodity"].isin(top_commodities), "Other"
+)
 
 # Convert to GeoDataFrame
-gdf = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df.longitude, df.latitude), crs="EPSG:4326")
+gdf = gpd.GeoDataFrame(
+    df, geometry=gpd.points_from_xy(df.longitude, df.latitude), crs="EPSG:4326"
+)
 
 print(f"Final dataset: {len(gdf):,} mines with coordinates")
 
@@ -137,7 +150,9 @@ fig = px.scatter_mapbox(
     title="🌍 Global Mineral Mining Operations (Active & Known Deposits)",
     color_discrete_sequence=px.colors.qualitative.Bold,
     category_orders=(
-        {"display_commodity": sorted(gdf["display_commodity"].unique())} if "display_commodity" in gdf.columns else None
+        {"display_commodity": sorted(gdf["display_commodity"].unique())}
+        if "display_commodity" in gdf.columns
+        else None
     ),
 )
 
@@ -157,7 +172,9 @@ fig.write_html("world_mining_operations_map.html")
 print("✅ Map saved as 'world_mining_operations_map.html'")
 
 # Optional: Save cleaned dataset
-gdf[["latitude", "longitude", "commodity", "geometry"]].to_file("mining_sites.geojson", driver="GeoJSON")
+gdf[["latitude", "longitude", "commodity", "geometry"]].to_file(
+    "mining_sites.geojson", driver="GeoJSON"
+)
 print("✅ Cleaned data saved as 'mining_sites.geojson'")
 
 # ====================================================================================================================||

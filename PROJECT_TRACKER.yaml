@@ -507,7 +507,7 @@ dimensions:
           name: from os.path import abspath
           type: import_from
         - file: thingery/materials/mining.py
-          name: from condor import condor
+          name: from kahndor import kahndor
           type: import_from
         - file: thingery/materials/mining.py
           name: pandas
@@ -583,7 +583,7 @@ dimensions:
         project: thingery
       internal_imports: 51
       internal_projects_used:
-      - condor
+      - kahndor
       - thingery
       leverage_score: 26.98
       score: 100
