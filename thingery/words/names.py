@@ -83,7 +83,7 @@ def _get_all_words():
     return sorted(list(words))
 
 
-def random_name_generator(words=2):
+def random_name_generator(words=2, max_letters=None, min_letters=None):
     """
     Generates a random name consisting of a specified number of words.
 
@@ -94,20 +94,10 @@ def random_name_generator(words=2):
         str: A space-separated string of random words in Title Case.
     """
     all_words = _get_all_words()
-
-    # Fallback words if no data could be loaded
     if not all_words:
-        all_words = [
-            "Thing",
-            "Object",
-            "Item",
-            "Element",
-            "Component",
-            "Device",
-            "Artifact",
-            "Entity",
-        ]
-
+        raise ValueError("No words could be loaded from the available sources.")
+    # if letters:
+    # restrict to words of the specified length
     selected = [random.choice(all_words) for _ in range(words)]
     return " ".join(word.title() for word in selected)
 
