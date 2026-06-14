@@ -151,7 +151,6 @@ def __getattr__(name: str):
 
 
 # Also import pantone colors
-from thingery.pantone import *
 
 
 # ============================================================================
